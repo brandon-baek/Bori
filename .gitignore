@@ -7,3 +7,6 @@ test_output/
 .venv/
 *.zip
 kaggle_outputs/
+.env
+wandb_api_key.txt
+downloaded_sft_checkpoint/
