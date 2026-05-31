@@ -1,0 +1,432 @@
+[
+  {
+    "instruction": "How do I ask for a refund in a Korean store if the item is broken?",
+    "input": "",
+    "output": "In a Korean store, you want to be polite but firm. Say: '죄송한데, 이 제품이 고장 났어요. 환불해 주세요.' (Excuse me, this product is broken. Please refund me.) Or more conversationally: '아이고, 이거 작동을 안 해요. 환불 가능할까요?' (Oh dear, this doesn't work. Is a refund possible?). Most stores expect you to use the receipt, so say '영수증 있는데요' (I have the receipt) while showing it. Avoid shouting—Korean service staff respond best to calm, apologetic-but-clear requests."
+  },
+  {
+    "instruction": "What's the natural way to tell a waiter my food is too spicy?",
+    "input": "",
+    "output": "Don't just say '매워요' (it's spicy). Say '너무 매워서 못 먹겠어요, 죄송한데 좀 덜 맵게 해주실 수 있나요?' (It's so spicy I can't eat it, sorry but could you make it less spicy?). For a quick fix: '물 좀 주세요, 매워서 살겠어요!' (Please give me water, I'm dying from the spice!). Korean waiters will often laugh and bring you a small bowl of rice or cold water—rice helps absorb the capsaicin better than water."
+  },
+  {
+    "instruction": "How to bargain at a Korean street market without being rude?",
+    "input": "",
+    "output": "Korean markets expect a little negotiation, but politely. Start with: '좀 깎아 주세요' (Please lower it a bit) while smiling. Or: '이거 두 개 사면 얼마에 해 주세요?' (If I buy two, how much will you give me?). Never haggle aggressively. A friendly '사장님, 저 학생이라 돈이 없어요~' (Boss, I'm a student, I have no money~) works wonders. Final tactic: pretend to walk away slowly—sometimes they'll call you back with a better price. Keep it light and joking, not confrontational."
+  },
+  {
+    "instruction": "How do I explain 'it's a steal' (meaning great bargain) in Korean?",
+    "input": "",
+    "output": "Korean doesn't have a direct 'steal' metaphor here. Say '완전 싸게 샀어요, 대박!' (I bought it super cheap, jackpot!). Or '가격이 미쳤어요, 진짜' (The price is crazy, seriously). Another natural expression: '이 가격에 이 퀄리티? 사기네' (This quality at this price? It's a scam [in a good, ironic way]). But safest is '진짜 득템했어요' (I really scored a good find)—'득템' comes from gaming slang for getting a rare drop, and Koreans use it for bargains."
+  },
+  {
+    "instruction": "What do I say if my hotel room has no hot water?",
+    "input": "",
+    "output": "Call the front desk: '프론트인가요? 방에 온수가 안 나와요. 좀 확인해 주세요.' (Is this the front desk? Hot water isn't coming out in the room. Please check it.) If you want to be stronger: '샤워하려고 하는데 찬물만 나와요, 빨리 고쳐주세요.' (I'm trying to shower but only cold water comes out, please fix it quickly). Korean hotels will usually send someone within 10 minutes. Always say '감사합니다' after they fix it, even if you're annoyed—it keeps things friendly."
+  },
+  {
+    "instruction": "How to order coffee with oat milk in a Korean cafe?",
+    "input": "",
+    "output": "Most Korean cafes have oat milk now but it's called '오트밀크' (oteu milkeu). Say: '아이스 아메리카노 하나 주세요, 우유 대신 오트밀크로 해 주세요.' (One iced Americano please, with oat milk instead of regular milk.). If they look confused: '오트밀크 있어요? 라떼 말고요.' (Do you have oat milk? Not latte.). Small cafes may charge 500-1000 KRW extra—they'll say '오트밀크는 500원 추가돼요' (Oat milk is 500 won extra). Just nod and say '네, 괜찮아요' (Yes, that's fine)."
+  },
+  {
+    "instruction": "What's the Konglish way to say 'I'll take a rain check'?",
+    "input": "",
+    "output": "Koreans don't use 'rain check' literally. Say '다음에 또 봐요, 오늘은 좀 바빠서' (Let's see each other next time, because I'm a bit busy today). For a more Konglish vibe: '오늘은 패스할게요, 다음 기회에' (I'll pass today, next opportunity). Or very naturally: '지금은 힘들고, 나중에 콜할게요' (It's hard now, I'll call you later). The last one mimics the casual 'I'll call you' used in Korean friend groups for postponing plans."
+  },
+  {
+    "instruction": "How do I ask a taxi driver to use the meter?",
+    "input": "",
+    "output": "Some taxi drivers in Korea might try a fixed price. Say firmly but politely: '미터기 사용해 주세요, 요금 그대로 낼게요' (Please use the meter, I'll pay the exact fare). If they resist: '법적으로 미터기 써야 하지 않나요?' (Aren't you legally supposed to use the meter?). Most will comply immediately. For airport taxis, say '공항까지 미터기로 가주세요' (Please go to the airport by meter). Always note the driver's ID number on the dashboard just in case, but 95% of drivers are honest."
+  },
+  {
+    "instruction": "What's a natural Korean expression for 'it's not my cup of tea'?",
+    "input": "",
+    "output": "Korean says '저랑 안 맞아요' (It doesn't match with me) or '제 스타일이 아니에요' (It's not my style). Example: '이 드라마가 인기 많지만 저랑 안 맞아요' (This drama is popular but not my cup of tea). For stronger dislike: '별로예요, 제 취향 아니에요' (It's not good, not my taste). Or even more casual Konglish: '내 취향은 아니야' (Literally 'not my taste'—'취향' is taste/preference). Avoid saying something is 'bad'—just say it doesn't fit you."
+  },
+  {
+    "instruction": "How to tell a Korean pharmacist you have diarrhea?",
+    "input": "",
+    "output": "Don't be embarrassed—just say '설사가 나서 약 좀 주세요' (I have diarrhea, please give me some medicine). For more detail: '배가 아프고 화장실을 자주 가게 돼요' (My stomach hurts and I have to go to the bathroom frequently). Pharmacists will ask: '몇 번이나 갔어요?' (How many times have you gone?) or '혈액은 있어요?' (Any blood?). Answer simply: '세 번 갔고 피는 없어요' (Three times, no blood). They'll give you loperamide or something similar. Drink plenty of '물' (water) and '이온음료' (sports drink)."
+  },
+  {
+    "instruction": "How do I explain 'jet lag' in Korean?",
+    "input": "",
+    "output": "Korean uses the English loanword '젯랙' (jet raek) commonly. Say: '시차 적응 때문에 피곤해요' (I'm tired because of time difference adjustment). Or more conversationally: '젯랙이 심해요, 밤에 못 자고 낮에 졸려요' (Jet lag is bad, I can't sleep at night and I'm sleepy during the day). A helpful phrase for friends: '몇 일 있어야 시차 적응 될까요?' (How many days will it take to adjust to the time difference?). Korean people travel a lot, so they'll understand and recommend '밖에서 햇볕 좀 쬐세요' (Get some sunlight outside)."
+  },
+  {
+    "instruction": "What's the right way to refuse a second helping at a Korean home?",
+    "input": "",
+    "output": "Korean hosts will push food. Say '배불러서 더 못 먹겠어요, 정말 맛있었어요' (I'm full, I can't eat more, it was really delicious). If they insist: '다음에 또 먹을게요, 진짜 배가 터질 것 같아요' (I'll eat it again next time, my stomach might really burst). For a polite lie: '양이 많아서 충분히 먹었어요' (The portion was big, I ate enough). Never just say 'no' without thanks. The magic phrase is '잘 먹었습니다' (I ate well)—say it while putting down your chopsticks, and they'll usually stop pushing."
+  },
+  {
+    "instruction": "How to ask 'Where is the fitting room?' in a Korean department store?",
+    "input": "",
+    "output": "Say '피팅룸 어디에요?' (fitting room, where is it?)—'피팅룸' is Konglish. Or more formally: '입어볼 수 있는 곳이 어디인가요?' (Where is the place where I can try things on?). Staff will point and say '저기 뒤쪽에 있어요' (It's in the back over there). They might also ask '사이즈 어떻게 돼요?' (What size are you?). Answer 'M 입어요' (I wear M) or '95 사이즈요' (Size 95—Korean size). Always take off your shoes before entering the fitting room if they have a small step—it's expected."
+  },
+  {
+    "instruction": "What does '눈치' mean and how do I use it in a restaurant?",
+    "input": "",
+    "output": "'눈치' (noon-chi) is Korean for social radar or reading the room. In a restaurant, you use '눈치' to sense when to leave. If you've finished eating and the place is crowded, say '눈치 보여서 갈게요' (I feel the pressure to leave, so I'll go). Or if service is slow, complain: '주인장 눈치 없는 거 아니에요?' (Isn't the owner being clueless about the room?). To praise someone: '눈치 빠르다' (quick social radar). Example: '웨이터가 눈치 빠르게 물 채워주더라' (The waiter was socially quick and refilled our water)."
+  },
+  {
+    "instruction": "How do I tell a Korean barber I just want a trim, not a style change?",
+    "input": "",
+    "output": "Be very direct: '스타일 변경 말고, 끝만 조금 다듬어 주세요' (Not a style change, just trim the ends a little). Show with your fingers how much: '이 정도만 잘라 주세요' (Cut just this much). To prevent miscommunication: '숱은 안 줄여도 돼요, 길이만 살짝' (No need to reduce volume, just length slightly). Korean barbers often want to add '레이어' (layers)—say '레이어 넣지 마세요, 그냥 일자로' (Don't add layers, just straight across). And repeat: '조금만요, 진짜 조금만요' (Just a little, really just a little)."
+  },
+  {
+    "instruction": "What's a Konglish way to say 'I'm broke' after shopping?",
+    "input": "",
+    "output": "Say '통장에 잔고가 얼마 없어, 쇼핑 때문에 망했어' (There's not much balance in my account, I'm ruined because of shopping). Or trendy Konglish: '지름신 강림해서 완전 파산' (The shopping spirit descended and I'm completely bankrupt—'지름신' is a meme god of impulse buying). For casual: '돈이 없어, 탕진했어' (No money, I squandered it all). Most common among friends: '이번 달은 이미 적자야, 밥 사줘' (This month is already in the red, buy me a meal). Add a laugh so they know you're half-joking."
+  },
+  {
+    "instruction": "How to order food delivery in Korean without using an app?",
+    "input": "",
+    "output": "Call the restaurant directly. Say '배달 가능한가요?' (Is delivery possible?). Then '여기는 [your address]인데요, [dish name] 하나 주문할게요' (This is [address], I'll order one [dish]). For example: '여기는 역삼동 123-4인데요, 짜장면 하나 주문할게요' (This is 123-4 Yeoksam-dong, I'll order one jjajangmyeon). They'll ask '전화번호요?' (Phone number?). Give yours. Then '얼마면 돼요?' (How much is it?). They'll tell you, you say '네, 감사합니다' and wait. Cash on delivery is normal—say '현금으로 낼게요' (I'll pay cash)."
+  },
+  {
+    "instruction": "What's the cultural nuance of '서비스' in Korean restaurants?",
+    "input": "",
+    "output": "'서비스' (service) means free extra food or drinks given by the owner. It's not a tip—tipping isn't done in Korea. The owner might bring '서비스' like a free soda or extra banchan (side dishes). To ask for it playfully: '서비스 없나요?' (No service?). But only if you're a regular. Better to earn it by being nice. Say '맛있어요, 사장님' (It's delicious, boss) and they might bring '서비스' naturally. Never demand it. If they give you something free, say '이거 서비스예요? 감사합니다!' (This is service? Thank you!)."
+  },
+  {
+    "instruction": "How do I complain that my takeout order is missing items?",
+    "input": "",
+    "output": "Call the restaurant immediately. Say '방금 배달 받았는데, [missing item]이 없어요' (I just got delivery, but [missing item] isn't there). Example: '치킨 시켰는데 양념치킨이 안 왔어요' (I ordered chicken, but the seasoned chicken didn't come). They'll apologize: '죄송합니다, 바로 보내드릴게요' (Sorry, I'll send it right away). Don't yell—Koreans resolve this calmly. If they argue (rare), say '네, 그럼 환불해 주세요' (Ok, then please refund me). For delivery apps, take a photo and use the app's '문제 신고' (report problem) feature."
+  },
+  {
+    "instruction": "How to ask a Korean convenience store clerk to heat up your food?",
+    "input": "",
+    "output": "Convenience stores (GS25, CU, 7-Eleven) have microwaves. Say '데워도 될까요?' (May I heat it up?). Or hand them the item: '좀 데워 주세요, 감사합니다' (Please heat it up for me, thanks). If you want to do it yourself: '전자레인지 어디에요?' (Where's the microwave?). They'll point. Be careful: Korean microwaves often have buttons like '1분' (1 minute), '30초' (30 seconds). For instant rice, peel the lid slightly first or it might explode. Ramyeon cups need water first—say '물은 어디서 받나요?' (Where do I get water?)."
+  },
+  {
+    "instruction": "What does '아이쇼핑' mean and how do I use it?",
+    "input": "",
+    "output": "'아이쇼핑' (eye shopping) means window shopping—looking without buying. Say '오늘은 돈 없어서 아이쇼핑만 할 거야' (I have no money today, so I'll just eye-shop). Or to a friend: '아이쇼핑하러 가자, 살 거 없어도 구경만' (Let's go eye-shopping, even if we don't buy anything, just looking). If a salesperson asks '도와드릴까요?' (Can I help you?), say '아이쇼핑 중이에요, 괜찮아요' (I'm eye-shopping, it's okay). They'll leave you alone. Very useful in high-end districts like Gangnam or Myeongdong."
+  },
+  {
+    "instruction": "How to say 'this shirt shrunk in the wash' when returning it?",
+    "input": "",
+    "output": "Go back to the store with the receipt and the shirt. Say '세탁했더니 줄었어요, 불량인가 봐요' (I washed it and it shrunk, I think it's defective). Or '상표대로 세탁했는데 이렇게 됐어요' (I washed it according to the label, but it turned out like this). They may offer an exchange, not a refund: '교환해 드릴게요' (I'll exchange it for you). If you want money back: '환불 가능할까요? 영수증 여기 있어요' (Is a refund possible? Here's the receipt). Be polite but firm. Cotton shirts shrinking is common—buy a size up next time."
+  },
+  {
+    "instruction": "What's a natural response when a Korean elder pays for my meal?",
+    "input": "",
+    "output": "Korean culture expects you to protest once or twice. Say '아니에요, 제가 낼게요!' (No, I'll pay!). They'll insist. Then say '정말 감사합니다, 다음에 제가 꼭 살게요' (Thank you so much, next time I'll definitely buy). Then accept gracefully. Never just say 'ok thanks'—it's rude. After they pay, say '잘 먹었습니다' (I ate well) again with a slight bow. If you're the elder paying, just wave your hand and say '괜찮아, 내가 낼게' (It's fine, I'll pay). The social dance is important."
+  },
+  {
+    "instruction": "How to ask for a doggy bag in a Korean restaurant?",
+    "input": "",
+    "output": "Doggy bags are becoming common but not universal. Say '남은 거 포장해 주세요' (Please pack the leftovers). Or '집에 가져갈게요, 포장 좀 해 주세요' (I'll take it home, please pack it for me). For BBQ places: '고기 남은 거 싸 주세요' (Please wrap the leftover meat). They'll use a '일회용 용기' (disposable container). If they seem hesitant, say '너무 맛있어서 아까워서요' (It's too delicious to waste, that's why). Some traditional restaurants may refuse for hygiene reasons—respect that and leave it."
+  },
+  {
+    "instruction": "What does '이거 사야 되나 말아야 되나 고민 중' mean in shopping?",
+    "input": "",
+    "output": "It means 'I'm debating whether to buy this or not.' Use it when you're indecisive. Say it out loud at a market: '이거 사야 되나 말아야 되나 고민 중이에요' (I'm debating whether to buy this). The vendor might offer a discount to push you over. Or a friend might say '그냥 사, 후회할 거야' (Just buy it, you'll regret it). For extra drama: '지르고 말까?' (Should I just pull the trigger?). Koreans love this shopping indecision phrase—it's very relatable. Often ends with buying it anyway."
+  },
+  {
+    "instruction": "How to tell a Korean tailor my pants are too long?",
+    "input": "",
+    "output": "Take the pants and say '기장이 너무 길어요, 좀 줄여 주세요' (The length is too long, please shorten it a bit). Show how much: '여기까지 올려 주세요' (Please raise it to here). Point to your ankle. For cuffs: '밑단은 그대로 두고 길이만' (Leave the hem as is, just the length). They'll ask '몇 센치?' (How many cm?). Estimate: '약 3센치 정도요' (About 3cm). Or just wear the pants and let them pin it while you stand. Cost is usually 5,000-15,000 KRW. Pick up next day: '수리 끝났어요, 입어 볼까요?' (The repair is done, want to try them on?)."
+  },
+  {
+    "instruction": "What's a polite way to tell street food vendor 'no onions'?",
+    "input": "",
+    "output": "Say '양파 빼 주세요, 알레르기 있어요' (Please leave out the onions, I have an allergy). Or '양파 없이 해 주세요' (Make it without onions). For tteokbokki, it's hard to remove because the sauce has onions. Instead say '양파가 들어간 메뉴 말고 다른 거 주세요' (Give me a different menu item that doesn't have onions). If they're already cooking, just pick them out and say '괜찮아요' (It's fine) to be polite. Vendors are busy and may not accommodate special requests—manage expectations."
+  },
+  {
+    "instruction": "How to ask 'Do you have this in a larger size?' in Korean?",
+    "input": "",
+    "output": "Say '이거 사이즈 큰 거 있어요?' (Do you have this in a larger size?). More specific: '지금 이거 말고 한 사이즈 업 있어요?' (Other than this one, do you have one size up?). Korean sizes run small. If they say '없어요' (No), ask '주문 가능한가요?' (Is it possible to order?). They might say '인터넷으로는 되는데 매장에는 없어요' (Online possible but not in store). For pants: '허리 둘레 큰 사이즈요' (Waist larger size). For shoes: '발이 커서 270 있어요?' (I have big feet, do you have 270mm?)."
+  },
+  {
+    "instruction": "What's the Korean expression for 'I'm just browsing'?",
+    "input": "",
+    "output": "Say '그냥 구경하고 있어요' (I'm just looking around). Or '아이쇼핑 중이에요' (I'm eye-shopping). Salespeople will likely leave you alone. If they keep following, say '혼자 볼게요, 필요하면 부를게요' (I'll look by myself, I'll call you if I need you). This is perfectly polite. In luxury stores like Lotte Department Store, they might still stand nearby. Just smile and ignore. Never feel pressured—Korean retail culture is actually less aggressive than many Western countries once you say you're browsing."
+  },
+  {
+    "instruction": "How do I order 'half and half' fried chicken?",
+    "input": "",
+    "output": "Say '후라이드 반 양념 반 주세요' (Half fried, half seasoned, please). Most chicken places understand '반반' (banban = half half). Example: '교촌 치킨 반반 시킬게요' (I'll order Kyochon chicken half-half). If you want specific flavors: '간장 반, 파마산 반' (Half soy sauce, half parmesan). For large groups: '반반 두 마리요' (Two half-half chickens). Don't say '50/50'—Konglish is '반반' (banban). Delivery apps have a '반반' button. Always ask '뼈 있는 거요, 순살이요?' (With bone or boneless?) before ordering."
+  },
+  {
+    "instruction": "What does '리필' mean and how to ask for it?",
+    "input": "",
+    "output": "'리필' (refill) is used for free drink refills in Korean cafes or BBQ restaurants (for side dishes). Say '리필 가능한가요?' (Is refill possible?). For coffee: '커피 리필해 주세요' (Please refill my coffee). For kimchi at a BBQ place: '김치 리필 돼요?' (Is kimchi refill possible?). Free refill places often have a sign: '리필 무료' (refill free). Some charge: '리필 유료' (refill for a fee). Always ask first. A common scam: they'll bring a new drink and charge you. Confirm: '리필이 공짜인가요?' (Is the refill free?)."
+  },
+  {
+    "instruction": "How to tell the hotel front desk 'the AC isn't working'?",
+    "input": "",
+    "output": "Call and say '에어컨이 안 돼요, 방이 너무 더워요' (The AC isn't working, the room is too hot). Or '냉방이 안 됩니다, 고쳐 주세요' (The cooling isn't working, please fix it). In winter: '난방이 안 돼요, 추워 죽겠어요' (The heating isn't working, I'm freezing to death). They'll send an engineer or give you a new room. For immediate fix: '선풍기라도 주실 수 있나요?' (Can you at least give me a fan?). Korean summers are brutal—this is a legitimate emergency. Be firm but polite. If they don't fix it, ask for '부분 환불' (partial refund)."
+  },
+  {
+    "instruction": "What's a natural way to compliment a Korean chef's cooking?",
+    "input": "",
+    "output": "Don't just say '맛있어요' (it's delicious)—that's basic. Say '손맛이 진짜 좋으시네요' (Your touch flavor is really good—'손맛' is the skill from a cook's hands). Or '요리하시는 솜씨가 예술이에요' (Your cooking skills are art). For street food: '사장님, 이거 왜 이렇게 맛있어요? 비법이 뭐예요?' (Boss, why is this so delicious? What's your secret?). Korean chefs love hearing '저녁에 생각날 거 같아요' (I think I'll think about this at dinner tonight). If it's amazing, say '혼난 맛이네요' (This is a scolded taste—old expression meaning unbelievably good)."
+  },
+  {
+    "instruction": "How to ask for a non-spicy version of a Korean dish?",
+    "input": "",
+    "output": "Many Korean dishes have non-spicy versions. Say '안 매운 거 있어요?' (Is there a non-spicy one?). For tteokbokki: '안 매운 떡볶이 가능한가요?' (Non-spicy tteokbokki possible?). For jjamppong: '안 매운 짬뽕으로 해 주세요' (Make it non-spicy jjamppong). They may suggest '간짜장' (dry jjajang) instead. For kimchi jjigae: '덜 맵게 해 주세요, 아이가 먹어요' (Make it less spicy, a child is eating). Important: '순한 맛' (sunghan mat) means mild flavor. Say '순한 맛으로 주세요' (Please give me the mild version). Always confirm: '완전 안 매운 거 맞죠?' (It's completely non-spicy, right?)."
+  },
+  {
+    "instruction": "What does '각자 계산' mean at a restaurant?",
+    "input": "",
+    "output": "'각자 계산' (gakja gesan) means going Dutch—each person pays for themselves. Say to the server: '각자 계산할게요' (We'll pay separately). Or '따로 계산해 주세요' (Please calculate separately). In big groups, Koreans often do '한 사람이 계산하고 나눠내기' (one person pays and everyone sends money via bank transfer). For '더치페이' (Dutch pay—Konglish), say '더치페이 할까요?' (Shall we do Dutch pay?). Some restaurants refuse separate payments for large tables—then one person pays and the group transfers '계좌이체' (bank transfer) using Kakao Pay or Toss."
+  },
+  {
+    "instruction": "How to say 'I've lost my wallet' in a Korean subway station?",
+    "input": "",
+    "output": "Go to the station's '분실물 센터' (lost and found center). Say '지갑을 잃어버렸어요, 도와주세요' (I lost my wallet, please help me). Describe it: '갈색 가죽 지갑이에요' (It's a brown leather wallet). Tell them where: '2호선 열차 안에서요' (Inside train line 2). Or '개찰구 근처에서요' (Near the ticket gate). They'll ask '신분증 있나요?' (Do you have ID?). If your ID was in the wallet, give them your name and phone number. Korean subway lost and founds are very efficient—return rates are high. Also check '경찰관서' (police box) in the station."
+  },
+  {
+    "instruction": "What's a Konglish phrase for 'I'm craving something sweet'?",
+    "input": "",
+    "output": "Say '단 거 땡겨' (Something sweet is pulling me—'땡기다' is craving slang). Or '단 거 먹고 싶어, 디저트 어디 가지?' (I want to eat something sweet, where should we go for dessert?). Very natural: '입이 심심해, 단 거 없어?' (My mouth is bored, is there something sweet?). For extreme craving: '당 폭발 직전이야, 빵 사러 가자' (Pre-sugar explosion, let's go buy bread). Koreans love '디저트 카페' (dessert cafes). Say '빙수 땡겨' (I'm craving bingsu) in summer or '호떡 땡겨' (I'm craving hotteok) in winter."
+  },
+  {
+    "instruction": "How to ask a Korean friend to translate a menu for me?",
+    "input": "",
+    "output": "Say '메�판 좀 읽어 줄 수 있어? 한글이 너무 많아' (Can you read the menu for me? There's too much Korean). Or '이거 뭔지 알려 줘, 영어 설명이 없어' (Tell me what this is, there's no English description). Point to items: '이거 매운 거야? 안 매운 거야?' (Is this spicy or non-spicy?). For allergens: '여기 계란 들어가? 우유?' (Does this have egg? Milk?). Your friend will appreciate you asking rather than guessing. After they help, say '고마워, 내가 커피 살게' (Thanks, I'll buy you coffee). Korean friends love translating as a bonding act."
+  },
+  {
+    "instruction": "What does '품절' mean and how to handle it?",
+    "input": "",
+    "output": "'품절' (pumjeol) means sold out. You'll see a '품절' sign or hear '죄송합니다, 품절이에요' (Sorry, it's sold out). Ask '언제 재입고 되나요?' (When will it be restocked?). They might say '내일 오전에요' (Tomorrow morning). Or '재입고 없어요, 시즌 한정이에요' (No restock, it's seasonal limited). If it's a popular item, ask '다른 지점에는 있나요?' (Is it at another branch?). For online shopping, add '재입고 알림' (restock notification). In a restaurant: '오늘 품절 메뉴 뭐예요?' (What's sold out today?). Always ask before getting your hopes up."
+  },
+  {
+    "instruction": "How to complain about slow service in a Korean cafe?",
+    "input": "",
+    "output": "Don't be aggressive. Go to the counter and say '주문한 지 20분 됐는데, 아직 안 나왔어요' (It's been 20 minutes since I ordered, but it hasn't come out yet). Add '괜찮으시면 좀 확인해 주세요' (If it's okay with you, please check). If it's coffee: '아이스 아메리카노 하나요, 빨리 마시고 가야 해서요' (One iced Americano, I need to drink it quickly and leave). Korean cafes are usually fast but if they're understaffed, be patient. They'll often apologize '죄송합니다, 지금 나가요' (Sorry, it's coming out now). If it's really bad, mention '리뷰에 남길게요' (I'll leave it in a review)—that gets action."
+  },
+  {
+    "instruction": "What's the cultural meaning of '먹방' and how to use it?",
+    "input": "",
+    "output": "'먹방' (mukbang) is a broadcast of someone eating. Say '오늘 저녁 먹방 찍을 거야' (I'm going to film a mukbang tonight). Or to a friend: '치킨 먹방 하자, 유튜브에 올리자' (Let's do a chicken mukbang, let's post it on YouTube). It's not just about eating—it's about ASMR sounds, huge portions, and interaction. For travel: '여행 갔을 때 현지 음식 먹방 했어' (I did a mukbang of local food when I traveled). To compliment: '네 먹방 보면 군침 돌아' (Your mukbang makes my mouth water). Koreans use '먹방' casually even for just eating with friends now."
+  },
+  {
+    "instruction": "How to ask 'Is this halal?' in a Korean restaurant?",
+    "input": "",
+    "output": "Say '이거 할랄 음식인가요?' (Is this halal food?). Or '돼지고기 안 들어갔죠? 술 안 들어갔죠?' (No pork, no alcohol, right?). Korean restaurants often don't know halal certification, but can tell you ingredients. Ask '소스에 돼지고기 육수 들어가나요?' (Does the sauce contain pork broth?). For '이슬람교도인데 할랄만 먹어요' (I'm Muslim and only eat halal). Itaewon has many halal restaurants. Outside there, look for '채식' (vegetarian) or '비건' (vegan) as safer options. Bring your own '도시락' (lunchbox) if unsure. Korean fried chicken may use '돈가루' (lard powder)—ask '식물성 기름인가요?' (Is it vegetable oil?)."
+  },
+  {
+    "instruction": "What does '워라밸' mean in a tourism context?",
+    "input": "",
+    "output": "'워라밸' (work-life balance) is Konglish. In travel, say '여행 가서 워라밸 찾았어' (I found work-life balance on my trip). Or '이곳은 워라밸이 좋아, 느리게 살 수 있어' (This place has good work-life balance, you can live slowly). Use it to compliment a relaxed town: '제주도는 진짜 워라밸 끝판왕이야' (Jeju Island is really the ultimate work-life balance place). Opposite: '워라밸 망했어, 야근만 해' (Work-life balance ruined, only overtime). Korean millennials talk about 워라밸 constantly—using it shows you understand modern Korean work culture."
+  },
+  {
+    "instruction": "How to tell a Korean tour guide 'let's skip this'?",
+    "input": "",
+    "output": "Say '이것은 스킵할게요, 시간이 없어서요' (Let's skip this because there's no time). Or '다음 코스로 바로 가도 될까요? 별로 안 보고 싶어요' (Can we go straight to the next course? I don't really want to see this). Be polite: '저희 개인적으로는 이거 별로 관심 없어서요' (Personally, we're not really interested in this). For a group, ask '다른 분들 괜찮으시죠?' (Is everyone else okay with it?). Korean guides will often comply if you're the majority. Say '죄송한데, 저희는 여기서 사진만 찍고 갈게요' (Sorry, we'll just take photos here and leave)."
+  },
+  {
+    "instruction": "How do I ask for 'soy sauce on the side' at a Korean restaurant?",
+    "input": "",
+    "output": "Say '간장은 따로 주세요' (Please give me soy sauce separately). Or '간장 소스는 사이드로 해 주세요' (Please put the soy sauce on the side). For raw fish (hoe): '초장 따로, 간장 따로' (Vinegar chili sauce separate, soy sauce separate). For dumplings: '간장 찍어 먹을 거라서 그릇에 따라 주세요' (Because I'll dip in soy sauce, please pour it into a bowl). Korean restaurants often drown food in sauce—asking for 'sauce on side' is common for health reasons or kids. They'll nod and say '네, 알겠습니다' (Yes, understood)."
+  },
+  {
+    "instruction": "What's the Korean way to say 'I got food poisoning'?",
+    "input": "",
+    "output": "Say '식중독 걸렸어요, 토하고 설사해요' (I got food poisoning, I'm vomiting and having diarrhea). Go to a pharmacy: '어제 뭘 잘못 먹었는지 배가 너무 아파요' (I don't know what I ate wrong yesterday but my stomach hurts so much). They'll give you '지사제' (antidiarrheal) and '진통제' (painkiller). If it's serious, go to a '내과' (internal medicine clinic). Say '구토가 멈추지 않아요, 수액 맞아야 할 것 같아요' (The vomiting won't stop, I think I need an IV). Korean hospitals are good with food poisoning. Tell them what you ate: '조개구이 먹었어요' (I ate grilled clams) or '덜 익은 고기였어요' (It was undercooked meat)."
+  },
+  {
+    "instruction": "How to ask for a 'spoon and fork' instead of chopsticks?",
+    "input": "",
+    "output": "Just say '수저 말고 포크 주세요' (Please give me a fork instead of a spoon and chopsticks). Koreans use '수저' (spoon + chopsticks set). For fork only: '포크만 주세요' (Just fork please). In Korean restaurants, spoons are standard for rice and soup—forks are rarer. Say '젓가락 사용 못 해요, 포크 있어요?' (I can't use chopsticks, do you have a fork?). Some places will look confused—then say '서양식 포크요' (Western style fork). For kids: '아이가 젓가락 어려워해서 포크 주세요' (My child finds chopsticks difficult, please give a fork). Better restaurants will have forks. Street food: just use your hands for things like kimbap."
+  },
+  {
+    "instruction": "What does '공병 보증금' mean at a convenience store?",
+    "input": "",
+    "output": "'공병 보증금' (empty bottle deposit) is the 100-500 KRW deposit you pay on glass bottles. Say '공병 돌려줄게요, 보증금 주세요' (I'll return the empty bottle, please give me the deposit). For soju or beer bottles: '이거 공병이에요, 100원 받을 수 있나요?' (This is an empty bottle, can I get 100 won?). Return to any convenience store or supermarket that sells that brand. They'll scan it and give cash. If you don't return it, you lose the deposit. Some people collect 공병 for extra money. Say '보증금은 현금으로 주세요' (Please give me the deposit in cash)."
+  },
+  {
+    "instruction": "How to complain that the 'banchan' (side dishes) weren't refilled?",
+    "input": "",
+    "output": "Politely flag down a server. Say '반찬 좀 더 주세요, 다 먹었어요' (Please give me more side dishes, I finished them). If they ignore you, say '반찬 리필 안 되나요?' (Side dish refills not possible?). Most Korean restaurants offer free refills on basic 반찬 like kimchi and pickled radish. If they still don't, mention '예전에는 리필됐는데 바뀌었나요?' (It used to be refilled, did it change?). For expensive 반찬 like '전' (savory pancakes) or '잡채' (glass noodles), refills may cost extra. Always ask '이거 리필 돼요?' (Can this be refilled?) before eating a lot."
+  },
+  {
+    "instruction": "What's a Konglish way to say 'That's a rip-off'?",
+    "input": "",
+    "output": "Say '바가지 씌웠네' (They put a gourd bowl over me—meaning overcharged). Or '가격이 너무 비싸, 사기친 거 아니야?' (The price is too expensive, isn't this a scam?). For strong Konglish: '이거 완전 사기야, 바가지 심하게 씌웠어' (This is a complete rip-off, they seriously overcharged me). In markets, say loudly but jokingly to the vendor '바가지 씌우지 마세요, 저 한국 사람 아니에요?' (Don't overcharge me, I'm not Korean?). That often gets a laugh and a discount. For taxis: '미터기 요금보다 두 배네요, 바가지네' (That's double the meter fare, rip-off)."
+  },
+  {
+    "instruction": "How to ask a Korean bakery for 'day-old bread' discount?",
+    "input": "",
+    "output": "Say '어제 빵 할인해 주나요?' (Do you discount yesterday's bread?). Korean bakeries rarely give discounts for day-old bread—they just throw it away. But ask '조금만 깎아 주세요, 유통기한 임박했잖아요' (Please lower it a bit, the expiration date is close). Some late-night bakeries offer '야간 할인' (night discount) after 8 PM. Say '마감 세일하나요?' (Do you do closing sales?). At Paris Baguette or Tous Les Jours, the discount is minimal. Better to use the app '덕후' or '굿즈' that notifies you when bakeries give away leftovers. Honestly, just buy fresh—Korean bread is cheap anyway."
+  },
+  {
+    "instruction": "What does '뷰 맛집' mean and how to use it?",
+    "input": "",
+    "output": "'뷰 맛집' (view delicious restaurant) means a place with an amazing view, especially cafes or restaurants. Say '이 카페 뷰 맛집이야, 한강 보여' (This cafe is a view delicious place, you can see the Han River). Or '여기 뷰가 맛집 인증' (Here the view is certified delicious). Use it on Instagram: '#뷰맛집 #서울여행'. To find one, ask a local: '경치 좋은 카페 추천해 주세요, 뷰 맛집으로요' (Please recommend a cafe with good scenery, a view delicious place). Popular 뷰맛집 spots: Namsan Tower cafes, Han River parks, beachside cafes in Busan. The word combines '맛집' (delicious restaurant) with '뷰' (view)—very trendy."
+  },
+  {
+    "instruction": "How to say 'I'm allergic to shellfish' at a Korean seafood market?",
+    "input": "",
+    "output": "Say '갑각류 알레르기가 있어요, 새우랑 게 못 먹어요' (I have a crustacean allergy, I can't eat shrimp or crab). Be specific: '굴, 홍합, 가리비도 안 돼요' (Oysters, mussels, scallops are also not okay). Point to the seafood: '이거 알레르기 있는데 괜찮나요?' (I have an allergy to this, is it okay?). Korean markets sometimes use shellfish in fish broth or seasoning—ask '육수에 조개류 들어가나요?' (Does the broth have shellfish?). For safety, say '알레르기가 심해서 죽을 수 있어요' (The allergy is severe, I could die). They'll take it seriously. Bring an Epipen and a Korean allergy card from your embassy."
+  },
+  {
+    "instruction": "What's a polite way to ask 'Is this free?' at a hotel breakfast?",
+    "input": "",
+    "output": "Point to the item and say '이거 추가 요금 있나요?' (Is there an extra charge for this?). Or '조식에 포함된 건가요?' (Is it included in the breakfast?). For items like a second coffee or juice: '리필은 공짜인가요?' (Is refill free?). Some hotels charge for premium items like fresh juice or espresso. Say '유료인 거 먼저 알려 주세요' (Please let me know what's paid first). If they say '유료예요' (It's paid), ask '얼마인가요?' (How much is it?). Then decide. Better to assume nothing is free except what's on the buffet line. Bottled water in your room? That's often '유료 미니바' (paid minibar)—ask first."
+  },
+  {
+    "instruction": "How to ask a Korean street vendor to make it 'to go'?",
+    "input": "",
+    "output": "Say '포장해 주세요' (Please pack it to go). Or '테이크아웃이요' (Takeout please—Konglish). For eomuk (fish cake) on a stick: '여기서 먹을 건데, 국물은 컵에 따로 주세요' (I'll eat here but please give the broth separately in a cup). For tteokbokki: '포장돼요? 멀리 가져가야 해서요' (Can it be packed? I have to take it far). They'll put it in a '일회용 용기' (disposable container). Say '젓가락도 주세요' (Please give chopsticks too). For soup: '국물 안 새게 해 주세요' (Please make sure the soup doesn't leak). Always double-check '뚜껑 꼭 닫아 주세요' (Please close the lid tightly)."
+  },
+  {
+    "instruction": "What does '이거 서비스예요?' mean in a restaurant?",
+    "input": "",
+    "output": "It means 'Is this free service?' Use it when the server brings something you didn't order. Say '이거 서비스예요? 안 시켰는데요' (Is this service? I didn't order it). If they say '네, 서비스예요' (Yes, it's service), say '감사합니다, 맛있게 먹을게요' (Thank you, I'll eat it well). If they made a mistake, they'll say '아니요, 다른 테이블 건데 잘못 가져왔네요' (No, it's for another table, I brought it by mistake). Then just smile. Never assume free food—always ask '서비스예요?' first. Some restaurants bring free '서비스' like fruit after a meal—that's when you say '이렇게 많이 주시는데 감사합니다' (Thank you for giving so much)."
+  },
+  {
+    "instruction": "How to tell a Korean taxi driver 'I'll pay by card'?",
+    "input": "",
+    "output": "Before getting in, ask '카드 돼요?' (Card possible?). If they say '네', get in. After arriving, say '카드로 할게요' (I'll pay by card). Some drivers prefer cash and might say '카드 단말기 고장 났어요' (Card machine is broken). That's often a lie. Say '그럼 현금 없는데요, 어떻게 하죠?' (Then I don't have cash, what should I do?). They'll magically fix the machine. For T-money (transportation card), say '티머니 되나요?' (T-money possible?). Airport taxis almost always take cards. For Kakao Taxi, you can pay by card in the app. If the driver is rude about card payment, note their license plate and report to '서울 콜택시' complaint line."
+  },
+  {
+    "instruction": "What's a natural response when someone says '맛있게 드세요'?",
+    "input": "",
+    "output": "'맛있게 드세요' means 'Eat deliciously' (enjoy your meal). The standard response is '잘 먹겠습니다' (I'll eat well). That's polite and expected. Among friends, just say '고마워' (Thanks). If you're the server saying it, customers will say '네, 감사합니다' (Yes, thank you). Don't overthink—'잘 먹겠습니다' works 100% of the time. After eating, say '잘 먹었습니다' (I ate well) to the server or host. That's equally important. Never say '맛있게 드세요' back—that's for the person serving, not the eater. So: server says '맛있게 드세요' → you say '잘 먹겠습니다'."
+  },
+  {
+    "instruction": "How to ask 'Can I take a photo of the menu?' in Korean?",
+    "input": "",
+    "output": "Say '메뉴판 사진 찍어도 돼요?' (Can I take a photo of the menu?). Most restaurants will say '네' (Yes). If they're busy, they might say '잠시만요' (Just a moment). For a traditional place, ask '사진 허용되나요?' (Is photography allowed?). Some high-end restaurants ban menu photos because of copycats. Then just say '그럼 기억할게요' (Then I'll remember). Or quickly type the dish names into your phone. If you want to photo a specific dish for translation, point and say '이것만 찍어도 될까요?' (Can I just take a photo of this?). Always be discreet—don't use flash."
+  },
+  {
+    "instruction": "What does '할인' mean and how to ask for it?",
+    "input": "",
+    "output": "'할인' (hal-in) means discount. Say '할인 가능한가요?' (Is a discount possible?). In department stores, ask '멤버십 할인 있어요?' (Is there a membership discount?). For cash payments: '현금하면 할인해 주나요?' (If I pay cash, do you give a discount?). Many Korean stores give 5-10% off for cash. For tourists: '외국인 할인 있나요?' (Is there a foreigner discount?). Some places offer '택스 리펀' (tax refund) instead—ask '택스 프리 돼요?' (Tax free possible?). During '세일' (sale) season, signs say '30% 할인'. For negotiation: '좀 할인해 주세요, 제가 많이 살게요' (Please give a discount, I'll buy a lot)."
+  },
+  {
+    "instruction": "How to tell a Korean pharmacist 'I need something for motion sickness'?",
+    "input": "",
+    "output": "Say '멀미 약 주세요, 배를 타야 해서요' (Please give me motion sickness medicine, because I have to take a boat). Or '자동차 멀미가 심해요' (I have severe car motion sickness). They'll give you '멀미약' which is usually '드라민' (Dramamine) or similar. Ask '졸림 없나요?' (Is there one without drowsiness?). Korean pharmacists understand '비졸음' (non-drowsy). For kids: '아기 멀미약 있어요?' (Is there motion sickness medicine for babies?). Take it 30 minutes before travel. Natural remedy: '생강차 마시면 도움돼요' (Drinking ginger tea helps). For seasickness on Jeju ferries, get the '멀미 패치' (motion sickness patch) behind the ear."
+  },
+  {
+    "instruction": "What's a Konglish way to say 'I'm hangry'?",
+    "input": "",
+    "output": "Korean doesn't have a direct word for 'hangry,' but say '배고파서 짜증나' (I'm hungry and annoyed). Or Konglish style: '행그리 상태야, 당장 밥 줘' (I'm in a hangry state, give me food immediately). Another: '혈당이 떨어져서 화나' (My blood sugar dropped and I'm angry). Trendier: '오늘 행그리 메갈' (Today I'm hangry mega—slang for extreme). Or just make a sound: '배고파 죽겠어, 기분 나빠' (I'm starving to death, I'm in a bad mood). Korean friends will understand and rush you to a '김밥천국' (gimbap heaven—cheap quick food). Don't say this to elders—just say '조금 배고파서 예민해요' (I'm a bit hungry so I'm sensitive)."
+  },
+  {
+    "instruction": "How to ask a Korean hotel for an 'early check-in'?",
+    "input": "",
+    "output": "Call ahead or ask at the front desk: '얼리 체크인 가능한가요?' (Is early check-in possible?). Standard check-in is 3 PM. For early, say '아침 일찍 도착하는데, 12시에 방 들어갈 수 있을까요?' (I arrive early in the morning, can I enter the room at 12?). They'll check: '객실 상태를 봐야 알겠어요' (I need to check room status). If available, they might charge extra: '추가 요금 있을까요?' (Will there be an extra fee?). Usually 20,000-50,000 KRW for early check-in. For free early check-in, book the night before. Or ask '짐만 맡길 수 있나요?' (Can I just leave my luggage?). They'll store luggage free. Then come back at 3 PM."
+  },
+  {
+    "instruction": "What does '모범 음식점' mean and why is it important?",
+    "input": "",
+    "output": "'모범 음식점' (model restaurant) is a certification by the Korean government for cleanliness and hygiene. Look for a green sign with '모범 음식점'. Say '이 집 모범 음식점이네, 믿고 먹어도 되겠다' (This is a model restaurant, we can trust and eat here). When choosing a place, ask '모범 음식점인가요?' (Is it a model restaurant?). They'll proudly show the certificate. These restaurants get regular health inspections, use fresh ingredients, and have English menus more often. Not every good restaurant has it, but for street food safety anxiety, 모범 음식점 is a safe bet. Found in busy tourist areas and traditional markets."
+  },
+  {
+    "instruction": "How to say 'I need a bag' at a Korean grocery store?",
+    "input": "",
+    "output": "Korea has a plastic bag ban. Say '봉투 주세요' (Please give me a bag). They'll sell you a '장바구니' (reusable shopping bag) for 100-500 KRW. For small items, just carry them. At checkout, they'll ask '봉투 필요하세요?' (Do you need a bag?). Answer '네' (Yes) or '아니요, 괜찮아요' (No, it's okay). For paper bags (at bakeries), say '종이가방 주세요' (Please give me a paper bag). Many Koreans bring their own '에코백' (eco bag). If you forget, buy the cheap '비닐봉투' (plastic bag) but know it's for trash only now. In convenience stores, small plastic bags are still free for just a few items."
+  },
+  {
+    "instruction": "What's a polite Korean phrase for 'I'm just looking, don't need help'?",
+    "input": "",
+    "output": "Say '그냥 구경하는 거라서 편하게 계세요' (I'm just looking, so please be comfortable). Or '필요하면 부를게요, 신경 안 쓰셔도 돼요' (I'll call you if I need you, you don't need to pay attention). In clothing stores: '입어보고 결정할게요, 혼자 있을게요' (I'll decide after trying on, I'll be alone). Department store salespeople can be pushy. Say '아이쇼핑 중이라서 괜찮아요' (I'm eye-shopping, it's fine). For luxury stores: '그냥 보는 거예요, 불편하지 않게 해 주세요' (I'm just looking, please don't make me uncomfortable). They'll usually back off. Smile while saying it—tone matters."
+  },
+  {
+    "instruction": "How to ask a Korean restaurant for 'less ice' in my drink?",
+    "input": "",
+    "output": "Say '얼음 적게 넣어 주세요' (Please put less ice). Or '얼음 빼고 반만' (No ice, just half). In summer, '아이스 아메리카노' comes 70% ice. Say '얼음 많이 넣지 마시고 원액 많이 주세요' (Don't put a lot of ice, please give more coffee concentrate). Some cafes charge for '얼음 적게' as it means more liquid. Ask '얼음 적게 하면 가격 같아요?' (If less ice, is the price the same?). They'll say '네' (Yes) usually. For a no-ice drink: '얼음 완전 빼고, 차갑게만 해 주세요' (No ice at all, just make it cold). For bottled drinks, just pour it over less ice yourself. Korean ice is safe to eat, so no worry."
+  },
+  {
+    "instruction": "What does '타격' mean in shopping context?",
+    "input": "",
+    "output": "'타격' (ta-gyeok) means 'hit' or 'damage'—in shopping, it means spending impact. Say '오늘 쇼핑 타격이 컸어' (Today's shopping damage was big—I spent a lot). Or '이번 달 카드 타격이 너무 심해' (This month's card damage is too severe). To warn a friend: '거기 가면 타격 장난 아니야' (If you go there, the damage is no joke). For a bargain: '이 가격에 이 퀄리티면 타격 적다' (At this price with this quality, the damage is small). It's playful, not literal. Use it on social media: '#쇼핑타격 #지름신'. Koreans understand overspending humor very well. Opposite: '타격 제로' (zero damage—spent nothing)."
+  },
+  {
+    "instruction": "How to tell a Korean bus driver 'I need to get off at the next stop'?",
+    "input": "",
+    "output": "Press the red '하차 벨' (stop bell) immediately. The driver doesn't need to be told. But if you missed pressing, walk to the front and say '죄송한데, 다음 정류장에서 내려요' (Excuse me, I'll get off at the next stop). They'll say '네' or just nod. For express buses, say '기사님, 다음 정류장 세워 주세요, 못 눌렀어요' (Driver, please stop at the next stop, I couldn't press the bell). Always use '기사님' (driver-nim) respectfully. Don't yell from the back—walk forward. If the bus is crowded, say '내릴게요, 지나가겠습니다' (I'll get off, I'll pass through). People will move. Never wait until the last second—Korean bus drivers close doors fast."
+  },
+  {
+    "instruction": "What's a natural Konglish expression for 'treat yourself'?",
+    "input": "",
+    "output": "Say '나 자신에게 선물하자' (Let's give a gift to myself). Or Konglish: '셀프 기프팅 해야지' (Should do self-gifting). More common: '소확행 하자' (Small but certain happiness—Konglish from Japanese 'shou-kakkou'). Example: '오늘 힘들었으니까 소확행으로 치킨 시켜 먹자' (It was hard today, so let's order chicken as small but certain happiness). For luxury treat: '내가 나를 위해 사주는 거야' (I'm buying it for me). Very natural: '한턱 내야지' (Should treat myself—'한턱' usually means treating others, but used playfully for self). Or just '지름!' (Buy impulse!)."
+  },
+  {
+    "instruction": "How to ask a Korean subway ticket booth for a day pass?",
+    "input": "",
+    "output": "Say '하루 권 있나요?' (Do you have a one-day pass?). The Seoul subway has '하루 자유 이용권' (one-day free pass) for about 5,000-7,000 KRW. Say '관광객인데 하루 권 주세요' (I'm a tourist, please give me a one-day pass). For multiple days: '이틀 권, 사흘 권도 있어요?' (Do you have 2-day or 3-day passes?). They'll point to the ticket machine. Most passes are for unlimited rides on subway and some buses. Ask '버스도 되나요?' (Is bus also included?). Some passes exclude express buses. For the AREX airport train, say '일반 열차 하루 권 되나요?' (Does the day pass work for regular trains?). Better to just get a T-money card and reload—easier."
+  },
+  {
+    "instruction": "What does '가성비' mean and how to use it in a restaurant?",
+    "input": "",
+    "output": "'가성비' (cost-performance ratio) means value for money. Say '이 집 가성비 진짜 좋다' (This place's cost-performance is really good). Or '가성비 맛집' (value-for-money delicious restaurant). To ask: '여기 가성비 어떤가요?' (How's the cost-performance here?). A local might say '가격 대비 양도 많고 맛도 괜찮아요' (Compared to price, portions are big and taste is decent). Bad 가성비: '가격은 비싼데 양이 너무 적어, 가성비 별로야' (Price is expensive but portions are too small, cost-performance is meh). Korean millennials prioritize 가성비 above all when dining out. A '가성비 폭탄' (cost-performance bomb) means amazing value."
+  },
+  {
+    "instruction": "How to tell a Korean server 'the soup is too salty'?",
+    "input": "",
+    "output": "Say '국물이 너무 짜요, 좀 싱겁게 해 주세요' (The soup broth is too salty, please make it more bland). Or '간이 너무 세요, 물 좀 넣어 주실 수 있나요?' (The seasoning is too strong, can you add some water?). For 된장찌개 or 김치찌개, high salt is normal. They might offer '물' (water) or '밥' (rice) to mix in. Say '밥 좀 더 주시면 국물에 비벼 먹을게요' (If you give more rice, I'll mix it with the soup). Never send it back unless it's inedible—Koreans prefer salty to bland. If it's truly too salty, say '짜서 못 먹겠어요, 다시 해 주세요' (It's too salty, I can't eat it, please remake it). They'll do it but might be annoyed."
+  },
+  {
+    "instruction": "What's a polite way to ask for the wifi password in Korean?",
+    "input": "",
+    "output": "Say '와이파이 비밀번호 알려 주세요' (Please tell me the wifi password). In cafes: '여기 와이파이 있죠? 비밀번호가 어떻게 되나요?' (You have wifi here, right? What's the password?). They'll point to a sign or tell you '8자리 숫자예요' (It's 8 digits). For hotels: '객실 와이파이 비밀번호가 뭔가요?' (What's the room wifi password?). Sometimes it's your room number or last name. Say '연결이 안 되는데 확인해 주세요' (It's not connecting, please check). Korean wifi passwords are often '12345678' or 'cafe name + 0000'. If they say '없어요' (don't have), go to a '스타벅스' (Starbucks) or '이디야' (Ediya)—free wifi always."
+  },
+  {
+    "instruction": "How to explain 'I'm gluten-free' at a Korean restaurant?",
+    "input": "",
+    "output": "Say '글루텐 프리 식단이에요. 밀가루 간장 못 먹어요' (I'm on a gluten-free diet. I can't eat flour or soy sauce). Ask '간장 안 들어간 메뉴 있나요?' (Is there a menu item without soy sauce?). Korean food is hard because soy sauce (gluten) is everywhere. Suggest '된장찌개는 괜찮은가요?' (Is doenjang jjigae okay?). Say '간장 대신 소금으로 해 주세요' (Please use salt instead of soy sauce). Safer options: '백반' (plain rice with side dishes, ask for no soy sauce), '삼겹살' (pork belly—no marinade), '김' (seaweed), '계란찜' (steamed egg—if no flour added). Bring a Korean allergy card: '밀가루 알레르기가 있어서 글루텐 프리 음식만 먹을 수 있어요' (I have a flour allergy and can only eat gluten-free food)."
+  },
+  {
+    "instruction": "What does '포장 마차' mean and how to order there?",
+    "input": "",
+    "output": "'포장 마차' (pojang macha) is a street food tent with seating. Say '포차에서 한잔 할래?' (Want to have a drink at a pocha?). Inside, sit and say '오뎅 국물 하나 주세요' (Please give me one fish cake broth). Popular orders: '떡볶이 1인분, 순대 1인분' (One serving tteokbokki, one serving sundae). For drinks: '소주 한 병, 맥주 두 병' (One bottle soju, two bottles beer). 포차 owners are blunt—speak directly. '사장님, 여기 맥주 더요!' (Boss, more beer here!). Payment is usually cash. Say '계산 할게요, 얼마에요?' (I'll pay, how much?). 포차 atmosphere is noisy and fun—don't expect fine dining manners."
+  },
+  {
+    "instruction": "How to ask 'Can I charge my phone here?' in Korean?",
+    "input": "",
+    "output": "Say '여기서 핸드폰 충전 돼요?' (Can I charge my phone here?). In cafes: '충전 콘센트 있어요?' (Is there a charging outlet?). Look under seats or near walls. If not, ask '혹시 보조 배터리 빌려 주실 수 있나요?' (Could you perhaps lend me a portable charger?). Some tourist info centers rent power banks. Say '충전기 좀 빌려 주세요, 돈 낼게요' (Please lend me a charger, I'll pay). In hotels, '객실에 충전기 있나요?' (Is there a charger in the room?). Many Korean convenience stores have '충전 존' (charging zone) for customers. Buy a small item like water and charge for 10 minutes—acceptable."
+  },
+  {
+    "instruction": "What's a natural Korean reaction to a 'free sample'?",
+    "input": "",
+    "output": "At department store food courts, they offer '시식' (sampling). Take one and say '감사합니다, 맛있네요' (Thank you, it's delicious). If you don't like it, just say '감사합니다' and walk away—never criticize. For pushy salespeople: '맛있긴 한데 오늘은 안 살게요' (It's delicious but I won't buy it today). If you try multiple samples without buying, say '죄송해요, 다음에 올게요' (Sorry, I'll come next time). At markets, '시식해도 돼요?' (May I sample?) before grabbing. Korean sample culture is generous but expect at least a polite smile. If you buy after sampling, say '시식해 보고 샀어요, 역시 맛있네요' (I bought after sampling, as expected delicious)."
+  },
+  {
+    "instruction": "How to tell a Korean tailor 'it's too tight'?",
+    "input": "",
+    "output": "Say '너무 꽉 끼어요, 풀어 주세요' (It's too tight, please loosen it). For pants: '허리가 너무 조여요, 늘릴 수 있나요?' (The waist is too tight, can you expand it?). Show them: '여기서 2센티만 늘려 주세요' (Please expand just 2cm here). For jackets: '어깨가 좁아서 움직이기 불편해요' (The shoulders are narrow and it's uncomfortable to move). They'll say '풀 수 있는 여유분이 있어요' (There's extra seam allowance). Ask '수리비 얼마인가요?' (How much is the repair?). Usually 10,000-30,000 KRW. If no extra fabric, say '그럼 새로 만들어야 하나요?' (Then should I get a new one?). They might suggest '다른 디자인으로' (a different design). Always try on before paying for the alteration."
+  },
+  {
+    "instruction": "What does '원산지 표시' mean and why check it?",
+    "input": "",
+    "output": "'원산지 표시' (origin label) shows where food comes from. Say '원산지가 어디예요?' (Where is the origin?). For beef: '한우예요, 수입산이에요?' (Is it Korean beef or imported?). Korean '한우' (Hanwoo) is expensive but high quality. For seafood: '이거 국내산이에요?' (Is this domestic?). Markets must label origin by law. If you don't see it, ask '원산지 표시 왜 없어요?' (Why is there no origin label?). For fruit: '이 사과는 어디서 왔어요?' (Where did these apples come from?). In restaurants, ask '김치는 국내산인가요?' (Is the kimchi domestic?). Most Chinese garlic is cheaper—some restaurants use it. If you care about local food, say '국내산만 골라 주세요' (Please choose only domestic products)."
+  },
+  {
+    "instruction": "How to ask a Korean restaurant for 'more kimchi'?",
+    "input": "",
+    "output": "Simply say '김치 좀 더 주세요' (Please give more kimchi). Koreans are passionate about kimchi refills. If they ignore you, wave and say '저기요, 김치 리필이요' (Excuse me, kimchi refill). For specific type: '겉절이 더 주세요' (More fresh kimchi—not fermented). Or '묵은지 좀 더' (More aged kimchi). At high-end places, ask '김치 종류가 여러 가지인데, 다 리필 되나요?' (There are many types of kimchi, can all be refilled?). They'll say some are '일회용' (one-time only). In a 찌개 (jjigae) restaurant, kimchi is essential—say '김치 없으면 밥 못 먹겠어요' (Without kimchi I can't eat rice). They'll laugh and bring it. Never pay for kimchi in a Korean restaurant—it should be free."
+  },
+  {
+    "instruction": "What's the best way to say 'I have a peanut allergy' in Korean?",
+    "input": "",
+    "output": "Say '땅콩 알레르기가 있어요, 땅콩 들어간 음식은 절대 못 먹어요' (I have a peanut allergy, I absolutely cannot eat food with peanuts). Ask '땅콩 가루나 땅콩 오일도 안 돼요' (Peanut powder or peanut oil is also not okay). Korean dishes that may have peanuts: '땅콩 소스' (peanut sauce) in some fusion restaurants, '땅콩 가루' on top of desserts, '짜장면' (jajangmyeon) sometimes has peanut butter in black bean sauce—ask '짜장면에 땅콩 들어가나요?' (Does jajangmyeon have peanuts?). For safety, say '먹으면 병원 가야 해요' (If I eat it, I have to go to the hospital). Bring an EpiPen and show a Korean allergy card: '땅콩 알레르기 있음' (Peanut allergy exists). Korean school lunches are peanut-free by law, but restaurants aren't."
+  },
+  {
+    "instruction": "How to ask a Korean convenience store 'Do you sell phone chargers?'",
+    "input": "",
+    "output": "Say '핸드폰 충전기 팔아요?' (Do you sell phone chargers?). Most 편의점 (convenience stores) sell basic cables but not wall adapters. Ask '케이블만 있나요, 아님 어댑터도 있어요?' (Only cables or adapters too?). They'll point to a rack. Say 'C타입 있어요?' (Do you have USB-C?). For iPhone: '아이폰 충전기 있어요?' (Do you have iPhone charger?). If not, say '혹시 충전기 대여해 주나요?' (Do you perhaps rent out chargers?). Some GS25 stores have '충전 서비스' (charging service) for a small fee. For emergency, buy a '보조배터리' (portable battery). Ask '보조배터리 어디에 있나요?' (Where are the portable batteries?). They're often behind the counter. Expect to pay 10,000-25,000 KRW."
+  },
+  {
+    "instruction": "What does '더치페이' mean and how to suggest it?",
+    "input": "",
+    "output": "'더치페이' (Dutch pay) means splitting the bill. Say '오늘 더치페이 할까요?' (Shall we do Dutch pay today?). Or '각자 내는 거 어때?' (How about each paying for themselves?). For a group: '인원수대로 n빵 하자' (Let's do n-bread—split by number of people). 'N빵' (n-ppang) is Konglish slang for equal split. Say '5명이니까 5빵 해요' (5 people, so split 5 ways). For itemized split: '각자 시킨 거 따로 계산해요' (Let's calculate separately what each ordered). In Korea, it's common for one person to pay and others send bank transfer. Say '내가 계산할게, 나중에 송금해' (I'll pay, send me money later). Use '카카오뱅크' or '토스' for instant transfers. Suggesting 더치페이 among friends is fine—with elders, let them pay unless they say '더치페이 하자' first."
+  },
+  {
+    "instruction": "How to say 'I've been overcharged' at a Korean market?",
+    "input": "",
+    "output": "Politely say '계산이 잘못된 것 같아요, 다시 봐 주세요' (I think the calculation is wrong, please check again). Point to the items: '이거 원래 3천 원인데 5천 원 찍혔어요' (This is originally 3,000 won but was rung up as 5,000 won). Or '가격표에는 2천 원인데 계산은 3천 원이네요' (Price tag says 2,000 won but the calculation is 3,000 won). If they argue, say '영수증 주세요, 확인해 볼게요' (Please give me the receipt, I'll check). For street markets without receipts, say '사장님, 바가지 씌우시면 안 되죠?' (Boss, you shouldn't overcharge me, right?). Say it with a smile. Most will correct it. If not, walk away and don't buy. Koreans value '정직함' (honesty) in markets—loud complaining is rare but effective."
+  },
+  {
+    "instruction": "What's a polite way to ask 'Is this seat taken?' in a food court?",
+    "input": "",
+    "output": "Ask '여기 앉아도 돼요?' (May I sit here?). Or '이 자리 사람 있나요?' (Is there someone in this seat?). In Korean food courts, people save seats with jackets or food. If you see items, ask '혹시 여기 사람 계세요?' (Is there perhaps someone here?). They'll say '네, 친구 왔어요' (Yes, my friend came) or '아니요, 앉으세요' (No, sit down). If someone says '잠시만요' (Just a moment), wait 2 minutes. To save a seat yourself, put your '가방' (bag) down and say '잠시 자리 비울게요' (I'll step away for a moment). During lunch rush (12-1 PM), food courts are crowded—expect to share tables. Say '같이 써도 돼요?' (Can we share?). Koreans usually say yes."
+  }
+]

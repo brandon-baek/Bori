@@ -1,0 +1,468 @@
+[
+  {
+    "instruction": "How do I say 'Let's circle back on this' in a natural Korean business setting?",
+    "input": "",
+    "output": "In Korean office talk, we often say '이 부분은 나중에 다시 논의해요' but that's a bit stiff. More natural Konglish: '이건 나중에 circle back 하죠.' Or if you want pure Korean but casual: '일단 이거 잠시 접어두고 나중에 다시 봐요.' Best for team chats: '다시 빼꼼 회의 때 이거 circle back 할게요.'"
+  },
+  {
+    "instruction": "What's the Konglish equivalent of 'low-hanging fruit' in a startup context?",
+    "input": "",
+    "output": "Startups here often say '로행잉 후르츠' (direct Konglish) but that sounds weird. Natural alternatives: '쉽게 딸 수 있는 과일' is too literal. Better: '빠르게 성과 볼 수 있는 것' or Konglish style: '이지윈즈 같은 태스크.' Most common: '쉬운 거 먼저 따먹자' (먼저 pick the easy wins). Example: '이번 스프린트에서 low-hanging fruit 먼저 처리할게요.'"
+  },
+  {
+    "instruction": "How to translate 'move the needle' for a Korean growth team meeting?",
+    "input": "",
+    "output": "We don't have a perfect idiom, but Konglish-friendly: '니들을 움직이다' (literal) is bad. Try: '진짜 영향 있는 KPI를 움직이자.' Or shorter: '임팩트 있는 지표를 건드리자.' Among young coworkers: '니들을 진짜로 밀어야 해.' Best: '이 액션이 니들을 움직일 수 있을까?' (Will this action move the needle?)"
+  },
+  {
+    "instruction": "Explain 'boil the ocean' to Korean junior devs in Konglish.",
+    "input": "",
+    "input": "",
+    "output": "Tell them: '보일 디 오션' means trying to do something impossibly huge at once. In Korean: '터무니없이 큰 범위를 한 번에 덮으려는 삽질.' Example: '이 이슈를 한 PR에 다 넣으려면 바다를 끓이는 거야.' Better to say: '스콥을 줄이자, 보일 디 오션 하지 말고.'"
+  },
+  {
+    "instruction": "What's a natural Korean way to say 'let's take this offline' after a meeting?",
+    "input": "",
+    "output": "Most common in Korean offices: '이건 따로 얘기하죠.' Konglish version: '오프라인으로 이어가요.' But natural: '회의 끝나고 개별적으로 이야기할게요.' Slack culture: '디엠으로 논의하실 분?' Best casual: '일단 이건 접고 나중에 각자 얘기해요.'"
+  },
+  {
+    "instruction": "How do I explain 'bandwidth' as in mental capacity in a Korean team chat?",
+    "input": "",
+    "output": "We use '밴드위스' directly often. '지금 밴드위스가 없어요' is common. Pure Korean: '여유/수용 가능한 일량.' Example: '이거 새 태스크인데 지금 제 밴드위스 남았나 확인할게요.' More polite: '지금 처리 가능한 업무량을 초과해서 일단 보류할게요.' But Konglish is fine: '밴드위스 이슈로 이번 주는 무리예요.'"
+  },
+  {
+    "instruction": "Translate 'hard stop' as in a fixed meeting end time into Korean.",
+    "input": "",
+    "output": "In Korean business, we say '하드 스톱' directly. '2시에 하드 스톱 있어요' works. Or pure Korean: '정확히 2시에 끝내야 해요.' Best: '이 미팅은 3시 하드 스톱이라 시간 엄수해 주세요.' For calendar invites: '하드 스톱 4시까지 꼭 마무리할게요.'"
+  },
+  {
+    "instruction": "How to naturally say 'touch base' in Korean?",
+    "input": "",
+    "output": "'터치 베이스' is used but rare. More common: '가볍게 체크하다' or '얼굴 한 번 보자.' For work: '짧게 미팅해서 동기화하자.' Example: '다음 주에 touch base 해서 진행 상황 공유해요.' Or casual: '연락 한 번 할게요, touch base 차원에서.'"
+  },
+  {
+    "instruction": "Explain 'straw man proposal' in Konglish for a Korean PM.",
+    "input": "",
+    "output": "We don't have a direct term but say '가설적인 초안' or '일단 던져보는 초안.' Konglish: '스트로우 맨 잠정안.' Explain: '아직 확정은 아니고 논의를 위한 가짜 프레임워크예요. 그래서 까도 돼요.' Example: '이 슬라이드는 스트로우 맨이라서 피드백 주시면 완전히 갈아엎을게요.'"
+  },
+  {
+    "instruction": "What's the Korean equivalent of 'put a pin in it'?",
+    "input": "",
+    "output": "Direct translation: '거기에 핀을 꽂자' is weird. Better: '일단 보류하고 나중에 다시 보자.' Or Konglish: '핀을 꽂아두자.' Casual: '여기 핀하자.' Most used: '이 이슈는 접어두고 다음 회의 때 다시 열어요.' Example: '아이디어 좋은데 리소스 문제로 put a pin in it 합시다.'"
+  },
+  {
+    "instruction": "How to say 'it's not rocket science' in a Korean startup?",
+    "input": "",
+    "output": "Literal '로켓 과학 아니잖아' is fine but a bit odd. Better: '어렵지 않아요, 그렇게 복잡한 거 아니에요.' Modern slang: '그게 뭐 대단한 건 아니지.' Konglish: '락 사이언스 아니야.' Example: '이 설정은 rocket science 아니니까 다들 한 번에 이해할 거예요.'"
+  },
+  {
+    "instruction": "Translate 'we need to align on this' into natural Konglish.",
+    "input": "",
+    "output": "Most natural: '이 부분 동기화 필요해요.' Konglish: '어라인 맞춰야 해.' Pure Korean: '의견을 일치시켜야 해요.' Example: '출시 전에 팀 전체가 align 해야 하는 부분이에요.' Or '모두 같은 방향으로 어라인되었는지 확인해 주세요.'"
+  },
+  {
+    "instruction": "What does 'drink the Kool-Aid' mean in a Korean team culture context?",
+    "input": "",
+    "output": "We explain: '미국 문화에서 회사나 리더를 맹목적으로 따르는 걸 뜻해요. 한국에선 '세봉된 거 아니야?' 비슷. Konglish: '쿨에이드 마신 상태.' Example: '그 스타트업 사람들 다 쿨에이드 마셔서 비판도 못 해.' Better: '너무 과하게 믿고 맹종하는 분위기라는 표현이에요.'"
+  },
+  {
+    "instruction": "How to say 'quick win' in Korean?",
+    "input": "",
+    "output": "We say '퀵 윈' directly and it's very common. Pure Korean: '빠른 성과' or '단기 실적.' Example: '이번 주에 퀵 윈 하나 만들 수 있을까?' '퀵 윈 먼저 챙기고 장기 과제로 넘어가죠.' In planning: 'MVP에서 퀵 윈 위주로 스콥 짜요.'"
+  },
+  {
+    "instruction": "Explain 'dogfooding' to a Korean product team.",
+    "input": "",
+    "output": "We use '독푸딩' or '자사 제품 먹어보기.' Best explanation: '우리가 만든 제품을 우리 팀이 직접 쓰면서 버그와 개선점을 찾는 거예요.' Example: '이 앱 출시 전에 일주일 dogfooding 합시다. 다들 실제 유저처럼 써보고 피드백 주세요.'"
+  },
+  {
+    "instruction": "How to translate 'peel the onion' in a debugging context?",
+    "input": "",
+    "output": "Literal '양파 껍질 벗기듯' works well. '버그가 양파처럼 겹겹이 쌓였네요, 하나씩 벗겨야 해.' Konglish: '필 디 어니언 전략으로 가자.' Example: '이 이슈는 표면만 봐서 안 되고, 양파 까듯이 층층이 파고 들어가야 해요.'"
+  },
+  {
+    "instruction": "What's the Konglish way to say 'I'll loop you in'?",
+    "input": "",
+    "output": "Most common: '루프에 넣어줄게' or '참여시킬게.' Better: '이메일에 루프 걸게.' Or '다음 논의에 loop in 할게요.' Example: '이 프로젝트 관련해서 디자이너분도 loop in 시켜야 할 것 같아요.' Casual: '회의 초대장에 너도 루프 걸어놨어.'"
+  },
+  {
+    "instruction": "How to say 'table this conversation' in Korean?",
+    "input": "",
+    "output": "Careful: US 'table' means postpone, UK means bring forward. In Konglish: '테이블 위에 올려두다' is confusing. Best: '이 논의는 일단 보류하죠.' Or '다음 회의 때로 미루자.' Example: '시간 관계상 이 안건은 table 합시다. 다음주에 다시 열어요.'"
+  },
+  {
+    "instruction": "Translate 'green field project' for Korean engineers.",
+    "input": "",
+    "output": "We often say '그린필드 프로젝트' directly. Explain: '기존 레거시 없이 완전히 새로 시작하는 프로젝트.' Example: '이건 greenfield 라서 기술 부채가 없어요. 자유롭게 설계할 수 있습니다.' Contrast: '브라운필드는 기존 시스템 건드려야 해서 더 조심해야 해요.'"
+  },
+  {
+    "instruction": "What's the Korean equivalent of 'sweat the details'?",
+    "input": "",
+    "output": "No direct idiom, but we say '디테일을 놓치지 않다' or '꼼꼼하게 파다.' Konglish: '스웻 디 디테일' is bad. Better: '작은 부분에 땀 흘리듯 신경 쓰다.' Example: '우리 제품은 디테일에 sweat 하는 팀이라서 QA가 빡세요.' Or '사소한 것에 목숨 걸지 말고 큰 그림 봐.'"
+  },
+  {
+    "instruction": "How to naturally say 'I don't have the cycles for that' in Korean?",
+    "input": "",
+    "output": "We say '싸이클이 없다' or '여유가 없다.' Tech slang: '지금 CPU가 풀가동 중이라서 (비유적으로).' Natural: '지금 이걸 처리할 수 있는 mental capacity가 안 돼요.' Best: '지금 사이클 빡빡해서 다음 주로 미뤄도 될까요?' More casual: '지금 머리가 안 돌아가, cycles 없어.'"
+  },
+  {
+    "instruction": "Explain 'happy path' in Konglish to a Korean QA tester.",
+    "input": "",
+    "output": "We use '해피 패스' directly. Explanation: '에러 없이 정상적으로 흘러가는 시나리오.' Example: '이 테스트 케이스는 happy path만 커버했어. edge case는 따로 작성할게.' Opposite: '언해피 패스나 예외 상황도 체크해야 해.' In Korean: '행복 경로' is rare, stick to Konglish."
+  },
+  {
+    "instruction": "What's a good Konglish translation for 'elevator pitch'?",
+    "input": "",
+    "output": "We say '엘리베이터 피치' directly. Explanation: '짧은 시간에 핵심을 전하는 자기소개/아이디어 설명.' Example: '투자자 미팅 전에 elevator pitch 30초로 준비해 와.' Or Korean: '단기 홍보 발표.' But Konglish is standard in startups: '엘피 연습 좀 하자.'"
+  },
+  {
+    "instruction": "How to say 'that's above my pay grade' in Korean?",
+    "input": "",
+    "output": "Literal '내 급여 등급 이상의 일' is formal. Casual Konglish: '페이 그레이드 오버' is weird. Better: '그건 제 결정 권한 밖이에요.' Or '내가 결정할 수 있는 레벨이 아니야.' Funny: '내 연봉으로는 이 결정 못 해.' Example: '예산 조정은 저의 pay grade above라서 팀장님께 전달할게요.'"
+  },
+  {
+    "instruction": "Translate 'heavy lifting' in a Korean dev context.",
+    "input": "",
+    "output": "We say '헤비 리프팅' directly. '이 부분이 전체 작업의 heavy lifting이에요.' Korean: '핵심 어려운 작업.' Example: '백엔드에서 데이터 마이그레이션이 heavy lifting이니까 프론트는 비교적 쉬울 거예요.' Or: '헤비 리프팅은 제가 할게, 나머지는 여러분이 도와주세요.'"
+  },
+  {
+    "instruction": "What does 'yak shaving' mean in Korean tech slang?",
+    "input": "",
+    "output": "We explain: '본 작업 전에 전혀 상관없는 선행 작업들을 무한히 하는 현상.' Konglish: '약 쉐이빙' is too direct. Better: '잠깐만에 시작했다가 삽질의 늪으로.' Example: '버그 하나 고치려다 환경 설정에서 또 막히고... 완전 yak shaving 하고 있어.'"
+  },
+  {
+    "instruction": "How to naturally request 'brain dump' from a Korean colleague?",
+    "input": "",
+    "output": "We say '브레인 덤프' directly. '브레인 덤프 좀 해줄래?' or '머릿속에 있는 거 다 쏟아 주세요.' Example: '지식 이전 차원에서 이 도메인 brain dump 해주실 수 있나요?' Casual: '내일 커피 타임에 이 프로젝트 brain dump 부탁해.'"
+  },
+  {
+    "instruction": "Translate 'punt' as in delay a decision into Konglish.",
+    "input": "",
+    "output": "In US sports metaphor, we say '펀트' or '미루다.' '이 결정은 다음 분기로 punt 하자.' More Korean: '차기 미팅으로 넘기죠.' Example: '이 기능은 스콥이 커서 일단 펀트할게요, v2에서 다시 논의.' Best: '펀트 kick the can down the road 비슷한 뉘앙스.'"
+  },
+  {
+    "instruction": "How to say 'spike' as in time-boxed research in Korean?",
+    "input": "",
+    "output": "Agile 용어로 '스파이크' 그대로 씁니다. '기술 검증용 스파이크 태스크 하나 만들었어요.' Explanation: '불확실한 부분을 일정 시간 동안만 연구하는 작업.' Example: '이 라이브러리 가능한지 spike 2일 잡았어요. 안 되면 다른 방법 찾을게요.'"
+  },
+  {
+    "instruction": "Explain 'throwing over the wall' in Korean collaboration context.",
+    "input": "",
+    "output": "Korean: '담장 넘겨 던지기' or '일방 전달.' Konglish: '드로잉 오버 더 월.' Example: '기획자가 디자인 없이 개발자한테 그냥 던지면 throwing over the wall이에요. 함께 일해야 해요.' Better: '협업 없이 산출물만 던지면 나중에 수정 비용 커져요.'"
+  },
+  {
+    "instruction": "What's the Korean equivalent of 'cover your ass' (CYA) in corporate?",
+    "input": "",
+    "output": "Slang: '엉덩이 커버' or more polite '증거 남기기.' Konglish: '커버 유어 애스.' Explanation: '나중에 책임 회피용으로 이메일이나 문서로 증거를 남기는 행위.' Example: '이 결정 꼭 메일로 cover your ass 해둬. 나중에 뒤집힐 수 있어.' Korean: '사후 대비용 문서화.'"
+  },
+  {
+    "instruction": "How to say 'we're not there yet' in a Korean growth meeting?",
+    "input": "",
+    "output": "Literal '아직 거기까지 못 갔어요' is fine. But better: '목표치에 아직 도달 못 했어요.' Konglish: '낫 데어 옛.' Example: 'MAU 목표 10만인데 7만이에요. we're not there yet.' Casual: '아직 멀었어, 더 가야 해.'"
+  },
+  {
+    "instruction": "Translate 'rinse and repeat' for a Korean process doc.",
+    "input": "",
+    "output": "Literal '헹구고 반복' is odd. Better: '이 과정을 반복하세요.' Konglish: '린스 앤 리피트.' Example: '설정 저장하고 테스트하고, 문제 없으면 rinse and repeat로 다음 모듈도 동일하게.' More natural: '똑같이 반복.'"
+  },
+  {
+    "instruction": "What's the Konglish for 'bike-shedding'?",
+    "input": "",
+    "output": "Konglish: '바이크 쉐딩' or '자전거 창고 논의.' Explanation: '사소한 디테일에 너무 많은 논의 시간을 쓰는 현상.' Example: '버튼 색상 두고 한 시간째? 그건 bike-shedding이야. 코어 로직 먼저 결정하자.' Korean says '지엽적 논의.'"
+  },
+  {
+    "instruction": "How to say 'on my radar' in Korean?",
+    "input": "",
+    "output": "Common: '제 레이더에 걸려 있어요.' Or '관심 있게 보고 있어요.' Example: '그 이슈는 이미 on my radar입니다. 다음 스프린트에 넣을게요.' Casual: '나도 레이더에 찍혔어, 알고 있어.' Better: '인지하고 있고 추적 중이에요.'"
+  },
+  {
+    "instruction": "Translate 'peel back the layers' in Korean root cause analysis.",
+    "input": "",
+    "output": "We say '레이어를 벗기다' or '하나씩 파고들다.' Konglish: '필 백 더 레이어스.' Example: '근본 원인 찾으려면 표면만 보지 말고 peel back the layers 해야 해.' Korean: '겉만 보고 결론 내리지 말고 깊이 들여다보자.'"
+  },
+  {
+    "instruction": "What's a natural Korean way to say 'I'll be the devil's advocate'?",
+    "input": "",
+    "output": "We say '데빌즈 어드보킷' directly but less common. Korean: '반대 입장에서 생각해 보자' or '일부러 반론 제기할게.' Example: '나 devil's advocate 해볼게. 이 아이디어의 리스크는 뭐지?' Better: '모두가 찬성할 때 반대 역할 한 번 해보겠습니다.'"
+  },
+  {
+    "instruction": "How to say 'shoot from the hip' in Korean startup culture?",
+    "input": "",
+    "output": "Meaning: 즉흥적으로 행동. Korean: '허리에서 쏘다' literal bad. Better: '계획 없이 바로 실행하다.' Konglish: '슛 프롬 더 힙.' Example: '걔는 항상 shoot from the hip이라 가끔 실수해도 빠르게 배워.' Or '분석보다는 일단 부딪혀 보는 스타일.'"
+  },
+  {
+    "instruction": "Translate 'window of opportunity' into natural Korean business.",
+    "input": "",
+    "output": "Literal: '기회의 창' is fine and common. Konglish: '원도우 오브 오퍼튜니티.' Example: '지금이 3개월 window of opportunity예요. 놓치면 경쟁자에게 선점당해요.' Or '짧은 기회 창을 잡아야 해.' Natural: '기회의 시간대.'"
+  },
+    {
+    "instruction": "Explain 'move fast and break things' in Korean for a new PM.",
+    "input": "",
+    "output": "Korean translation: '빠르게 움직이고 깨뜨려라' but awkward. Konglish: '무브 패스트 앤 브레이크 띵스' is too direct. Better: '속도 우선, 완벽함은 나중에. 일단 부딪히고 깨지면서 배우자.' Example: '스타트업 초기엔 move fast and break things 마인드가 필요해. 완벽 기다리면 너무 늦어.'"
+  },
+  {
+    "instruction": "How do you naturally say 'I'm drowning in work' in Korean?",
+    "input": "",
+    "output": "Literal: '일 때문에 익사할 것 같아요' is dramatic but okay. Better: '일이 너무 많아서 벅차요' or '업무에 파묻혔어요.' Konglish: '드라우닝 인 워크.' Example: '주말에도 일했는데 아직도 드라우닝이네. 좀 도와줄 수 있어?' Casual: '일 때문에 죽겠어.'"
+  },
+  {
+    "instruction": "What's the Konglish for 'pain point' in UX research?",
+    "input": "",
+    "output": "We use '페인 포인트' directly. '유저의 main pain point가 뭐예요?' Korean: '불편 사항' or '문제점.' Example: '이 설문으로 고객의 pain point를 찾아야 해요. 그걸 해결하면 제품 가치가 올라가요.' In meeting: '페인 포인트 먼저 리스트업합시다.'"
+  },
+  {
+    "instruction": "Translate 'value proposition' into Korean business slang.",
+    "input": "",
+    "output": "Common: '가치 제안' but stiff. Konglish: '밸류 프롭' is shorter. Example: '우리의 밸류 프롭은 '가장 빠른 배송'이에요.' Or '고객에게 전달하는 핵심 가치가 뭔지 정리하자.' In pitch: '밸류 프롭 슬라이드 한 장으로 정리해 주세요.'"
+  },
+  {
+    "instruction": "How to say 'take a step back' in a Korean strategy meeting?",
+    "input": "",
+    "output": "Literal: '한 걸음 물러서다' is fine. Konglish: '테이크 어 스텝 백.' Example: '지금 디테일에 빠졌어. 한 번 take a step back 해서 전체 그림 보자.' Korean: '멀리서 다시 보는 게 필요해요.' Better: '거시적 관점에서 재평가.'"
+  },
+  {
+    "instruction": "Explain 'happy ears' vs 'deaf ears' in Korean context.",
+    "input": "",
+    "output": "'Happy ears' is not common. Better: '잘 들리다' vs '들리지 않다.' But idiom: '그의 제안은 귀가 따가울 정도로 들었지만 액션은 없었어.' Konglish: '이어스' is weird. Example: '피드백 줘도 deaf ears라서 안 고쳐.' Opposite: '내 의견이 happy ears에 들어와서 바로 반영됐어.'"
+  },
+  {
+    "instruction": "How to naturally say 'I need to pick your brain' in Korean?",
+    "input": "",
+    "output": "Korean: '당신의 머리를 따야 해' literal bad. Better: '잠깐 조언 구해도 될까요?' or '전문가 의견 듣고 싶어요.' Konglish: '픽 유어 브레인' is common among techies. Example: '이 아키텍처 관련해서 네 brain 좀 pick 해도 돼? 커피 살게.' Casual: '뇌 좀 털어 줘.'"
+  },
+  {
+    "instruction": "What's the Korean equivalent of 'boil the frog' in gradual process?",
+    "input": "",
+    "output": "We know '개구리 끓이기' from the fable. Korean: '서서히 변화시키는 전략.' Example: '큰 변화를 한 번에 하면 반발이 심하니까 boil the frog 전략으로 단계적으로 바꾸자.' Konglish: '보일 더 프로그.' Often used in UX or org change.'"
+  },
+  {
+    "instruction": "Translate 'bury the lede' for Korean content writers.",
+    "input": "",
+    "output": "Literal: '리드를 묻다' is unknown. Better: '가장 중요한 내용을 뒷부분에 숨기는 실수.' Example: '이 뉴스레터는 bury the lede 했어. 핵�심 소식이 3문단에 나와.' Konglish: '베리 더 리드.' Fix: '중요한 거 먼저 앞에 써.'"
+  },
+  {
+    "instruction": "How to say 'I'll give you the 30,000 foot view' in Korean?",
+    "input": "",
+    "output": "Literal: '3만 피트 상공에서 보는 시야' is used. Konglish: '서티 파운드 뷰.' Example: '디테일은 빼고 30,000 foot view로 전체 로드맵 설명할게요.' Korean: '새 관점에서 큰 그림만 말씀드리겠습니다.' Often: '하이레벨 개요'"
+  },
+  {
+    "instruction": "Explain 'echo chamber' in Korean startup context.",
+    "input": "",
+    "output": "Korean: '메아리 방' or '의견 편향 공간.' Konglish: '에코 챔버.' Example: '같은 생각만 하는 팀은 에코 챔버에 갇혀서 혁신이 없어. 다양한 의견 들으려고 외부 인사이트를 넣어야 해.' Or '여론이 한쪽으로 쏠리는 현상.'"
+  },
+  {
+    "instruction": "How to naturally say 'we're all in this together' in Korean team morale context?",
+    "input": "",
+    "output": "Korean: '우리 모두 함께라서 어려움을 이겨낼 수 있어요.' Or '한배를 탔어요.' Konglish: '올 인 디스 투게더.' Example: '크런치 모드지만 we're all in this together. 다 같이 끝까지 가요.' Casual: '우리 팀은 원팀이야.'"
+  },
+  {
+    "instruction": "Translate 'put lipstick on a pig' for Korean product review.",
+    "input": "",
+    "output": "Korean: '돼지에게 립스틱 바르기' is understood. Example: 'UI만 예쁘게 바꾸고 근본 문제 해결 안 하면 lipstick on a pig이야.' Konglish: '립스틱 온 어 피그.' Better: '겉만 번지르르하고 속은 똑같은 상황.'"
+  },
+  {
+    "instruction": "How to say 'think outside the box' in Korean?",
+    "input": "",
+    "output": "Common: '상자 밖에서 생각하다' or '틀을 깨다.' Konglish: '싱크 아웃사이드 더 박스.' Example: '기존 방식으로 안 될 때는 think outside the box 해서 새로운 접근이 필요해요.' Short: '발상의 전환.'"
+  },
+  {
+    "instruction": "What's a natural Konglish equivalent of 'crunch time'?",
+    "input": "",
+    "output": "We say '크런치 타임' directly. Example: '출시 일주일 전이라 crunch time이에요. 다들 야근 각오하세요.' Korean: '막바지 총력전.' Better: '데드라인 직전의 집중 기간.' But Konglish is most common in dev teams.'"
+  },
+  {
+    "instruction": "Translate 'shotgun approach' in Korean marketing context.",
+    "input": "",
+    "output": "Korean: '산탄총 방식' (literal) or '무차별 마케팅.' Konglish: '샷건 어프로치.' Example: '타겟 없이 broad하게 광고하면 shotgun approach라서 효율이 나빠. sniper approach로 정밀 타격해야 해.' Opposite: '정밀 타격.'"
+  },
+  {
+    "instruction": "How to say 'I don't have a horse in this race' in Korean meeting?",
+    "input": "",
+    "output": "Literal: '이 경주에 내 말이 없다' is strange. Better: '이 결정에 내 이해관계가 없어요.' Konglish: '호스 인 디스 레이스.' Example: 'A안 B안 둘 다 괜찮아요, 저는 horse in this race 없으니까 팀 결정 따를게요.' Meaning: 중립적."
+  },
+  {
+    "instruction": "Explain 'cargo cult' in Korean engineering culture.",
+    "input": "",
+    "output": "Korean: '화물 숭배' from anthropology. Example: '다른 회사가 하니까 무작정 따라 하는 게 cargo cult야. 원리를 이해하고 적용해야 해.' Konglish: '카고 컬트.' In dev: '패턴만 베끼고 이유는 모르는 코딩.'"
+  },
+    {
+    "instruction": "How to naturally say 'let's not boil the ocean' in Korean planning?",
+    "input": "",
+    "output": "Korean: '바다를 끓이지 말자' used directly. Example: '스콥이 너무 커, 바다 끓이지 말고 일단 작게 시작하자.' Konglish: '보일 디 오션' is fine. Better: '처음부터 완벽하려 하지 말고 MVP부터.'"
+  },
+  {
+    "instruction": "Translate 'managing up' for Korean junior employees.",
+    "input": "",
+    "output": "Korean: '윗사람 관리' sounds weird. Better: '상사와 효과적으로 소통하며 일하는 스킬.' Konglish: '매니징 업.' Example: '매니징 업은 아부가 아니에요. 상사가 필요한 정보를 미리 주고 기대치를 맞추는 거예요.'"
+  },
+  {
+    "instruction": "What's the Konglish for 'low friction' in UX?",
+    "input": "",
+    "output": "We say '로우 프릭션' directly. Example: '회원가입이 로우 프릭션이어야 이탈률이 낮아요.' Korean: '장벽이 낮은' or '매끄러운.' Better: '사용자 저항이 적은 경험.' Opposite: '하이 프릭션 = 불편한.'"
+  },
+  {
+    "instruction": "How to say 'put your oxygen mask on first' in Korean leadership context?",
+    "input": "",
+    "output": "Korean: '산소마스크 먼저 쓰기' 비유. Example: '리더가 번아웃 되면 팀도 망가져요. 산소마스크 먼저 쓰듯 self-care 먼저 하세요.' Konglish: '옥시젠 마스크 온 퍼스트.' Means: 자신을 돌봐야 타인도 도울 수 있다."
+  },
+  {
+    "instruction": "Explain 'sunk cost fallacy' in Korean startup decision.",
+    "input": "",
+    "output": "Korean: '매몰 비용 오류.' Konglish: '성크 코스트 팔러시.' Example: '이미 3개월 썼다고 계속 밀고 가는 건 sunk cost fallacy야. 접을 건 접고 피봇해야 해.' Common advice: '과거 비용에 얽매이지 말고 미래 가치만 보자.'"
+  },
+  {
+    "instruction": "How to translate 'blue sky thinking' in Korean ideation session?",
+    "input": "",
+    "output": "Korean: '파란 하늘 생각' but better: '제약 없는 자유로운 아이디어 발산.' Konglish: '블루 스카이 씽킹.' Example: '현실 예산 무시하고 blue sky thinking 해보자. 그중에 실행 가능한 걸 고르면 돼.' Opposite: '현실주의적 접근.'"
+  },
+  {
+    "instruction": "What's natural Korean for 'put all your eggs in one basket'?",
+    "input": "",
+    "output": "Equivalent: '한 바구니에 달걀을 모두 담지 마라.' Used directly. Example: '한 고객사에 80% 매출 의존하면 eggs in one basket이라 위험해. 포트폴리오 분산해야 해.' Konglish: '에그스 인 원 바스켓.'"
+  },
+  {
+    "instruction": "How to say 'give the benefit of the doubt' in Korean team culture?",
+    "input": "",
+    "output": "Korean: '의심스러우면 일단 믿어 주다' or '선의로 해석하다.' Konglish: '베네핏 오브 더 다웃.' Example: '코드 리뷰에서 실수해도 일단 benefit of the doubt 주고 설명 들어요. 나쁜 의도라고 바로 가정하지 마세요.'"
+  },
+  {
+    "instruction": "Translate 'hard landing' vs 'soft landing' in Korean project launch.",
+    "input": "",
+    "output": "Korean: '하드 랜딩' = 갑작스러운 론칭, '소프트 랜딩' = 점진적 출시. Example: '하드 랜딩하면 위험하니까 soft landing으로 베타 테스터부터 오픈하자.' In business: '인수 후 soft landing으로 문화 통합.'"
+  },
+  {
+    "instruction": "How to naturally say 'I'm just spitballing here' in Korean?",
+    "input": "",
+    "output": "Korean: '그냥 생각나는 대로 던져 보는 거예요' or '대충 말해 보는 거.' Konglish: '스핏볼링.' Example: '이거 아직 정리 안 된 아이디어인데, spitballing 차원에서 들어줘. 나중에 바뀔 수 있어.' Casual: '일단 막 던져 보는 거야.'"
+  },
+  {
+    "instruction": "Explain 'pivot' in Korean startup context with Konglish.",
+    "input": "",
+    "output": "We use '피봇' directly. Example: '현재 모델로 성장이 안 돼서 피봇해야 해. 다른 고객층을 타겟으로 방향 전환하자.' Korean: '방향 전환' but 피봇 is more specific. '실패를 인정하고 비즈니스 모델을 바꾸는 것.'"
+  },
+  {
+    "instruction": "What's Korean for 'canary in the coal mine'?",
+    "input": "",
+    "output": "Literal: '탄광의 카나리아' is understood. Example: '매출 하락은 위험의 canary in the coal mine이야. 빨리 대응해야 해.' Konglish: '케너리 인 더 콜 마인.' Meaning: 조기 경고 신호. Used in product metrics too."
+  },
+  {
+    "instruction": "How to translate 'by the skin of your teeth' in Korean?",
+    "input": "",
+    "output": "Korean equivalent: '간신히' or '가까스로.' Example: '마감을 by the skin of our teeth 맞췄어요. 5분 남기고 배포 완료.' Konglish: '바이 더 스킨 오브 유어 티스' is rare. Better: '턱걸이로 성공하다.'"
+  },
+  {
+    "instruction": "How to say 'it's not a hill I'm willing to die on' in Korean meetings?",
+    "input": "",
+    "output": "Korean: '내가 목숨 걸고 싸울 가치가 없는 이슈야.' Example: '버튼 색깔 논쟁은 not a hill I'm willing to die on. 디자이너 결정 따를게요.' Konglish: '힐 아이엠 윌링 투 다이 온.' Means: 사소한 건 양보한다."
+  },
+  {
+    "instruction": "Explain 'speaking fee' vs 'consulting rate' in Korean business culture.",
+    "input": "",
+    "output": "Korean: '강연료' vs '자문료.' Konglish: '스피킹 피' and '컨설팅 레이트.' Example: '컨퍼런스 강연은 speaking fee가 있고, 1:1 조언은 consulting rate이 달라. 보통 컨설팅이 더 높아.' Often confused by juniors."
+  },
+  {
+    "instruction": "How to say 'I have a lot on my plate' in Korean naturally?",
+    "input": "",
+    "output": "Korean: '접시에 담긴 일이 많다' literal. Better: '업무가 너무 많아서 벅차요.' Konglish: '롯 온 마이 플레이트.' Example: '이번 주에 롯 온 마이 플레이트라서 새로운 태스크 못 받아요. 다음 주에 주세요.'"
+  },
+  {
+    "instruction": "What's the Konglish equivalent of 'drink our own champagne'?",
+    "input": "",
+    "output": "Similar to dogfooding. Konglish: '샴페인 마시기' but rare. Better: '우리가 만든 서비스를 우리가 직접 쓰면서 품질 확인.' Example: '출시 전에 drink our own champagne 하자. 모든 팀원이 1시간씩 실제 유저처럼 써보고 피드백.'"
+  },
+  {
+    "instruction": "Translate 'raise the bar' in Korean performance review.",
+    "input": "",
+    "output": "Korean: '기준을 높이다' or '수준을 끌어올리다.' Konglish: '레이즈 더 바.' Example: '이번 하반기부터 퀄리티 기준 raise the bar 할게요. 기존보다 더 높은 성과를 요구합니다.' Often in hiring: '바를 높여서 더 좋은 인재만 뽑자.'"
+  },
+    {
+    "instruction": "How to naturally say 'I'm getting up to speed' in Korean onboarding?",
+    "input": "",
+    "output": "Korean: '따라잡고 있어요' or '적응 중이에요.' Konglish: '겟팅 업 투 스피드.' Example: '입사 첫 주라서 아직 getting up to speed 중이에요. 다음 주부터 본격적으로 기여할게요.' Better: '속도 내는 중'"
+  },
+  {
+    "instruction": "Explain 'negative ROI' in Konglish for Korean PMs.",
+    "input": "",
+    "output": "We say '네거티브 ROI' or '투자 대비 손실.' Example: '이 기능 개발에 3개월 걸리는데 매출 증가는 미미하면 negative ROI야. 하지 말아야 해.' Korean: '투자 수익률이 마이너스.' Often: 'ROI 음수면 스크랩.'"
+  },
+  {
+    "instruction": "What's Korean for 'mental model' in UX design?",
+    "input": "",
+    "output": "Korean: '멘탈 모델' direct loanword. Example: '유저의 멘탈 모델과 우리 디자인이 달라서 혼란을 줘요. 기대치에 맞춰야 해.' Konglish: '멘탈 모델 갭 분석.' Explanation: '사용자가 생각하는 방식.'"
+  },
+  {
+    "instruction": "How to say 'I'll take the bullet' in Korean team context?",
+    "input": "",
+    "output": "Korean: '내가 총알 맞을게' used figuratively. Example: '고객 미팅에서 문제 생기면 내가 take the bullet 할게. 다른 팀원은 보호해 줘.' Konglish: '테이크 더 불렛.' Means: 희생해서 책임지다."
+  },
+  {
+    "instruction": "Translate 'on the same page' into Konglish.",
+    "input": "",
+    "output": "We say '온 더 세임 페이지' directly. Example: '중요한 건 팀 전체가 on the same page여야 한다는 거야. 서로 이해도가 달리면 안 돼.' Korean: '같은 이해를 공유하다.' Casual: '페이지 맞춰야 해.'"
+  },
+  {
+    "instruction": "What's the Korean idiom for 'too many cooks in the kitchen'?",
+    "input": "",
+    "output": "Korean: '주방에 요리사가 너무 많다' is used similarly. Example: '디자인 결정에 다섯 명이 관여하니까 too many cooks in the kitchen이야. 결정권자 한 명만 정하자.' Konglish: '투 매니 쿡스 인 더 키친.'"
+  },
+  {
+    "instruction": "How to say 'fire drill' as in urgent unplanned task in Korean?",
+    "input": "",
+    "output": "We use '파이어 드릴' or '긴급 태스크.' Example: '오늘 오후에 갑자기 파이어 드릴 들어와서 플랜 B로 전환했어.' Korean: '비상 소방 훈련' but better: '갑작스러운 긴급 업무.' Common: '불 나는 상황.'"
+  },
+  {
+    "instruction": "Explain 'value add' in Korean meeting culture.",
+    "input": "",
+    "output": "Konglish: '밸류 애드' or '부가 가치.' Example: '이 회의가 내 밸류 애드가 뭐지? 없으면 안 나가도 돼.' Korean: '기여하는 점' or '도움이 되는 부분.' Question to ask: '내가 여기서 추가 가치를 줄 수 있나?'"
+  },
+  {
+    "instruction": "How to naturally request 'proof of concept' in Korean?",
+    "input": "",
+    "output": "We say 'POC' (proof of concept) directly. Example: '이 기술 가능한지 POC 먼저 만들어 보자. 일주일 안에 프로토타입 나오면 돼.' Korean: '개념 증명.' Konglish: '푸프 오브 컨셉트' but POC is shorter."
+  },
+  {
+    "instruction": "What's the Korean for 'lowest hanging fruit' already covered? Let's do 'gain traction' instead.",
+    "input": "",
+    "output": "We say '게인 트랙션' or '트랙션 얻다.' Example: '초기 스타트업에서 가장 중요한 건 gain traction이야. 사용자 성장 지표가 트랙션을 증명해 줘.' Korean: '진전, 견인력 확보.' Common phrase: '트랙션이 붙기 시작했다.'"
+  },
+  {
+    "instruction": "Translate 'take it to the next level' in Korean.",
+    "input": "",
+    "output": "Korean: '다음 단계로 끌어올리다' or '레벨업하다.' Konglish: '넥스트 레벨로 가자.' Example: '이 프로젝트 성공으로 우리 팀을 take it to the next level 할 수 있어요.' Casual: '한 단계 더 도약.'"
+  },
+  {
+    "instruction": "How to say 'don't reinvent the wheel' in Korean dev team?",
+    "input": "",
+    "output": "Equivalent: '바퀴를 다시 발명하지 마라.' Example: '이미 있는 오픈소스 쓰면 되는데 don't reinvent the wheel. 새로 만들 시간 낭비 하지 마.' Konglish: '리인벤트 더 휠.' Best practice: '재사용해.'"
+  },
+  {
+    "instruction": "Explain 'scope creep' in Konglish to a Korean PM.",
+    "input": "",
+    "output": "We say '스콥 크립' directly. Example: '기획자분, 스콥 크립 조심해요. 자꾸 기능 추가하면 데드라인 못 맞춰요.' Korean: '범위 확장' negative nuance. Prevention: '초기 스콥 문서에 추가 기능은 v2로 미뤄요.'"
+  },
+  {
+    "instruction": "What's natural Korean for 'learn the ropes'?",
+    "input": "",
+    "output": "Korean: '밧줄을 배우다' literal. Better: '일의 감각을 익히다' or '업무에 익숙해지다.' Konglish: '런 더 로프스.' Example: '인턴 첫 달은 learn the ropes 하는 시간이에요. 천천히 따라 하세요.' Or '기본기를 배우는 단계.'"
+  },
+  {
+    "instruction": "How to say 'knock on wood' in Korean superstition context?",
+    "input": "",
+    "output": "Korean: '나무를 두드리다' similar. But we often say '말이 씨가 된다' or '캄사일레' (touch wood). Example: '이번 출시에 큰 버그 없을 거야, knock on wood.' And physically knock on desk. Konglish: '낙 온 우드' understood."
+  },
+  {
+    "instruction": "Translate 'pay it forward' in Korean team culture.",
+    "input": "",
+    "output": "Korean: '앞으로 전파하다' or '도움을 다른 사람에게 베풀다.' Example: '선배가 알려줬으면 pay it forward 해서 후배에게도 공유해 줘.' Konglish: '페이 잇 포워드.' Meaning: 받은 은혜를 갚는 게 아니라 다른 이에게 주는 것."
+  },
+  {
+    "instruction": "What's the Konglish for 'sacred cow' in business?",
+    "input": "",
+    "output": "We say '세이크리드 카우' directly. Example: '이 프로세스는 sacret cow처럼 아무도 건드리지 못해요. 비효율적이지만 전통이라 고수하는 중.' Korean: '불가침의 대상.' Often used in agile: 'sacred cow를 깨야 혁신이 가능.'"
+  },
+  {
+    "instruction": "How to naturally say 'let's sync up' in Korean?",
+    "input": "",
+    "output": "We say '싱크업' or '동기화하자.' Example: '내일 아침에 15분만 sync up 해요. 진행 상황 공유할게요.' Korean: '정보 맞추자.' Most common in Slack: '싱크 필요해요. 언제 가능?'"
+  }
+]

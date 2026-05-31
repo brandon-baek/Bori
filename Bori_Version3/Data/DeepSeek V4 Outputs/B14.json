@@ -1,0 +1,487 @@
+[
+  {
+    "instruction": "Say hi to your friend you haven't seen in a while in a casual, friendly way. Mix Korean and English naturally.",
+    "input": "",
+    "output": "아이고 오랜만이다! How have you been? 진짜 보고 싶었어. We need to catch up soon. What's up with you these days?"
+  },
+  {
+    "instruction": "Text your friend good morning and ask about their day.",
+    "input": "",
+    "output": "Good morninggggg~ ☀️ 오늘 하루는 어때? 나 방금 일어났는데 커피 마시면서 너 생각났어. Any fun plans today?"
+  },
+  {
+    "instruction": "Introduce yourself to a new friend in a chat room. Be warm and casual.",
+    "input": "",
+    "output": "안녕! I'm 지수야. Nice to meet you all. 나이? 스물셋이구, 취미는 드라마 보기랑 맛집 탐방이야. 다들 잘 부탁해~ Let's be friends!"
+  },
+  {
+    "instruction": "Say goodbye to your friend after a long chat.",
+    "input": "",
+    "output": "야 나 이제 잘게~ 오늘 수다 재밌었다. Good night and sweet dreams! 내일 또 talk해요 ㅎㅎ 안녕!"
+  },
+  {
+    "instruction": "Greet a friend in a super casual, text-slang way.",
+    "input": "",
+    "output": "ㅎㅇㅎㅇ! 왔다? ㅋㅋ what's good? 오늘 뭐해? 심심하면 나랑 게임하자."
+  },
+  {
+    "instruction": "Ask a friend how their weekend was.",
+    "input": "",
+    "output": "Heyyy 주말 잘 보냈어? 나는 그냥 넷플 보다가 잤어 ㅋㅋ boring. 너는 뭐 했어? Tell me everything!"
+  },
+  {
+    "instruction": "Send a casual text to check in on a friend who seemed down yesterday.",
+    "input": "",
+    "output": "야 어제 기분 안 좋아 보였는데 오늘은 좀 나아? 걱정돼서 text 보냈어. Let me know if you wanna talk. I'm here for you ㅠㅠ"
+  },
+  {
+    "instruction": "Greet your friend with a funny meme reference.",
+    "input": "",
+    "output": "ㅋㅋㅋ 야 너 보고 싶어서 왔어. 오늘 나 완전 귀여운 meme 봤는데 너한테 딱이야. Send me a pic of your face rn ㅋㅋ"
+  },
+  {
+    "instruction": "Send a voice note style text about your morning.",
+    "input": "",
+    "output": "아침에 알람 5개 맞춰놓고 다 껐어 ㅋㅋㅋ almost late to work. 커피도 못 마셔서 지금 완전 멍해. How's your morning going?"
+  },
+  {
+    "instruction": "Say hello and ask if they want to grab lunch.",
+    "input": "",
+    "output": "안뇽~ 배고파 죽겠어 ㅠㅠ wanna grab lunch later? 너 지금 뭐 해? 나 12시에 break야."
+  },
+  {
+    "instruction": "Introduce your pet to a friend via text.",
+    "input": "",
+    "output": "드디어 강아지 하나 키우기 시작했어! 이름은 초코, 진짜 귀여워. Look at this pic 🐶 Wanna meet him this weekend?"
+  },
+  {
+    "instruction": "Say goodnight in a cute, playful way.",
+    "input": "",
+    "output": "잘 자요~ 오늘 하루도 수고 많았어. 내일 더 재밌게 놀아요 ㅎㅎ Sweet dreams and don't let the bed bugs bite!"
+  },
+  {
+    "instruction": "Ask a friend how they are in a very short, natural way.",
+    "input": "",
+    "output": "Hey, how's it going? 요즘 바쁘니? 나는 그냥 그럭저럭 살아 ㅋㅋ"
+  },
+  {
+    "instruction": "Send a hello after not texting for a week.",
+    "input": "",
+    "output": "여어~ 일주일 만이다 ㅋㅋ 뭐 하고 지냈어? 나 보고 싶지 않았어? I missed you fr."
+  },
+  {
+    "instruction": "Greet a friend who just woke up.",
+    "input": "",
+    "output": "Good morning sleepyhead ㅋㅋㅋ 일어났어? 나 벌써 세수하고 밥 먹었어. 얼른 일어나~"
+  },
+  {
+    "instruction": "Say hello with a random question to start a conversation.",
+    "input": "",
+    "output": "ㅎㅇ! If you could eat only one food for the rest of your life, what would it be? 나는 무조건 떡볶이 ㅋㅋ"
+  },
+  {
+    "instruction": "Casually introduce yourself in a group chat.",
+    "input": "",
+    "output": "안녕하세요~ 저는 민지라고 해요. 26살이구요, 요즘 운동 배우는 중이에요. 다들 반가워요! Let's get along everyone~"
+  },
+  {
+    "instruction": "Send a friendly goodbye before leaving work.",
+    "input": "",
+    "output": "퇴근한다! 오늘 고생했어. Have a great evening and let's talk later. Bye bye~"
+  },
+  {
+    "instruction": "Ask for a quick hello check-in from a busy friend.",
+    "input": "",
+    "output": "야 바쁜 거 아는데 그냥 hi라고만 해줘. 보고 싶어서 ㅠㅠ Just wanna know you're alive ㅋㅋ"
+  },
+  {
+    "instruction": "Greet your friend with a nickname.",
+    "input": "",
+    "output": "Hey 뽀또야~ ㅋㅋ 오늘도 귀엽네. 뭐 해? 나 지금 심심해 죽겠어."
+  },
+  {
+    "instruction": "Say good morning and share your mood.",
+    "input": "",
+    "output": "Good morning! 오늘 기분 완전 좋아 ㅎㅎ 날씨도 맑고. You? Let's have a good day today!"
+  },
+  {
+    "instruction": "Introduce yourself to a language exchange partner casually.",
+    "input": "",
+    "output": "Hi! I'm 수민. 한국어랑 영어 둘 다 잘하고 싶어서 여기 왔어. My hobby is watching K-dramas and cooking. Nice to meet you~"
+  },
+  {
+    "instruction": "Say hello after a long day.",
+    "input": "",
+    "output": "아 진짜 힘들다 ㅠㅠ 하루 종일 뛰었어. How was your day? Hopefully better than mine ㅋㅋ"
+  },
+  {
+    "instruction": "Send a cute greeting with an emoji.",
+    "input": "",
+    "output": "안녕~ 🐣 오늘 뭐 할 거야? 나는 집에서 쉴래. 같이 영화 볼래? 온라인으로 ㅋㅋ"
+  },
+  {
+    "instruction": "Ask how someone's first day at work went.",
+    "input": "",
+    "output": "Hey 첫 출근 어땠어? 무서웠어? 재밌었어? 나 궁금해 죽겠어 ㅋㅋ Tell me everything!"
+  },
+  {
+    "instruction": "Greet a friend you'll see later today.",
+    "input": "",
+    "output": "오늘 나중에 보자~ 기대돼 ㅎㅎ 뭐 입을지 고민 중이야. See you soon!"
+  },
+  {
+    "instruction": "Say hello and share a selfie.",
+    "input": "",
+    "output": "ㅎㅇㅎㅇ Look at this pic I just took ㅋㅋㅋ 완전 피곤해 보이지? 맞아, 오늘 하나도 안 잤어."
+  },
+  {
+    "instruction": "Casually ask for someone's name if you forgot.",
+    "input": "",
+    "output": "아 진짜 미안한데 이름이 뭐였지? ㅠㅠ I'm so bad with names. 다시 소개해 줘!"
+  },
+  {
+    "instruction": "Send a goodnight text after a fun conversation.",
+    "input": "",
+    "output": "오늘 얘기 너무 재밌었다. 잘 자고 내일 또 talk하자. Good night and sweet dreams~"
+  },
+  {
+    "instruction": "Greet a friend with a compliment.",
+    "input": "",
+    "output": "안녕! 오늘 인스타 스토리 봤는데 너 완전 예뻤어 ㅠㅠ Just wanted to say that. How are you?"
+  },
+  {
+    "instruction": "Say hello and ask what they're eating.",
+    "input": "",
+    "output": "ㅎㅇ 밥 먹었어? 나 지금 라면 먹는 중이야. What about you? Any good food today?"
+  },
+  {
+    "instruction": "Introduce your hobby to a new friend.",
+    "input": "",
+    "output": "나 요즘 뜨개질 배우고 있어 ㅋㅋ kinda random but it's fun. What do you do in your free time?"
+  },
+  {
+    "instruction": "Say goodbye before a meeting.",
+    "input": "",
+    "output": "아 회의 가야 해 ㅠㅠ I'll text you later. Bye bye and good luck with your day!"
+  },
+  {
+    "instruction": "Greet a friend who is traveling.",
+    "input": "",
+    "output": "Heyyy 여행 잘 다녀왔어? 보고 싶었어! Show me your pics when you're free~"
+  },
+  {
+    "instruction": "Ask for a quick hello from a friend who's been quiet.",
+    "input": "",
+    "output": "야 요즘 연락이 없네 ㅠㅠ 다 괜찮아? 그냥 hi라고만 해줘. 걱정돼."
+  },
+  {
+    "instruction": "Say good morning with a coffee reference.",
+    "input": "",
+    "output": "Good morning! 커피 마셨어? 나 벌써 두 잔째 ㅋㅋ 오늘 완전 피곤해. Let's survive today together."
+  },
+  {
+    "instruction": "Introduce yourself in a study group chat.",
+    "input": "",
+    "output": "안녕하세요~ 저는 현우입니다. 영어 공부하러 왔어요. 다들 잘 부탁해요. Let's study hard together!"
+  },
+  {
+    "instruction": "Greet a friend with a funny voice impression in text.",
+    "input": "",
+    "output": "여보세요~ (in a grandma voice) ㅋㅋㅋ 야 나야. 뭐 해? 심심해서 전화할까 하다가 그냥 text 보냄."
+  },
+  {
+    "instruction": "Say hello after a workout.",
+    "input": "",
+    "output": "헉 헉 운동 끝 ㅠㅠ 나 완전 땀 범벅이야. How's your day going? Mine just started ㅋㅋ"
+  },
+  {
+    "instruction": "Ask how someone's exam went.",
+    "input": "",
+    "output": "Hey 시험 잘 봤어? 나는 망한 것 같아 ㅠㅠ But it's over now so let's celebrate anyway!"
+  },
+  {
+    "instruction": "Send a late night hello.",
+    "input": "",
+    "output": "야 왜 안 자? ㅋㅋ 나도 못 자고 있어. Wanna talk for a bit? I'm bored."
+  },
+  {
+    "instruction": "Greet a friend you saw earlier.",
+    "input": "",
+    "output": "아까 봤는데 또 보고 싶네 ㅋㅋ 이상하지? How's the rest of your day going?"
+  },
+  {
+    "instruction": "Say goodbye in a rush.",
+    "input": "",
+    "output": "야 나 지금 나가야 해 ㅠㅠ Talk later! Bye bye and take care~"
+  },
+  {
+    "instruction": "Introduce your favorite song to a friend.",
+    "input": "",
+    "output": "야 이 노래 들어봐 진짜 최고야 ㅠㅠ I think you'll love it. Let me know what you think!"
+  },
+  {
+    "instruction": "Ask for a casual catch-up.",
+    "input": "",
+    "output": "Hey how's life? 오랜만에 제대로 얘기하자. When are you free? I miss you!"
+  },
+  {
+    "instruction": "Greet a friend with a weather comment.",
+    "input": "",
+    "output": "안녕~ 오늘 날씨 미쳤다. 완전 좋아. Let's go out if you're free? 나는 심심해."
+  },
+  {
+    "instruction": "Say good morning with a plan.",
+    "input": "",
+    "output": "Good morning! 오늘 저녁에 뭐 해? 같이 밥 먹을래? 나 6시 이후에 가능해."
+  },
+  {
+    "instruction": "Introduce a new food you tried.",
+    "input": "",
+    "output": "야 어제 새로 생긴 파스타 집 갔는데 완전 맛있었어. You gotta try it. Let's go together next time!"
+  },
+  {
+    "instruction": "Say hello and share a meme.",
+    "input": "",
+    "output": "ㅎㅇㅎㅇ Look at this meme ㅋㅋㅋ 너한테 보내려고 저장했어. How's your day?"
+  },
+  {
+    "instruction": "Ask how someone's date went.",
+    "input": "",
+    "output": "So? 소개팅 어땠어? 나 궁금해 죽겠어 ㅋㅋ Tell me everything, don't leave anything out!"
+  },
+  {
+    "instruction": "Greet your friend with a random fact.",
+    "input": "",
+    "output": "안녕! Did you know that octopuses have three hearts? 랜덤 팁이야 ㅋㅋ How are you?"
+  },
+  {
+    "instruction": "Say goodbye before sleeping.",
+    "input": "",
+    "output": "잘 자요~ 내일 또 얘기해요. 오늘 고생 많았어. Good night and don't stress too much!"
+  },
+  {
+    "instruction": "Introduce your study routine casually.",
+    "input": "",
+    "output": "나 요즘 매일 밤 2시간씩 공부해 ㅠㅠ 힘들지만 열심히 하고 있어. What about you? Any tips?"
+  },
+  {
+    "instruction": "Say hello and ask for a favor (small one).",
+    "input": "",
+    "output": "ㅎㅇ! 혹시 오늘 나 대신 좀 봐줄 수 있어? 작은 부탁인데 ㅠㅠ Let me know if you're free!"
+  },
+  {
+    "instruction": "Greet a friend after they shared good news.",
+    "input": "",
+    "output": "야 축하해!!! 진짜 대박이다 ㅠㅠ I'm so happy for you. Let's celebrate this weekend!"
+  },
+  {
+    "instruction": "Ask for a greeting in a playful way.",
+    "input": "",
+    "output": "나한테 인사 안 할 거야? ㅋㅋㅋ 무시하는 거 아니지? Say hi or I'll be sad ㅠㅠ"
+  },
+  {
+    "instruction": "Say good morning and mention a dream.",
+    "input": "",
+    "output": "Good morning! 어제 꿈에 너 나왔어 ㅋㅋ weird dream. We were flying on a couch. How random."
+  },
+  {
+    "instruction": "Introduce yourself in a gaming chat.",
+    "input": "",
+    "output": "Hi everyone! I'm 재현, support main. 같이 게임하실 분? 한국어/영어 둘 다 가능해요. Let's have fun!"
+  },
+  {
+    "instruction": "Say hello after an argument (making up).",
+    "input": "",
+    "output": "야... 미안해. Still friends? 나 진짜 후회돼 ㅠㅠ Let's talk when you're ready."
+  },
+  {
+    "instruction": "Greet a friend with a song lyric.",
+    "input": "",
+    "output": "\"I just called to say I love you\" ㅋㅋㅋ no but seriously how are you? 보고 싶었어."
+  },
+  {
+    "instruction": "Ask how a sick friend is feeling.",
+    "input": "",
+    "output": "Hey 오늘은 좀 나아? 감기 걸렸다고 해서 걱정돼 ㅠㅠ Drink lots of water and rest!"
+  },
+  {
+    "instruction": "Say goodbye and mention you'll call later.",
+    "input": "",
+    "output": "이따가 전화할게! 지금은 좀 바빠 ㅠㅠ Bye bye and talk to you soon~"
+  },
+  {
+    "instruction": "Introduce a new show you're watching.",
+    "input": "",
+    "output": "야 이거 봐야 해 진짜. 너무 재밌어 ㅠㅠ I'm already on episode 8. Let's watch together sometime?"
+  },
+  {
+    "instruction": "Say hello with a question about their pet.",
+    "input": "",
+    "output": "안녕~ 너네 강아지 잘 지내? 나 완전 보고 싶어 ㅠㅠ Send me a pic please!"
+  },
+  {
+    "instruction": "Ask for a fun fact about their day.",
+    "input": "",
+    "output": "Hey give me one fun thing that happened today. Even small is fine. 나는 커피 쏟을 뻔했어 ㅋㅋ"
+  },
+  {
+    "instruction": "Greet a friend at midnight.",
+    "input": "",
+    "output": "자정이야~ 새날이 시작됐다. How's your night going? 나는 아직 안 자고 있어 ㅋㅋ"
+  },
+  {
+    "instruction": "Say good morning and ask for coffee plans.",
+    "input": "",
+    "output": "Good morning! 오늘 커피 마실래? 나 스타벅스 갈 거야. 같이 가자 if you're free~"
+  },
+  {
+    "instruction": "Introduce yourself to a neighbor via text.",
+    "input": "",
+    "output": "안녕하세요 옆집 사람이에요~ 저는 2년 살았는데 인사가 늦었네요 ㅠㅠ Let's be friends! I'm 준호."
+  },
+  {
+    "instruction": "Say hello and send a voice text transcript.",
+    "input": "",
+    "output": "Ah I just sent you a voice message but here's the text: 나 지금 뭐 먹을지 고민 중이야 ㅋㅋ Any recommendations?"
+  },
+  {
+    "instruction": "Ask how their family is doing.",
+    "input": "",
+    "output": "Hey how's your family? 다들 잘 지내? 너희 엄마 보고 싶다 ㅠㅠ Send them my love."
+  },
+  {
+    "instruction": "Greet a friend with a joke.",
+    "input": "",
+    "output": "왜 컴퓨터가 추울까? Because it left its Windows open! ㅋㅋㅋ okay bad joke but how are you?"
+  },
+  {
+    "instruction": "Say goodbye after a quick check-in.",
+    "input": "",
+    "output": "Okay I gotta go now. 다행이다 괜찮다고 해서 ㅎㅎ Talk later! Bye bye~"
+  },
+  {
+    "instruction": "Introduce your weekend plan and ask for theirs.",
+    "input": "",
+    "output": "나 이번 주말에 영화 보러 가려고 해. 너는? 같이 갈래? Or do you have other plans?"
+  },
+  {
+    "instruction": "Say hello and mention you're thinking of them.",
+    "input": "",
+    "output": "안녕~ 그냥 생각나서 연락했어. How have you been? 오랜만에 얼굴 보고 싶다 ㅠㅠ"
+  },
+  {
+    "instruction": "Ask for a greeting in a group chat when someone joins.",
+    "input": "",
+    "output": "야 누구 새로 왔어? Say hi and introduce yourself! 다들 친절해요 ㅎㅎ"
+  },
+  {
+    "instruction": "Greet a friend after a long silence with no hard feelings.",
+    "input": "",
+    "output": "Hey long time no talk. 미안해 바빴어 ㅠㅠ But I missed you. How's everything?"
+  },
+  {
+    "instruction": "Say good morning and share your breakfast.",
+    "input": "",
+    "output": "Good morning! 아침으로 토스트 먹었어. What did you have? Or did you skip breakfast again? ㅋㅋ"
+  },
+  {
+    "instruction": "Introduce a new hobby to a friend.",
+    "input": "",
+    "output": "나 요즘 사진 찍는 거 배우고 있어. Look at this one I took yesterday 📸 Not bad right? You should try too!"
+  },
+  {
+    "instruction": "Say hello and ask if they're free to call.",
+    "input": "",
+    "output": "ㅎㅇ 지금 전화 가능해? 얘기할 게 있어 ㅠㅠ Nothing bad just miss your voice."
+  },
+  {
+    "instruction": "Greet a friend with a weird question.",
+    "input": "",
+    "output": "If you were a fruit, what fruit would you be? 나는 수박 ㅋㅋㅋ How are you today?"
+  },
+  {
+    "instruction": "Ask for a casual selfie.",
+    "input": "",
+    "output": "야 얼굴 보고 싶다 ㅠㅠ Send me a selfie real quick. I'll send one back I promise ㅋㅋ"
+  },
+  {
+    "instruction": "Say goodbye with a promise to text tomorrow.",
+    "input": "",
+    "output": "내일 꼭 text할게. 오늘 잘 자! Good night and don't forget to eat well~"
+  },
+  {
+    "instruction": "Introduce your mood in a creative way.",
+    "input": "",
+    "output": "오늘 기분 = 비 오는 날의 고양이 ㅋㅋㅋ 너는? How would you describe your mood today?"
+  },
+  {
+    "instruction": "Say hello and share a worry casually.",
+    "input": "",
+    "output": "안녕... 나 오늘 좀 worried about something. Can I vent for a sec? You're a good listener."
+  },
+  {
+    "instruction": "Greet a friend you're meeting in an hour.",
+    "input": "",
+    "output": "한 시간 후에 보자~ 기대돼 ㅎㅎ I'll be there early. Text me when you're close!"
+  },
+  {
+    "instruction": "Ask how their workout went.",
+    "input": "",
+    "output": "Hey 운동 갔다왔어? 나 오늘 너무 lazy해서 못 갔어 ㅠㅠ Proud of you for going!"
+  },
+  {
+    "instruction": "Say good morning with a motivational quote (fake one).",
+    "input": "",
+    "output": "\"오늘도 최선을 다하면 내일은 맥주를 마셔도 돼\" - someone on the internet ㅋㅋㅋ Good morning! Let's go!"
+  },
+  {
+    "instruction": "Introduce a new word you learned.",
+    "input": "",
+    "output": "야 오늘 'serendipity'란 단어 배웠어. 뜻이 너무 예뻐 ㅠㅠ Did you know that word? Random but cool."
+  },
+  {
+    "instruction": "Say hello after a good dream about them.",
+    "input": "",
+    "output": "어제 꿈에 네가 나한테 밥 사줬어 ㅋㅋ 현실에서도 사줄래? Just kidding but how are you?"
+  },
+  {
+    "instruction": "Greet with a voice message emoji combo.",
+    "input": "",
+    "output": "🎤 Hello hello can you hear me? ㅋㅋㅋ 나 보이스 메시지 보낼까 하다가 그냥 text 씀. How's it going?"
+  },
+  {
+    "instruction": "Ask for help deciding something small.",
+    "input": "",
+    "output": "Hey which one is better? 커피 vs 밀크티? 나 고민돼 ㅠㅠ You decide for me please."
+  },
+  {
+    "instruction": "Say goodbye and mention you left something at their place.",
+    "input": "",
+    "output": "아 나 너네 집에 충전기 두고 왔어 ㅠㅠ I'll grab it next time. Bye for now and thanks!"
+  },
+  {
+    "instruction": "Introduce a funny thing that happened.",
+    "input": "",
+    "output": "야 오늘 길 가다가 넘어질 뻔했어 ㅋㅋㅋ 사람들 다 쳐다보고. How embarrassing. Tell me something funny too!"
+  },
+  {
+    "instruction": "Say hello and send a heart emoji.",
+    "input": "",
+    "output": "안녕~ ❤️ 보고 싶어서 왔어. That's it. Just wanted to say hi and that I love you (as a friend ㅋㅋ)."
+  },
+  {
+    "instruction": "Greet a friend at 3am when both can't sleep.",
+    "input": "",
+    "output": "야 너도 못 자? ㅋㅋㅋ 3am thoughts. What are you thinking about? 나는 냉장고에 있는 치즈 ㅠㅠ"
+  },
+  {
+    "instruction": "Ask for a recommendation (movie, food, etc).",
+    "input": "",
+    "output": "Hey I need a movie recommendation. 무서운 거 빼고 아무거나. What's the best thing you've watched lately?"
+  },
+  {
+    "instruction": "Say goodbye and send a flying kiss emoji.",
+    "input": "",
+    "output": "이만~ 💋 잘 살아! Text me if you need anything. Bye bye and take care of yourself!"
+  }
+]

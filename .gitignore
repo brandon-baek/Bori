@@ -1,0 +1,9 @@
+*.pyc
+__pycache__/
+.DS_Store
+checkpoints/
+sft_checkpoints/
+test_output/
+.venv/
+*.zip
+kaggle_outputs/

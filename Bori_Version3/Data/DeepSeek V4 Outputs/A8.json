@@ -1,0 +1,497 @@
+[
+  {
+    "instruction": "팀원들이 예산 관련 질문이 많아서, 간단한 budget update를 Slack에 올려줘.",
+    "input": "",
+    "output": "팀 여러분, quick budget update 공유드려요~ 아직 Q3 funding 확정 전이라 현재 spending plan은 가변적이에요. 다만 cloud cost나 marketing 관련 expense는 조금만 더 아껴주시면 좋겠습니다. 혹시 본인 프로젝트에서 추가 approval 필요한 게 있으면 이번주 금요일까지 finance 팀에 ping 주세요! 감사합니다 🙏"
+  },
+  {
+    "instruction": "투자사 미팅 전에 run rate랑 burn rate 계산 좀 확인해줘.",
+    "input": "",
+    "output": "네 금방 체크했어요. 현재 monthly burn rate는 약 1억 8천 정도고, 현 run rate 대비 약 14개월 버틸 수 있어요. 다만 다음 투자 라운드 전까지 추가 비용 줄이면 16~17개월까지도 가능할듯. 피치덱에 반영할게요. 참고로 gross margin은 68% 유지 중입니다."
+  },
+  {
+    "instruction": "새로운 pitch deck 만들 때 꼭 들어가야 할 slide가 뭐야?",
+    "input": "",
+    "output": "보통 problem, solution, market size, business model, traction, team, financial projection, ask 요렇게 8개 core slide는 필수예요. 특히 financial projection slide에서는 3년 예상 P&L, cash flow, user growth 같이 hard number 들어가야 좋아요. 예전 시리즈A 피치덱 보내드릴까요?"
+  },
+  {
+    "instruction": "이번달 지출 결산 보여줘, Konglish로 짧게.",
+    "input": "",
+    "output": "이번달 total spend: 4,200만원. Top 3 항목: payroll 52%, cloud infra 18%, sales & marketing 15%. 예산 대비 3% 초과인데, dev tool subscription에서 좀 오버됐어요. 다음 달엔 조정 예정입니다."
+  },
+  {
+    "instruction": "VC 미팅에서 budget allocation 질문 나올 때 어떻게 답변 준비하면 좋을까?",
+    "input": "",
+    "output": "보통 product dev 45%, sales & marketing 30%, G&A 15%, R&D 10% 정도로 답하면 무난해요. 실제로는 엔지니어링 인건비가 product dev + R&D에 대부분 들어가고요. VC들은 특히 customer acquisition cost payback period와 marketing efficiency ratio를 많이 봅니다. 그 부분 준비해두시면 좋아요."
+  },
+  {
+    "instruction": "재무팀에서 이번 분기 budget reforecast를 요청했어. 어떻게 해야 해?",
+    "input": "",
+    "output": "아마 실제 spend 대비 original plan 차이 나는 항목들 업데이트하라는 뜻일 거예요. 엑셀에 actual vs budget 달고, 예상치 못한 비용(예: 서버 장애 대응 비용)은 따로 note 첨부하세요. 그리고 다음 분기 forecast는 최근 run rate 기반으로 계산하면 편해요. 제가 템플릿 드릴까요?"
+  },
+  {
+    "instruction": "우리 스타트업 IRR 계산 좀 도와줘, 투자 유치용으로.",
+    "input": "",
+    "output": "네 간단히 했어요. 현재 기준 5년 IRR 약 34% 나옵니다. 가정은 연평균 성장률 45%, final exit multiple 8x EV/Revenue. VC가 IRR 25% 이상 보통 원하니까 괜찮은 수치예요. 다만 exit scenario sensitivity table도 덱에 넣으면 더 설득력 있어요."
+  },
+  {
+    "instruction": "이번 주말까지 budget approval 받아야 해. 어떻게 request 올리는 게 좋을까?",
+    "input": "",
+    "output": "Slack에 이렇게 올리세요: '리더님, Q3 추가 budget approval 요청드립니다. 항목: 디자인팀 툴 라이선스 업그레이드 (연 240만원). 근거: 현재 툴 대비 프로토타이핑 속도 30% 향상 기대. 급한 건 아니지만 이번주 결재 가능하실까요?' 간결하고 근거 있으면 잘 통과돼요."
+  },
+  {
+    "instruction": "Pitch deck에 넣을 burn multiple 계산해줘.",
+    "input": "",
+    "output": "OK. Net burn = 1.8억/month, net new ARR = 2.1억/month라서 burn multiple = 0.86 (좋은 편!). 1 미만이면 돈 쓴 대비 성장 잘 하고 있다는 뜻. 이거 덱에 'capital efficiency' slide에 넣으면 좋아요."
+  },
+  {
+    "instruction": "투자자들이 우리 cash flow statement를 많이 물어봐. 간단 설명 부탁해.",
+    "input": "",
+    "output": "주로 operating cash flow (영업현금)와 free cash flow (FCF) 집중하세요. 우리는 operating cash flow는 아직 negative지만 FCF 개선 추세예요. 주요 이유는 deferred revenue 증가와 납품 대금 회수 기간 단축. 만약 투자자 질문 오면 'working capital management'에 포커스 맞추는 게 좋아요."
+  },
+  {
+    "instruction": "회사 예산 짤 때 어떤 tool 사용해?",
+    "input": "",
+    "output": "우리는 Google Sheets + Fathom (보고용), 간단한 forecasting은 Retool로 custom. 초기 스타트업은 Airtable이나 Spreadsheet만으로도 충분해요. 다만 투자 단계 커지면 QuickBooks나 Xero 연동 고려해야 합니다."
+  },
+  {
+    "instruction": "VC 피드백: 'unit economics가 더 필요하다'고 했어. 무슨 뜻이야?",
+    "input": "",
+    "output": "고객 1명당 revenue와 cost 구조를 더 상세히 보여달라는 뜻입니다. 예: customer lifetime value (LTV), customer acquisition cost (CAC), LTV/CAC ratio, gross margin per user. 보통 B2B SaaS는 LTV/CAC > 3, payback period < 12개월 원합니다. 관련 계산해서 덱에 추가 슬라이드 만들까요?"
+  },
+  {
+    "instruction": "다음 주 CFO 인터뷰 보는데, budget planning 프로세스 물어보면 뭐라고 할까?",
+    "input": "",
+    "output": "bottom-up과 top-down approach 결합한다고 말씀하세요. 각 팀이 필요한 리소스 bottom-up으로 내고, 경영진은 company OKR과 매출 목표 top-down으로 조정. 매월 rolling forecast 업데이트하고, 분기마다 board 승인. 실제론 구글 시트로 간단히 운영해도 OK. 답변 준비 도와드릴까요?"
+  },
+  {
+    "instruction": "스타트업 예산에서 가장 흔한 실수 세 가지 알려줘.",
+    "input": "",
+    "output": "1) marketing budget을 지나치게 낙관적으로 설정 (실제 효율 반영 안 함) 2) cloud cost나 subscription fee 같은 recurring cost 까먹음 3) hiring timeline에 따른 ramp-up cost 미반영. 특히 #3 때문에 payroll 예산 실제보다 적게 잡아서 나중에 overrun 나기 쉬워요."
+  },
+  {
+    "instruction": "우리 제품 가격 책정 전략을 budget plan에 어떻게 반영하지?",
+    "input": "",
+    "output": "가격 전략에 따라 sales capacity, customer support cost, payment processing fee 등이 영향 받아요. 예를 들어 enterprise pricing으로 가면 sales cycle 길어져서 CAC 증가. self-service면 support ticket 증가. Budget에 'pricing experiment buffer' 라인 만들어서 10-15% 여유 두는 게 안전합니다."
+  },
+  {
+    "instruction": "Runway 계산 다시 해줘. 현재 현금 9억, 월 net burn 7천만원.",
+    "input": "",
+    "output": "간단히 9억 / 7천만원 = 약 12.8개월 (13개월). 다만 이건 gross burn 기준. 만약 이번 분기 revenue 2억 예상되면 net burn은 5천만원으로 줄어들고 runway는 18개월로 늘어납니다. 피치덱에는 net burn 기준으로 보통 써요."
+  },
+  {
+    "instruction": "피치덱 financial slide 디자인 팁 있어?",
+    "input": "",
+    "output": "4개의 핵심만 차트로: ARR 성장 추이, gross margin %, CAC payback months, runway. 글자 최소화하고, 숫자 강조하세요. bar chart보다는 line chart 추천 (성장 보기 쉬움). 하단에 assumption notes 작게 달면 professional해 보입니다."
+  },
+  {
+    "instruction": "우리 시드 단계인데, budget에 consulting fee 넣는 게 좋을까?",
+    "input": "",
+    "output": "필요할 때만 쓰고, 되도록 고정비보다는 variable cost로 잡으세요. 시드 단계면 accounting이나 법률 자문 정도만 연간 500-100만원 정도 예산 세우는 게 일반적입니다. 전략 컨설팅은 series A 이후나 고려하셔도 돼요."
+  },
+  {
+    "instruction": "팀이 budget을 자꾸 넘겨. 어떻게 communication 하면 좋을까?",
+    "input": "",
+    "output": "Slack에 이렇게 올려보세요: \"팀원분들, 이번 달 보니까 마케팅 예산 15% 초과 사용 예정이네요. 이유가 있을 거 같은데, 혹시 unexpected expense 있으면 오늘까지 알려주세요. 초과분은 다음 달 예산에서 차감될 예정입니다. 감사합니다!\" blame 말고 solving 분위기로 가는 게 핵심입니다."
+  },
+  {
+    "instruction": "P&L statement에서 가장 보기 쉬운 Konglish 설명 부탁해.",
+    "input": "",
+    "output": "P&L은 쉽게 '수익 - 비용 = 이익' 표입니다. 위에서부터 revenue (매출), 빼기 COGS (매출원가) = gross profit, 빼기 operating expenses (운영비 - R&D, 마케팅, G&A) = operating income, 빼기 tax & interest = net income. 이걸로 회사가 장사를 잘 하는지 봅니다."
+  },
+  {
+    "instruction": "Seed 라운드에서 얼마나 budget을 자세히 보여줘야 해?",
+    "input": "",
+    "output": "시드 단계는 보통 12개월 use of funds table + headcount plan + top 5 expense categories 정도면 충분. 너무 상세한 line item은 불필요하고, 가장 중요한 건 '우리가 이 돈으로 다음 milestone을 언제 찍을지' 보여주는 것입니다. milestone 기반 budget이 좋아요."
+  },
+  {
+    "instruction": "오늘 CFO랑 budget meeting 있는데, 어떤 질문 대비해야 해?",
+    "input": "",
+    "output": "1) 어떤 가정으로 숫자 뽑았는지 (예: growth rate, churn, conversion) 2) 가장 risky한 예산 항목 3) contingency plan (예산 20% 깎이면 어떻게 할 건지). 그리고 본인이 'own'하는 budget 항목은 숫자 외운 채로 가세요."
+  },
+  {
+    "instruction": "피치덱에 넣을 market sizing (TAM, SAM, SOM) 간단히 알려줘.",
+    "input": "",
+    "output": "TAM = 전체 시장 규모 (예: 전 세계 K-뷰티 온라인 시장 50조). SAM = 우리 제품/서비스가 실제로 도달 가능한 시장 (예: 한국+일본 온라인 10조). SOM = 첫 3-5년 안에 우리가 점유할 수 있는 realistic 부분 (예: 2천억). SOM 제일 중요합니다."
+  },
+  {
+    "instruction": "VC가 'revenue forecast 근거가 약하다'고 했어. 어떻게 보강할까?",
+    "input": "",
+    "output": "bottom-up 접근으로 바꿔보세요. 예: '월 신규 고객 100명 x ARPU 5만원 x 12개월 = 연간 6천만원' 식으로 각 가정에 근거 (과거 데이터, pilot 결과, 업체 벤치마크)를 달아주세요. 그리고 best case, base case, worst case 3개 시나리오 제시하면 설득력 올라갑니다."
+  },
+  {
+    "instruction": "Budget review 미팅에서 쓸 짧은 opening 멘트 만들어줘.",
+    "input": "",
+    "output": "\"안녕하세요. 이번 분기 budget 대비 actual은 101%로 거의 달성했고, 주요 variance는 cloud cost 증가 때문입니다. 다만 revenue는 8% 상회 달성해서 효율은 나쁘지 않네요. 다음 분기 forecast에서는 이슈 반영해서 조정했습니다. 논의 시작할까요?\""
+  },
+  {
+    "instruction": "개발팀에 budget cut이 필요해. 어떻게 전달할까 Konglish로.",
+    "input": "",
+    "output": "팀장님, 회사 전체적으로 Q3 budget 조정이 필요해서요. 개발팀 예산을 10% 정도 trim 해야 할 것 같습니다. cloud cost 최적화나 contractor 시간 조정으로 가능할까요? 제안해 주시면 revenue impact 최소화하는 direction으로 논의해요. 감사합니다!"
+  },
+  {
+    "instruction": "우리 스타트업 valuation 산정에 budget이 어떻게 영향을 줘?",
+    "input": "",
+    "output": "직접적 영향은 크진 않지만, 예산 효율성 -> 성장 속도 -> valuation에 영향 줍니다. 같은 revenue라도 burn rate 낮은 회사가 higher valuation 받아요. 특히 시드/시리즈 A에서는 'capital efficiency' (투자 대비 성장)가 중요. budget 잘 관리하면 valuation negotiation에서 유리합니다."
+  },
+  {
+    "instruction": "투자자에게 보낼 budget update 이메일 예시 써줘.",
+    "input": "",
+    "output": "Subject: Q2 Budget vs Actual & Q3 Forecast\n\n안녕하세요 [Name]님,\n\nQ2 actual spend was within 2% of budget. 주요 차이는 마케팅 비용 overrun (4%)을 dev tool underrun (-6%)이 상쇄했습니다. Cash runway remains ~14 months.\n\n첨부에 Q3 forecast과 updated cap table 있습니다. 미팅 일정 조율 가능하실까요?\n\n감사합니다."
+  },
+  {
+    "instruction": "'Zero-based budgeting' 개념을 팀에 설명해줘.",
+    "input": "",
+    "output": "예전 예산 기준으로 자동 증액 안 하고, 매 분기/년도 처음부터 모든 비용을 정당화하는 방식입니다. \"작년에 썼으니까 올해도\" 같은 관성 제거하고, 실제 필요한 곳에만 돈 씁니다. 초기 스타트업에 추천하는 방법은 아니고 (시간 많이 듦), 성장 후반에 효율화할 때 씁니다."
+  },
+  {
+    "instruction": "OKR이랑 budget 연결해서 관리하는 팁 있어?",
+    "input": "",
+    "output": "각 OKR에 'estimated cost' 태그를 달고, KR (key result) 달성에 예상되는 budget을 미리 할당하세요. 예: 'MAU 10만 달성' KR에 마케팅비 5천만원 배정. 이렇게 하면 OKR review = budget review 자연스레 연결되고, resource 낭비 줄어듭니다. 저희 팀 템플릿 공유 가능합니다."
+  },
+  {
+    "instruction": "영업팀 예산에 SDR 도구 추가하려고 해. 근거怎么写?",
+    "input": "",
+    "output": "근거: SDR 도구 (예: Apollo, Lusha) 월 30만원 추가 시, 리드 발굴 효율 40% 향상으로 월 5개 더 demo 예약 가능 -> 파이프라인 가치 약 3천만원 증가. ROI 약 10배. budget 요청시 이렇게 숫자로 말하면 잘 통과됩니다."
+  },
+  {
+    "instruction": "Budget meeting에서 가장 많이 듣는 Konglish 표현 알려줘.",
+    "input": "",
+    "output": "1) '그 부분은 scope creep이 있어서 overrun 됐어요' 2) 'burn rate가 예상보다 빨라서 runway 조정 필요합니다' 3) 'top-line은 괜찮은데 bottom-line이 아쉽네요' 4) 'capex보다 opex 위주로 가야 할 것 같아요'. 이 정도 알면 회의 분위기 파악 쉬워요."
+  },
+  {
+    "instruction": "예산 짤 때 accounting 용어(amortization, depreciation) 설명해줘.",
+    "input": "",
+    "output": "Depreciation (감가상각): 장비 (서버, 노트북) 값어치가 시간 지나며 떨어지는 걸 비용 처리. Amortization (무형자산 상각): 소프트웨어, 특허 같은 무형자산 비용 분할. 둘 다 현금 유출은 아니지만, P&L에 비용으로 잡혀서 순이익, tax에 영향 줍니다."
+  },
+  {
+    "instruction": "시리즈 A 준비하는데 budget template 추천해줘.",
+    "input": "",
+    "output": "Carta의 template이나 Causal (도구) 기본 템플릿 좋아요. 핵심 열: Category, Q1-Q4, Total, Actual vs Budget, Owner. 그리고 'Assumptions' 시트 따로 만들어서 성장률, CAC, churn 같은 가정 넣으세요. 가장 중요한 건 version control (v1, v2) 확실히 하는 겁니다."
+  },
+  {
+    "instruction": "Pitch deck에 넣을 간단한 budget efficiency metric 추천해줘.",
+    "input": "",
+    "output": "1) Burn multiple = net burn / net new ARR (낮을수록 좋음) 2) Magic number = (QoQ revenue growth * 4) / previous quarter sales & marketing spend (1.0 이상 좋음) 3) Gross margin %. 이 3개만 덱에 넣어도 VC들이 좋아합니다."
+  },
+  {
+    "instruction": "직원들이 budget culture에 참여하도록 어떻게 독려할까?",
+    "input": "",
+    "output": "매달 'budget hero' 상을 주고, 예산 절감 아이디어 제안하면 포인트 지급. 가장 효과적인 건 '팀별 budget 소비 현황'을 투명하게 공유하는 겁니다. 예: 대시보드에 '마케팅팀: 76% 사용' 이런 식. 사람들은 자기가 보이면 자연스레 아껴요."
+  },
+  {
+    "instruction": "VC meeting 예정인데 'use of funds' 슬라이드 어떻게 만들까?",
+    "input": "",
+    "output": "원형 차트로 % 표시: Product dev 50%, Sales & Marketing 25%, G&A 15%, Buffer 10%. 각 카테고리 아래 'Key hires (예: 2명 엔지니어)', 'Milestone (예: v2.0 출시)' 간단히 적으세요. 그리고 'Buffer' 넣으면 현실적이고 준비된 인상 줍니다."
+  },
+  {
+    "instruction": "Budget planning에서 가장 빼먹기 쉬운 비용 5가지 알려줘.",
+    "input": "",
+    "output": "1) 법인세 및 회계 감사 비용 2) 은행 수수료 & payment gateway fee 3) 직원 복지 후생비 (간식, 팀빌딩) 4) 특허/상표 등록비 5) 인턴 또는 계약직 전환 비용. 이 5개를 '기타 운영비'로 뭉뚱그리지 말고 각각 라인으로 잡아야 overrun 안 나요."
+  },
+  {
+    "instruction": "스타트업에서 'budget owner' 개념 설명해줘.",
+    "input": "",
+    "output": "각 budget 라인에 책임자 1명을 지정하는 거예요. 예: '마케팅 예산 owner = CMO', '클라우드 비용 owner = CTO'. owner는 승인, 보고, variance 책임을 집니다. 이렇게 하면 지출 투명성 올라가고, '누구도 모르는 지출'이 사라집니다."
+  },
+  {
+    "instruction": "투자 유치 후 첫 budget 어떻게 짜야 할까?",
+    "input": "",
+    "output": "12-18개월 runway 목표로 하고, 40%는 반드시 핵심 제품 개발에, 30%는 growth에, 20%는 팀 확장, 10% 예비비로. 제일 중요한 건 'hiring plan' 예산을 현실적으로 잡는 겁니다 (연봉 + 세금 + 복지 + 도구). 많이들 이 부분에서 삐끗합니다."
+  },
+  {
+    "instruction": "Budget vs actual 차이(variance) 분석 어떻게 해?",
+    "input": "",
+    "output": "두 가지 축으로: 1) 유리한지 불리한지 (favorable vs unfavorable) 2) 규모 (material vs immaterial). Favorable variance도 원인 분석 필요 (예: 마케팅비 덜 썼는데 매출도 같이 떨어졌으면 좋은 게 아님). 주요 variance는 '한 줄 요약 + action item' 으로 정리합니다."
+  },
+  {
+    "instruction": "초기 스타트업에서 financial model 처음 만들 때 조언해줘.",
+    "input": "",
+    "output": "너무 복잡하게 만들지 마세요. driver-based model로 (가정 5~10개만). 예: 신규 고객 수 x ARPU = revenue. 직원 수 x 평균 연봉 = 인건비. 여기에 CAC, churn 정도만 추가. 100줄 넘어가는 엑셀은 버그 나기 쉽고 투자자도 싫어합니다. simplicity is king."
+  },
+  {
+    "instruction": "Konglish로 예산 관련 회의록 요약해줘.",
+    "input": "",
+    "output": "Meeting summary from budget review:\n- Q3 spend 4.2억, 2% over budget\n- Main issue: ad spend 효율 down (CAC up 15%)\n- Action: marketing team to revise channel mix by Friday\n- Next meeting: 9/28, each team prepare Q4 forecast draft\n- 승인 완료: dev tool upgrade (300만원)"
+  },
+  {
+    "instruction": "CAC (Customer Acquisition Cost) 줄이려면 어디에 budget을 더 써야 해?",
+    "input": "",
+    "output": "반직관적이지만 referral program과 content marketing에 budget 더 쓰면 CAC 낮아져요. 초기에는 유료 광고에 over-invest하는데, 오히려 바이럴 루프나 커뮤니티 예산을 늘리면 장기적 CAC down. 즉 budget을 'growth'에서 'engagement'로 일부 재배치하세요."
+  },
+  {
+    "instruction": "우리 스타트업 B2B인데 budget에 sales cycle cost 어떻게 반영하지?",
+    "input": "",
+    "output": "Sales cycle 길면 (3-6개월) budget에 'sales enablement cost', 'trial support cost' 라인 따로 넣으세요. 그리고 acquisition cost는 contract value 기준이 아니라, 'closed-won 고객 1명' 기준 CAC로 계산. 엔터프라이즈 영업은 POC 비용도 예산에 포함해야 합니다."
+  },
+  {
+    "instruction": "Financial projection에서 'sensitivity analysis' 간단히 설명해줘.",
+    "input": "",
+    "output": "주요 가정(예: 성장률, churn) 하나를 바꿨을 때 결과가 어떻게 변하는지 보는 겁니다. 예: growth rate 40% vs 60% -> revenue 3배 차이. 이런 분석을 budget에 포함하면 '우리는 리스크를 안다'는 인상을 줘서 투자자 신뢰도 높아집니다."
+  },
+  {
+    "instruction": "개발자 도구 예산 (IDE, CI/CD 등) 합리화하는 팁 있어?",
+    "input": "",
+    "output": "월간 사용량 기반으로 'active user'만 라이선스 유지. 예: GitHub Copilot 매달 비활성 계정 정리하고, CI/CD는 크레딧 사용률 보고 tier 조정. 저희 팀은 이 방법으로 월 40만원 절감했어요. 예산에 'review quarterly subscription' 액션 아이템 넣어두세요."
+  },
+  {
+    "instruction": "피치덱에 'revenue model' 슬라이드 만들 때 budget 관련 팁?",
+    "input": "",
+    "output": "가격 전략과 함께 'unit economics breakdown'을 포함하세요: 고객 1명당 COGS, support cost, CAC, 그리고 그게 어떻게 gross margin과 operating margin으로 이어지는지. 예: '우리는 각 고객이 12개월 안에 CAC를 회수하고 이후 80% margin을 남깁니다' -> 이게 budget 효율성 증거입니다."
+  },
+  {
+    "instruction": "Budget 조정 요청이 자주 들어와. 프로세스를 어떻게 fix할까?",
+    "input": "",
+    "output": "월 1회 'change request deadline' 지정하고, 긴급한 건 예외로 처리. 모든 요청은 'business impact justification' (매출, 사용자 성장, 비용 절감 중 어떤 걸 얼마나 개선하는지)을 적게 하세요. 그래도 빈번하면 팀별 예산에 'discretionary fund' 5%를 줘서 자체 조정하게 하세요."
+  },
+  {
+    "instruction": "스타트업에서 GAAP vs non-GAAP 차이 예산에 어떻게 반영해?",
+    "input": "",
+    "output": "GAAP 기준으로는 stock-based compensation도 비용 처리. 하지만 non-GAAP (adjusted)로 보면 SBC를 빼서 actual cash burn 파악. 투자자들 둘 다 봅니다. 예산 짤 때는 cash 기준으로 운영 예산 잡고, GAAP은 회계 보고용으로 별도 track 하세요."
+  },
+  {
+    "instruction": "우리 투자자 update에 budget section 추가하려 해. 뭘 넣지?",
+    "input": "",
+    "output": "간단한 table: 'Budget vs Actual (Quarter)', 'Cash Runway', 'Key variance explanation (top 2)', 'Next quarter forecast'. 설명은 각 항목 1-2문장으로. 긴 보고서는 아무도 안 읽습니다. 그리고 항상 '질문 있으면 slack 주세요' 닫는 멘트."
+  },
+  {
+    "instruction": "Budget 미팅에서 '물음표' 질문 많이 받아. 예시 좀.",
+    "input": "",
+    "output": "1) '왜 R&D 예산이 20% 늘었나요?' 2) '이 forecast의 downside risk는 뭔가요?' 3) '만약 매출이 30% 덜 나오면 어떻게 대응할 건가요?' 이 3개가 제일 흔함. 준비 답변: 이유(신규 프로젝트), 리스크(경쟁 심화), 대응(변동비 조정, hiring freeze) 순서로 말하세요."
+  },
+  {
+    "instruction": "Pitch deck에 cash flow statement 생략해도 돼?",
+    "input": "",
+    "output": "시드 단계에서는 괜찮지만 시리즈 A 이상은 꼭 넣으세요. 투자자들이 실제 현금 흐름을 보고 '언제 추가 투자 필요할지' 평가합니다. 대신 간소화 버전으로: operating, investing, financing cash flow, 그리고 ending cash balance + runway. 이 4개만 차트로 보여주세요."
+  },
+  {
+    "instruction": "예산 관련 용어 'accrual' 이 뭐야? 직원에게 설명해줘.",
+    "input": "",
+    "output": "간단히: 아직 돈은 안 냈지만, 비용이 '발생'한 상태. 예: 3월에 AWS 썼는데 4월에 결제 -> 3월 budget에 accrual로 반영. 현금 기준으로만 보면 실제 비용 시점이 왜곡돼서, 회계상 accrual basis를 써야 정확한 budget vs actual 비교 가능합니다."
+  },
+  {
+    "instruction": "스타트업 예산에서 marketing budget 가장 많이 낭비되는 곳은?",
+    "input": "",
+    "output": "1) 성과 측정 안 되는 브랜딩 광고 2) ROI 계산 안 한 이벤트 참가비 3) 여러 툴 중복 구독. 특히 3번: 분석팀, 마케팅팀, 영업팀이 각자 다른 리드 툴 쓰는 경우 예산 누수 심함. '도구 통합' 예산 검토 한 번 해보세요."
+  },
+  {
+    "instruction": "회사가 budget 초과했을 때 Konglish로 공지하는 예시.",
+    "input": "",
+    "output": "팀에 긴급 공지드립니다. 이번 달 현재까지 budget 대비 12% overrun 상태입니다. 주요 원인은 예상치 못한 server cost 증가와 마케팅 집행 시점 문제. 즉시 free hiring freeze, 그리고 모든 non-essential spending 승인 필요합니다. 상세 내용은 1시간 내 finance 채널에 공유드릴게요."
+  },
+  {
+    "instruction": "Financial model에서 ARR과 revenue 차이 설명해줘.",
+    "input": "",
+    "output": "ARR = 연간 recurring revenue (구독료 등)의 현재 run rate. Revenue = 실제 인식된 매출. 차이는 주로 deferred revenue에서 발생 (미리 받은 돈). 예: 12월에 1년치 받으면 ARR에 반영되지만 revenue는 매월 조금씩 인식. budget 짤 때 둘 다 tracking 해야 합니다."
+  },
+  {
+    "instruction": "MVP 개발 예산 어떻게 책정해? 초기 스타트업.",
+    "input": "",
+    "output": "핵심 기능만, 2~3개월 개발 예상. 엔지니어 1명 3개월 = 인건비 약 4500만원 + 인프라 + 디자인 최소. budget은 5000~7000만원 사이 잡고, 이후 iteration 예산은 따로. 너무 elaborate한 MVP는 자금 낭비입니다. 'test 가설'에 집중하세요."
+  },
+  {
+    "instruction": "투자자들이 'budget cushion' 물어봐. 얼마나 잡는 게 좋아?",
+    "input": "",
+    "output": "보통 total budget의 10-15%를 예비비 (contingency)로 잡습니다. 초기 스타트업일수록 cushion 크게 (15~20%). 이유: unexpected cost 항상 생김. cushion을 왜 그렇게 잡았는지 설명할 때 'known unknowns (예: 시장 변동성)' vs 'unknown unknowns'로 나눠 말하면 professional해 보입니다."
+  },
+  {
+    "instruction": "예산 관련해 동료에게 '제안'할 때 부드러운 Konglish 표현.",
+    "input": "",
+    "output": "혹시 광고 예산의 20%를 유튜브에서 틱톡으로 옮기는 건 어떨까요? 최근 데이터 보니 전환율이 더 좋아지고 있어서요. 물론 기존 채널 성과 유지하면서 test 해보는 거라 리스크는 작을 것 같아요. 의견 주시면 감사하겠습니다!"
+  },
+  {
+    "instruction": "Pitch deck에 'financial KPIs' 3개만 뽑아줘.",
+    "input": "",
+    "output": "1) ARR growth (% YoY) 2) Gross margin (%) 3) CAC payback period (months). 이 3개면 투자자들이 business health와 capital efficiency를 한눈에 평가 가능합니다. 추가로 runway도 위에 작게 표시하면 완벽."
+  },
+  {
+    "instruction": "회계 시스템 도입 예산, 얼마나 잡아야 해? 초기.",
+    "input": "",
+    "output": "초기에는 QuickBooks Self-Employed (월 1만원대)나 Xero (약 3만원)로 시작. 직원 10인 이상 되면 QuickBooks Online Plus (월 8만원) + Expensify (월 5만원). 연간 총 예산 100만원 내외면 충분. ERP는 훨씬 커진 후에 고려하세요."
+  },
+  {
+    "instruction": "예산 승인 받는 Konglish 이메일 예시 (to CEO).",
+    "input": "",
+    "output": "Subject: 예산 승인 요청 - 고객 지원팀 도구 도입\n\n리더님,\n\nZendesk 도입 관련 예산 승인 요청드립니다. 월 45만원 (연 540만원) 예상됩니다. 근거: 현재 support ticket 응답 시간 6시간 -> 도입 후 2시간으로 단축, CSAT 15% 향상 기대.\n\n검토 부탁드려요. 감사합니다!"
+  },
+  {
+    "instruction": "Budget review 후 action item을 어떻게 효과적으로 communicate 할까?",
+    "input": "",
+    "output": "Slack에 thread로 정리: '예산 회의 액션 아이템:\n1) 마케팅팀: 9/30까지 채널별 ROI 분석 (@marketing-lead)\n2) 엔지니어링: 10/5까지 클라우드 cost 절감 방안 제출 (@cto)\n3) 전체: 10/7까지 Q4 forecast 업데이트\n감사합니다!' 태그와 데드라인 필수."
+  },
+  {
+    "instruction": "스타트업에서 'budget vs forecast vs actual' 차이점 알려줘.",
+    "input": "",
+    "output": "Budget = 계획 (보통 1년). Forecast = 업데이트된 예측 (분기/월, 실제 반영). Actual = 실제 발생한 숫자. Budget은 목표, Forecast는 현실 기반 예측, Actual은 결과. 예산 관리는 이 3개를 비교하면서 'gap'을 분석하고 조정하는 과정입니다."
+  },
+  {
+    "instruction": "피치덱에 'ask' 슬라이드 budget 관련해서 뭘 적어야 해?",
+    "input": "",
+    "output": "1) 투자 희망 금액 2) 사용 계획 (pie chart로: product 40%, marketing 30%, team 20%, buffer 10%) 3) 그 돈으로 달성할 milestone (예: 12개월 내 ARR 50억, 팀 30명). 'ask'는 구체적일수록 좋습니다. 'R&D 예산 5억' 보다는 '5억으로 엔지니어 4명 채용'이 낫습니다."
+  },
+  {
+    "instruction": "동료가 budget 질문으로 슬랙 DM 왔어. 답변 예시.",
+    "input": "",
+    "output": "A: '이번달 마케팅 예산 200만원 남았는데, 페이스북 광고에 다 써도 될까요?'\nB: '아직 캠페인 성과 확인 전이라면 50만원만 테스트로 쓰고 나머지는 다음 달로 carry over 하는 게 좋을 것 같아요. 월말에 전체 ROI 보고하고 추가 집행해요. 어때요?'"
+  },
+  {
+    "instruction": "투자자들이 'working capital' 계속 물어봐. budget에서 뭘 의미하지?",
+    "input": "",
+    "output": "운전자본 = 유동자산(현금, 매출채권) - 유동부채(매입채무). 스타트업에서 특히 중요한 건 'days sales outstanding' (DSO, 대금 회수 기간)과 'days payable outstanding' (DPO, 대금 지급 기간). DSO를 줄이고 DPO를 늘리면 현금흐름 좋아집니다. 예산에 이 두 지표 목표를 포함하세요."
+  },
+  {
+    "instruction": "예산 관련해, '오해하기 쉬운 3가지' 알려줘.",
+    "input": "",
+    "output": "1) 예산을 다 쓰는 게 좋은 게 아님 (남으면 효율적으로 썼다는 증거일 수 있음) 2) 예산 삭감이 나쁜 게 아님 (오히려 집중도 높아짐) 3) 예산은 '제약'이 아니라 '전략적 선택'의 도구. 이 3가지 팀에 공유하면 budget culture가 건강해집니다."
+  },
+  {
+    "instruction": "Pitch deck의 financial slide에 들어갈 'benchmark' 데이터 원해.",
+    "input": "",
+    "output": "SaaS 벤치마크: gross margin 70-80%, CAC payback < 12 months, LTV/CAC > 3x, annual churn < 10%, R&D spend 20-30% of revenue. 업종별 편차 있으니 참고만 하세요. 우리 회사 숫자와 이 benchmark를 비교하면 강력한 근거가 됩니다."
+  },
+  {
+    "instruction": "예산 세우는데 'top-down' vs 'bottom-up' 뭐가 더 좋아?",
+    "input": "",
+    "output": "둘 다 해야 합니다. Top-down으로 회사 전체 목표 (예: 매출 50억) 정하고, bottom-up으로 각 팀이 필요한 리소스 계산. 둘을 조정하는 게 실제 예산입니다. 어느 한 쪽만 하면 비현실적이거나 비효율적이기 쉬워요. 하이브리드가 정답입니다."
+  },
+  {
+    "instruction": "투자자 미팅 전날, budget 관련 급하게 준비할 게 뭐야?",
+    "input": "",
+    "output": "1) 현재 cash balance와 runway 2) 가장 최근 monthly burn rate 3) 지난 분기 대비 revenue growth rate 4) 가장 큰 3개 비용 항목. 이 4개 숫자 암기하고, 예상 질문에 대한 한 문장 답변 준비. 30분이면 충분합니다."
+  },
+  {
+    "instruction": "Slack에 예산 관련된 vote나 poll 올리는 예시.",
+    "input": "",
+    "output": ":poll: Q4 예비비 1,000만원 사용처 투표해주세요~\n1) 팀 오프사이트 (제주도 1박2일)\n2) 업무용 장비 업그레이드 (모니터, 키보드)\n3) 교육/컨퍼런스 참가비 지원\n4) 그냥 다음 분기로 이월\n투표 마감: 금요일까지! (한 사람당 1표)"
+  },
+  {
+    "instruction": "'Budget vs actual' 보고를 월 1회 팀에 공유하려 해. 양식 예시.",
+    "input": "",
+    "output": "항목 | 예산 | 실제 | 차이 | 비고\n개발팀 | 8000 | 8400 | +400 | 서버 증설\n마케팅 | 5000 | 4700 | -300 | 광고 효율화\n인건비 | 12000| 12200| +200 | 신규채용\n합계 | 25000| 25300| +300 | 전체 1.2% 초과\n이렇게 간단하게. 이유 1-2줄만."
+  },
+  {
+    "instruction": "스타트업에서 12개월 runway 유지하려면 예산 어떻게 짜야 해?",
+    "input": "",
+    "output": "현금 100%라고 가정하면, 매월 net burn = 현금/12. 거기서 revenue 예측 차감하고 남은 게 allowable expense. 그런데 보통 14개월로 짜는 게 안전 (예상치 못한 지연 대비). 계획 짤 때 'hiring slower'와 'marketing flexibility'가 핵심 레버입니다."
+  },
+  {
+    "instruction": "투자자들에게 budget 보낼 때 가장 실수하는 점은?",
+    "input": "",
+    "output": "과도하게 optimistic한 가정 (예: 월 50% 성장), 그리고 scenario analysis 없음. 투자자들은 'worst case plan'이 있는지 봅니다. 또 formatting: excel에 color coding, 설명 없이 숫자만 있는 것도 큰 실수. 간단한 cover memo 꼭 붙이세요."
+  },
+  {
+    "instruction": "예산 모델에서 'variance threshold' 뭔지 알려줘.",
+    "input": "",
+    "output": "차이가 '얼마나 커야 action을 취할지' 기준. 예: +/-5% 이내는 ignore, 5-15%는 review 필요, 15% 이상은 즉시 action. 저희는 10% threshold 씁니다. Threshold 설정하면 지나친 micro-management 피하고 중요한 variance에 집중 가능합니다."
+  },
+  {
+    "instruction": "재무팀에서 'opex'랑 'capex' 용어 써. 차이 예시 들어줘.",
+    "input": "",
+    "output": "Opex (운영비) = 매월 반복 지출: 월급, 렌트, 마케팅비, 클라우드 비용. Capex (자본적 지출) = 장기 자산 구매: 서버 구입, 사무실 인테리어, 특허 취득. 예산 짤 때 capex는 감가상각으로 나눠서 비용 인식하고, opex는 당월 비용으로 바로 잡습니다. 세금에도 영향 줘요."
+  },
+  {
+    "instruction": "스타트업에 'financial controller' 꼭 필요해? budget 관점에서.",
+    "input": "",
+    "output": "직원 20명 이하 시리즈 A 전까지는 아웃소싱 회계사로 충분 (월 30~50만원). 그 이상 되면 파트타임 컨트롤러 고려 (연 4-5천만원). 예산 규모 10억 이상 넘어가면 budget tracking이 복잡해져서 전담 인력이 효율적입니다."
+  },
+  {
+    "instruction": "피치덱에 'break-even analysis' 넣어도 돼?",
+    "input": "",
+    "output": "네, 특히 B2B나 subscription 모델에 좋습니다. 언제 월별로 profit을 내는지 보여주세요. 예상 break-even point까지 '자금 추가 투입 필요 없음'을 증명. break-even 이후의 cash flow로 투자금 회수 가능성을 보여주면 VC들이 좋아합니다."
+  },
+  {
+    "instruction": "예산 회의 때 'efficiency ratio' 많이 나오는데 뭔가요?",
+    "input": "",
+    "output": "보통 'operating expense / revenue' (수익 대비 운영비 비율). 낮을수록 효율적. 스타트업은 초기에 80-100%도 흔하지만, 성장하면 40-60%로 내려가는 게 목표. 각 부서 efficiency도 개별 측정 가능 (예: 마케팅 efficiency = revenue / marketing spend)."
+  },
+  {
+    "instruction": "연말 예산 정리하고 내년 계획 짤 때 tip.",
+    "input": "",
+    "output": "1) 사용하지 않은 예산은 '왜' 분석 (필요 없었거나 실행 못했거나) 2) 내년은 올해 actual + inflation (3~5%) + growth factor로 시작 3) 각 팀에 '예산 제안서' template 배포, 마감일 설정. 11월 중순 시작해서 12월 중순 마감하는 게 가장 일반적입니다."
+  },
+  {
+    "instruction": "예산 짤 때 '인건비' 예측을 가장 정확히 하는 방법.",
+    "input": "",
+    "output": "현재 직원 x (연봉 + 세금 10% + 복지 5% + 도구 5%) + 예상 신규 채용 월별 반영 (hiring date 기준). 신규 채용은 3개월 lag (면접-입사-정착) 감안해서 budget에 넣으세요. 많이들 이 lag를 빼먹어서 overrun 납니다."
+  },
+  {
+    "instruction": "투자자들이 'cash conservation plan' 뭔지 물어봐. 대답 예시.",
+    "input": "",
+    "output": "만약 revenue가 30% 덜 나올 경우, 1순위로 마케팅 비용 50% 컷, 2순위로 hiring freeze, 3순위로 모든 non-essential travel 중단, 이렇게 단계별로 준비했습니다. 이 plan으로 runway를 6개월에서 10개월로 늘릴 수 있습니다. 구체적일수록 좋습니다."
+  },
+  {
+    "instruction": "슬랙에 budget reminder 올리는 예시 (한국어+영어).",
+    "input": "",
+    "output": "@channel 리마인더: 이번 주 금요일까지 Q4 예산 초안 제출해주세요! 템플릿은 #finance pinned message에 있습니다. 질문 있으면 DM 주세요. 특히 클라우드 비용과 마케팅 집행 계획 빠짐없이 부탁드려요. 감사합니다~"
+  },
+  {
+    "instruction": "스타트업 budget 책정 시 '최우선 순위' 3가지.",
+    "input": "",
+    "output": "1) 핵심 제품 개발 및 유지 (엔지니어링) 2) 고객 획득 및 유지 (sales & CS) 3) 필수 운영 (법무, 회계). 이 3개에 80% 이상 배정. 그다음이 사무실, 복지, 브랜딩 등. 성장 단계에 따라 순위 바뀔 수 있지만, 절대 product와 customer 예산은 건드리지 마세요."
+  },
+  {
+    "instruction": "예산 관련 회의에서 영어 단어 많을 때 도움되는 cheat sheet.",
+    "input": "",
+    "output": "Overhead = 간접비, COGS = 매출원가, OPEX = 운영비, CAPEX = 설비투자, Burn = 현금소모, Runway = 버틸 수 있는 개월 수, Variance = 차이, Accrual = 발생주의, Deferred revenue = 선수수익. 이 정도 알면 회의 따라가기 충분합니다."
+  },
+  {
+    "instruction": "인사팀에서 예산 절감 위해 어떤 제안을 할 수 있을까?",
+    "input": "",
+    "output": "1) 원격 근무 활성화로 사무실 면적 축소 2) 복지 포인트를 효율적 플랫폼으로 통합 3) 인재 추천 보너스 성과 연동형으로 전환 4) 교육 예산을 팀 단위 공동 구매. 이 정도만 해도 연간 수천만원 절감 가능합니다."
+  },
+  {
+    "instruction": "피치덱 마지막 Q&A 대비, budget 관련 예상 질문 3개.",
+    "input": "",
+    "output": "1) '왜 지금 이 규모의 투자가 필요한가요?' -> milestone 기반으로 답변 2) '가장 큰 비용 항목은 무엇이고, 왜 그렇게 큰가요?' -> 인건비, 이유는 성장 가속화 3) '다음 18개월 동안 cash flow 전망은?' -> 그래프 보여주고 설명. 미리 연습하세요."
+  },
+  {
+    "instruction": "초기 스타트업에서 '재무 예측' 처음 해봐. 두려워 마시라고 조언.",
+    "input": "",
+    "output": "완벽할 필요 없습니다. VC들도 예측이 틀리는 걸 압니다. 중요한 건 가정의 투명성과 논리적 흐름. '이 가정 하에 이 결과가 나옵니다'라고 말하면 됩니다. 그리고 계속 업데이트하세요. 첫 모델은 무조건 틀려요. 그래서 버전 관리를 하는 겁니다."
+  },
+  {
+    "instruction": "Budget 조정이 어려운 이유를 팀에 어떻게 설명할까?",
+    "input": "",
+    "output": "예산은 domino와 같아서 하나 바꾸면 다른 부서에 연쇄 영향이 있습니다. 예: 마케팅 예산 줄이면 -> sales pipeline 감소 -> revenue forecast 하향 -> 전체 회사 valuation 영향. 그래서 쉽게 바꾸기 어렵습니다. 리퀘스트는 항상 근거와 함께 보내주세요."
+  },
+  {
+    "instruction": "외부 컨설턴트 예산, 얼마나 잡는 게 보통인가요?",
+    "input": "",
+    "output": "early-stage는 연간 total budget의 2-5% 정도. 구체적으로: 전략 컨설팅 (월 500~1000만원), 법무/특허 (시간당 30~50만원), 디자인 (프로젝트당 300~1000만원). 너무 많은 컨설팅 비용은 투자자들이 리소스 낭비로 봅니다. 정말 필요한 곳에만 쓰세요."
+  },
+  {
+    "instruction": "Q4 예산 짜는데, 블랙프라이데이 마케팅 어떻게 반영할까?",
+    "input": "",
+    "output": "일시적 비용 증가를 반영하되, LTV 대비 CAC가 threshold 넘지 않게 cap 설정. 보통 11월 마케팅 예산은 평소의 150-200%로 잡고, 12월은 회복 기간으로 예산 줄입니다. 블프 성과에 따른 변동 예산 (예: ROAS 300% 이상이면 추가 집행) 도 고려하세요."
+  },
+  {
+    "instruction": "Budget 미팅 때 사용하는 존댓말 Konglish 예시.",
+    "input": "",
+    "output": "팀장님, Q3 actual 대비 forecast에서 cloud cost가 15% overrun 되었는데요, 이유는 신규 feature 배포 시 auto-scaling threshold 설정이 낮았기 때문입니다. 다음 분기부터는 좀 더 보수적으로 잡겠습니다. 조정된 forecast 내일까지 공유드리겠습니다."
+  },
+  {
+    "instruction": "투자자들이 'capital allocation framework'를 원해. 설명해줘.",
+    "input": "",
+    "output": "돈을 어디에 얼마나, 왜 그렇게 배분하는지에 대한 원칙입니다. 예: '1) 기존 제품 성장에 60%, 2) 신규 시험에 30%, 3) 실패 대비 예비비 10%'. 또는 'ROI 3배 이상인 프로젝트에만 투자' 같은 rule. 예산의 철학을 보여줍니다. 간단한 한 페이지로 정리하세요."
+  },
+  {
+    "instruction": "스타트업 인수 시 예산 실사(due diligence) 준비 checklist.",
+    "input": "",
+    "output": "1) 지난 3년간 monthly P&L & cash flow 2) budget vs actual variance 분석 3) 모든 recurring subscription 목록 4) 예산 승인 프로세스 문서 5) cap table 및 미래 equity plan. 미리 준비해두면 due diligence 기간이 2주에서 3일로 단축됩니다."
+  },
+  {
+    "instruction": "Slack에 예산 관련 질문 왔을 때 친절한 답변 예시.",
+    "input": "",
+    "output": "질문: '여행 경비 예산이 부족한데 어떻게 하죠?'\n답변: '혹시 가상 미팅 대체 가능한지 확인 부탁드려요. 꼭 필요하면 제 discretionary 예산에서 일부 support 가능합니다. 대신 justification (예상 ROI) 간단히 slack thread에 적어주세요! 최대한 도와드릴게요.'"
+  },
+  {
+    "instruction": "IPO 준비하는 스타트업의 예산 프로세스는 어떻게 달라져?",
+    "input": "",
+    "output": "훨씬 formal해집니다. 분기별 board 승인 mandatory, Sarbanes-Oxley style 통제, rolling forecast 대신 연간 budget 고정, 모든 variance에 공식 해명 필요. 예산 팀도 2-3명에서 10명 이상으로 늘어납니다. 준비 단계면 외부 컨설턴트 예산도 미리 잡으세요."
+  },
+  {
+    "instruction": "예산 관련 부정적 피드백을 긍정적으로 전달하는 방법.",
+    "input": "",
+    "output": "나쁜 소식을 '기회'로 reframe: '예산 승인이 안 되어서 아쉽지만, 덕분에 우리 더 창의적인 무료 채널을 발굴했어요. 예를 들어 커뮤니티 기반 growth hack을 시도해보려고 합니다. 예산 제약이 오히려 새로운 전략을 가져왔네요.' 이렇게 말하면 팀 사기도 유지됩니다."
+  }
+]

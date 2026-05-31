@@ -1,0 +1,497 @@
+[
+  {
+    "instruction": "클라이언트 미팅 후 follow-up 이메일을 보내야 해. 영어와 한국어 섞어서 자연스럽게 작성해 줘.",
+    "input": "",
+    "output": "Hey [Client Name]님,\n\n오늘 미팅 시간 내주셔서 감사합니다. 말씀하신 feedback 기반으로 몇 가지 action items를 정리했어요.\n\n1. Proposal에서 discount structure 조정 (말씀하신 15% → 20%로 revise)\n2. Contract term을 12개월에서 6개월 pilot으로 변경\n3. 다음주 화요일까지 revised MOU 보내드리기\n\n다른 부분은 그대로 유지하면 될까요? ASAP confirm 부탁드려요. 감사합니다!"
+  },
+  {
+    "instruction": "영업 타겟에 대한 팀 미팅을 주최해야 해. 슬랙 메시지 형식으로 초대장을 작성해 줘.",
+    "input": "",
+    "output": "팀 여러분,\n\n이번 Q4 sales target 관련해서 긴급하게 sync 필요합니다. 오늘 오후 3시에 15분 짧게 catch-up 해요.\n\nAgenda:\n- Current pipeline status check\n- Q4 gap 분석 및 action plan\n- Client renewal 리스크 논의\n\n장소는 conference room B이고, 각자 최신 forecast 수치 미리 슬랙에 share 부탁드려요. Thanks!"
+  },
+  {
+    "instruction": "잠재 고객에게 우리 제품을 소개하는 짧은 피치를 Konglish로 작성해 줘.",
+    "input": "",
+    "output": "안녕하세요, [고객사명]님.\n\n저희는 [회사명]의 솔루션을 통해 B2B sales pipeline을 자동화하는 startup입니다.\n\n핵심 benefit은:\n- Lead scoring 자동화로 conversion rate 30% 상승\n- Email outreach personalization을 AI로 처리\n- CRM 연동으로 sales rep의 admin time 50% 절감\n\n15분 정도 quick demo 해드릴 수 있는데, 혹시 관심 있으신가요? 답변 부탁드립니다."
+  },
+  {
+    "instruction": "계약 negotiation 중에 클라이언트가 discount를 요청했어. 어떻게 reply할지 Konglish로 알려줘.",
+    "input": "",
+    "output": "Client님,\n\n요청하신 30% discount는 현재 저희 pricing policy 상으로는 어렵습니다. 대신 아래 counter proposal 드려요:\n\n- Annual upfront 결제 시: 15% discount\n- 3년 장기 계약: 20% discount + 1년 무료 technical support\n- Reference case 제공 시: 추가 5% credit\n\n어떤 옵션이 가장 적합할까요? 함께 좋은 solution 찾고 싶습니다. 피드백 기다릴게요."
+  },
+  {
+    "instruction": "영업 콜 스크립트를 간단하게 만들어 줘. 기술 스타트업 B2B 제품이야.",
+    "input": "",
+    "output": "안녕하세요, [고객사] [의사결정자]님.\n\n저는 [회사명]의 [내 이름]이라고 합니다. 짧게 2분만 말씀드릴게요.\n\n지금 영업팀에서 lead response time 때문에 놓치는 기회 많으시죠? 저희 AI 챗봇은 24/7 qualification 후 warm lead만 rep에게 넘겨줘서 conversion rate를 2배로 올려줍니다.\n\n다음주 수요일 20분 짧게 demo 가능하실까요? 캘린더 링크 보내드릴게요."
+  },
+  {
+    "instruction": "클라이언트가 contract termination을 통보했어. retention을 위한 이메일을 Konglish로 작성해 줘.",
+    "input": "",
+    "output": "[Client님],\n\nTermination notice 잘 봤습니다. usage data 보니 최근 2달간 engagement가 급감했더라고요. 혹시 특별한 이슈가 있었을까요?\n\n저희가 도와드릴 수 있는 부분:\n- Dedicated customer success manager 배정\n- 무료 training session 진행\n- Monthly business review 도입\n\n일단 15분 짧은 call로 의견 나눠보시죠. 감사합니다."
+  },
+  {
+    "instruction": "영업 예측 리포트를 팀에 공유해야 해. 슬랙 메시지 형식으로 작성해 줘.",
+    "input": "",
+    "output": "팀,\n\n이번달 sales forecast 업데이트 공유합니다:\n\n✅ Closed-won: 3 deals (총 $120k ARR)\n🟡 Commit: 5 deals ($200k potential)\n🔴 Pipeline: 12 opportunities ($450k)\n\nGap: $80k 남았습니다. Brightspot: Client A의 upsell negotiation 거의 마무리됨.\n\nAction items:\n- EOW까지 각자 top 3 deals status 업데이트\n- 내일 오전 standup에서 risk review\n\n화이팅!"
+  },
+  {
+    "instruction": "잠재 고객과의 첫 미팅에서 쓸 수 있는 icebreaker 대화를 Konglish로 만들어 줘.",
+    "input": "",
+    "output": "반갑습니다, [고객사] [이름]님.\n\n들어가시기 전에, 혹시 작년에 참가하셨다는 [산업 컨퍼런스] 가 보이네요. 저도 거기서 발표했었어요! 거기서 들은 sales enablement 전략 꽤 인상적이었습니다.\n\n아, 먼저 간단히 소개할게요. 저는 [회사명]에서 영업팀의 productivity를 올려주는 툴을 만들고 있어요. 잠깐, 커피 드실래요? ☕️"
+  },
+  {
+    "instruction": "클라이언트가 무료 trial을 원하는데, 보안 이슈가 있어. 어떻게 답변할까?",
+    "input": "",
+    "output": "Client님,\n\nTrial 요청 감사합니다. 보안상의 이유로 무료 trial은 sandbox 환경에서만 가능합니다. 대신 아래 옵션 제안드려요:\n\n1. NDA 체결 후 14일 유료 trial (결제는 full refund 가능)\n2. 저희 엔지니어가 라이브 데모 + Q&A 1시간 진행\n3. 레퍼런스 사이트의 recorded demo 공유\n\n어떤 방식이 가장 편하실까요? 보안은 양보할 수 없는 부분이라 양해 부탁드려요."
+  },
+  {
+    "instruction": "영업 콜 후 클라이언트가 '생각해보겠다'고 했어. follow-up 이메일을 보내자.",
+    "input": "",
+    "output": "안녕하세요 [Client],\n\n'생각해보겠다'는 피드백, 충분히 이해합니다. 결정은 중요한 일이니까요.\n\n혹시 결정에 필요한 추가 정보나 objection 해소해 드릴 부분 있으면 알려주세요. 함께 고민할 수 있습니다.\n\n참고로 다음주 목요일까지 early bird discount ($5k 할인) 적용 가능합니다. 천천히 검토하시되, 궁금한 점은 편하게 물어봐 주세요.\n\n감사합니다."
+  },
+  {
+    "instruction": "계약서에 있는 liability clause가 너무 불리해. negotiation을 위한 Konglish 메시지를 작성해 줘.",
+    "input": "",
+    "output": "Legal 팀에 문의했습니다. 현재 liability clause (Section 7.2)의 'unlimited liability'는 저희 policy상 unacceptable합니다.\n\nCounter proposal:\n- Liability capped at total contract value (6개월치)\n- Excluding IP infringement 및 gross negligence\n- Mutual indemnity 추가\n\n이정도면 fair하다고 생각하는데, 어떻게 생각하세요? clause 수정 없이는 contract sign이 어려울 것 같습니다. 답변 기다릴게요."
+  },
+  {
+    "instruction": "영업팀 KPI를 설정해야 해. 슬랙에 공유할 메시지를 만들어 줘.",
+    "input": "",
+    "output": "영업팀 여러분,\n\n이번 분기 KPI 확정되었습니다:\n\n📊 Activity KPI (weekly):\n- Cold calls: 30건 이상\n- Demo 진행: 5건 이상\n- Proposal sent: 3건 이상\n\n📈 Outcome KPI (quarterly):\n- New logo: 4개 이상\n- Expansion ARR: $50k 이상\n- Win rate: 25% 이상\n\n매주 월요일 오전에 tracker 공유할 예정입니다. 의견 있으시면 지금 알려주세요!"
+  },
+  {
+    "instruction": "클라이언트가 payment term을 net 45로 요청했어. 우리는 net 15만 가능해. 어떻게 reply할까?",
+    "input": "",
+    "output": "Client님,\n\nPayment term net 45은 저희 cash flow 상황상 어렵습니다. 대안 제안드려요:\n\nOption A: Net 20 + 2% early payment discount (net 10일 경우)\nOption B: Net 30 with 0.5% monthly interest after due date\nOption C: 50% upfront, 50% net 30\n\n저희도 가능한 선에서 협의하고 싶습니다. 가장 적합한 옵션 알려주세요. 감사합니다."
+  },
+  {
+    "instruction": "경쟁사 제품과 비교 분석한 이메일을 잠재 고객에게 보내려고 해. Konglish로 작성해 줘.",
+    "input": "",
+    "output": "[Client]님,\n\n경쟁사와 저희 솔루션 비교 간단히 공유드립니다:\n\n| 항목 | 경쟁사 A | 저희 |\n|------|---------|------|\n| 가격 | $2k/월 | $1.5k/월 |\n| 온보딩 시간 | 4주 | 1주 |\n| AI 기능 | 기본 | 고급 (custom model) |\n| 24/7 지원 | 유료 | 무료 |\n\n추가로 저희만의 장점: 무제한 API calls, SLA 99.9%, dedicated CSM.\n\n혹시 비교 원하시는 다른 포인트 있나요? 상세한 comparison matrix 보내드릴 수 있습니다."
+  },
+  {
+    "instruction": "영업 데모 중 기술 오류가 발생했어. 고객에게 보낼 사과 메시지를 작성해 줘.",
+    "input": "",
+    "output": "[Client]님, 데모 중 technical issue가 발생해서 진심으로 죄송합니다.\n\n저희 엔지니어링팀에서 원인 파악 완료했고, 오늘 중으로 fix했습니다. 다시 데모 진행 가능한 시간을 알려주세요.\n\n보상으로 다음 중 하나 선택해 드릴게요:\n- 1개월 무료 사용권\n- 온보딩 fee 면제 (약 $2k 가치)\n- 추가 2시간 1:1 트레이닝\n\n다시 한번 불편 드려 죄송합니다. 재도전 기회 주시면 감사하겠습니다."
+  },
+  {
+    "instruction": "상사에게 분기 실적 보고서 요약을 Konglish로 작성해 줘.",
+    "input": "",
+    "output": "[상사님],\n\nQ3 sales performance 요약 드립니다:\n\n✅ 달성: $1.2M ARR (target 대비 102%)\n⚠️ 이슈: Enterprise segment win rate 18% (target 25%)\n💡 인사이트: SMB쪽 upsell이 40% 증가함\n\nAction plans for Q4:\n- Enterprise sales training 강화 (2 sessions planned)\n- Pricing strategy 재검토 (특히 multi-year deals)\n- Partner channel 확대 (3개 협의 중)\n\n풀 리포트는 따로 드롭박스에 공유했습니다. 피드백 부탁드려요."
+  },
+  {
+    "instruction": "클라이언트가 reference call을 요청했어. 어떻게 준비하면 좋을지 조언해 줘.",
+    "input": "",
+    "output": "좋은 sign입니다! 아래 checklist 참고하세요:\n\nBefore call:\n- Reference client에게 background와 key talking points share\n- NDA 확인 및 승인\n- Current client의 pain points와 유사한 reference 선정\n\nDuring call:\n- Client가 직접 질문하게 두기 (우리 개입 최소화)\n- ROI data 준비 (예: \"전환율 35% 증가\")\n- Confidential info는 절대 언급 금지\n\nAfter call:\n- Reference client에게 감사 선물 (예: Starbucks 기프티콘)\n- Key takeaways를 internal 팀에 공유\n\n성공적인 reference call 되길 바랍니다!"
+  },
+  {
+    "instruction": "딜이 closing 단계인데, 갑자기 클라이언트가 signature를 미루고 있어. 어떻게 follow-up할까?",
+    "input": "",
+    "output": "안녕하세요 [Client],\n\nContract 검토 중 갑자기 소식이 없어 연락드립니다. 혹시 추가로 필요한 정보나 막히는 부분이 있을까요?\n\n참고로 저희 quarter-end가 다음주 금요일이고, 그 이후에는 pricing이 10% 인상될 예정입니다.\n\n혹시 짧은 5분 call로 status check 가능할까요? 오늘 오후나 내일 오전 괜찮으시면 알려주세요. 좋은 마무리 함께 하고 싶습니다."
+  },
+  {
+    "instruction": "영업 프로세스 개선을 위한 팀 브레인스토밍을 주최하려고 해. 슬랙 초대장을 만들어 줘.",
+    "input": "",
+    "output": "Sales 팀,\n\n영업 프로세스 efficiency를 높이기 위해 워크샵 진행합니다!\n\n일시: 이번주 목요일 오후 2-4시\n장소: 회의실 A + remote zoom\n\nAgenda:\n- Current pipeline review (data-driven)\n- Bottleneck 분석 (lead → opportunity conversion)\n- Tooling 개선 아이디어 (HubSpot 자동화 등)\n- Action items 도출\n\n각자 2-3개 개선 아이디어 미리 생각해오세요. 간식은 제가 쏩니다! 참석 가능 여부 리액션 부탁드려요."
+  },
+  {
+    "instruction": "클라이언트가 NDA 서명을 거부했어. 어떻게 설득할 수 있을까?",
+    "input": "",
+    "output": "Client님,\n\nNDA 서명 거부하신 이유를 이해하려 합니다. 혹시 우려되는 특정 clause가 있으신가요?\n\n저희 입장을 설명드리자면:\n- 저희 IP와 pricing strategy 보호가 필요함\n- 양방향 confidentiality로 서로를 보호\n- Standard template이며 200+ 파트너가 동의함\n\n아니면 단방향 NDA (client 정보만 보호)는 가능할까요? 가장 중요한 건 trust입니다. 함께 좋은 solution 찾고 싶어요. 어떻게 생각하시나요?"
+  },
+  {
+    "instruction": "연례 계약 renewal negotiation 중이야. 가격 인상을 어떻게 커뮤니케이션할까?",
+    "input": "",
+    "output": "[Client]님,\n\nRenewal season이라 연락드립니다. 지난 1년간 저희가 제공한 가치를 먼저 공유할게요:\n- New features: 12개 출시\n- Average response time: 2시간 → 15분 개선\n- Uptime 99.95% 달성\n\n이에 따라 renewal pricing을 7% 인상할 예정입니다. 하지만 loyalty discount으로 3%만 인상 (최종 +4%) 제안드려요.\n\n혹시 multi-year (2년+) 계약 시 0% 인상 가능합니다. 의견 있으시면 말씀해 주세요."
+  },
+  {
+    "instruction": "클라이언트가 implementation 일정이 너무 빠르다고 complain했어. 어떻게 대응할까?",
+    "input": "",
+    "output": "Client님,\n\nImplementation timeline 관련 피드백 감사합니다. 기존 4주 일정이 부담되시는군요.\n\n수정안 제안드립니다:\n- Phase 1 (core features): 6주\n- Phase 2 (advanced): +4주 (총 10주)\n\n또는 저희가 dedicated resource를 추가로 투입해서 5주로 타협 가능합니다.\n\n어떤 게 가장 현실적일까요? 무리하게 진행해서 품질 떨어지는 것보다는, 함께 achievable한 plan 세우고 싶습니다. 조정 가능한 부분 말씀해 주세요."
+  },
+  {
+    "instruction": "경쟁사가 더 저렴한 견적을 줬다는 클라이언트 이메일을 받았어. 어떻게 reply할까?",
+    "input": "",
+    "output": "Client님,\n\n경쟁사 견적 공유 감사합니다. 저희 가격이 확실히 높아 보이네요. 하지만 고려하셔야 할 점이 있습니다:\n\n경쟁사는:\n- 별도 integration 비용 ($1만+)\n- 기본 support만 제공 (24/7은 $500/월 추가)\n- Data migration 별도 견적\n\n저희는 all-inclusive라 hidden cost가 전혀 없습니다. 게다가 3년간 price lock 보장해 드립니다.\n\n혹시 TCO (Total Cost of Ownership) 비교 원하시면 간단한 spreadsheet 보내드릴까요? 감사합니다."
+  },
+  {
+    "instruction": "신규 영업 rep에게 cold email 템플릿을 만들어 줘. B2B SaaS 제품이야.",
+    "input": "",
+    "output": "Subject: [고객사]님, sales productivity 2배로 올리는 방법\n\n안녕하세요 [이름]님,\n\n영업팀에서 가장 큰 고민이 lead response time과 qualification이죠. 저희 [제품명]은 AI로 inbound lead를 24/7 자동 응대 + 점수화해서 warm lead만 rep에게 넘겨줍니다.\n\n결과:\n- Response time 5시간 → 3분\n- Conversion rate 2.3x 증가\n- Rep당 하루 3시간 절약\n\n별도 소프트웨어 설치 없이 CRM과 1일 만에 연결됩니다.\n\n관심 있으시면 15분 quick demo 해드릴 수 있습니다. 아니면 2분짜리 설명 영상 링크 보내드릴까요?\n\n감사합니다,\n[내 이름]"
+  },
+  {
+    "instruction": "계약서에 있는 SLA (Service Level Agreement) 조항을 설명해 달라고 클라이언트가 요청했어. Konglish로 답변해 줘.",
+    "input": "",
+    "output": "Client님,\n\nSLA 조항 간단히 설명드립니다:\n\n✅ Uptime: 99.9% 보장 (월 43분 이하 downtime)\n   - 미달 시: 월비용 10% credit\n\n✅ Response time:\n   - Critical (system down): 15분 이내\n   - High (major bug): 2시간\n   - Normal: 24시간\n\n✅ Resolution time:\n   - Critical: 4시간\n   - High: 24시간\n\n✅ 제외사항: planned maintenance (사전 48시간 공지), 제3자 이슈, force majeure\n\n이해 안 되시는 부분 있으면 설명 더 해드릴게요. 괜찮으신가요?"
+  },
+  {
+    "instruction": "클라이언트가 '이미 비슷한 툴 쓰고 있다'며 거절했어. 어떻게 대응할까?",
+    "input": "",
+    "output": "Client님, 솔직한 피드백 감사합니다.\n\n혹시 current tool에서 불편하신 점이나 개선 원하시는 부분이 있으신가요? 저희는 단순히 '또 다른 툴'이 아니라 gap을 채우는 complement 역할을 할 수 있습니다.\n\n예를 들어 현재 툴은 reporting이 약하다고 알고 있는데, 저희는 AI forecasting이 강점입니다.\n\n아니면 아주 짧은 10분 call로 '혹시 우리가 도와드릴 부분이 있을까?' 정도만 체크해도 될까요? 부담 없이 생각해 주세요."
+  },
+  {
+    "instruction": "영업팀이 사용할 pricing negotiation 가이드라인을 Konglish로 작성해 줘.",
+    "input": "",
+    "output": "Sales 팀을 위한 negotiation tips:\n\n1. 절대 먼저 discount 제안하지 마세요. value부터 논의.\n2. Discount 요청 시 reciprocity 요구 (예: multi-year, upfront, reference 제공)\n3. 권한 밖의 요청은 \"검토해보겠다\" (즉시 No 대신)\n\n승인된 discount range:\n- 5%: team lead 승인\n- 10%: sales director 승인\n- 15% 이상: CEO 승인 + 특별 사유\n\nNon-price concessions (cost 없는 대안):\n- Faster onboarding\n- Dedicated slack channel\n- Monthly business review\n\n가격만 보지 말고 total value를 어필하세요!"
+  },
+  {
+    "instruction": "클라이언트의 구매 결정권자가 바뀌었다는 소식을 들었어. 어떻게 접근할지 Konglish로 알려줘.",
+    "input": "",
+    "output": "축하합니다! 새로운 stakeholder는 fresh opportunity입니다. Action plan:\n\n1. ASAP 기존 논의 내용을 간단히 정리한 deck 공유\n2. New decision maker에게 짧은 intro email 작성 (예: \"안녕하세요, 제안드린 내용 간단히 요약드립니다\")\n3. 15분 짧은 catch-up 요청 (relationship building 목적)\n\n주의할 점:\n- 이전 negotiation 약속은 다시 확인 필요\n- 새 분의 pain points 파악하는 게 우선\n- 너무 가격 이야기 먼저 하지 마세요\n\n추천: 새로운 stakeholder의 LinkedIn 보고 배경 파악 후 customized 접근하세요."
+  },
+  {
+    "instruction": "연말에 클라이언트에게 보내는 '감사 및 renewal reminder' 이메일을 작성해 줘.",
+    "input": "",
+    "output": "Subject: [Client]님, 한 해 동안 감사했습니다 + 2025 renewal 안내\n\n안녕하세요 [Client]님,\n\n2024년 한 해 동안 저희와 함께해 주셔서 진심으로 감사합니다. 올해 함께 이룬 성과 몇 가지 공유드립니다:\n- 15개 feature 출시\n- 99.97% uptime 기록 (SLA 초과)\n- Client님 팀의 productivity 28% 향상\n\n2025년 renewal이 1월 31일에 만료됩니다. 조기 renewal 시:\n- 5% early bird discount (1월 15일까지)\n- 2024 가격 1년 더 lock\n- 무료 advanced analytics add-on\n\n검토 부탁드리며, 새해에도 더 나은 파트너가 되겠습니다. 감사합니다!"
+  },
+  {
+    "instruction": "클라이언트가 '예산 승인이 아직 안 났다'며 미루고 있어. 어떻게 follow-up할까?",
+    "input": "",
+    "output": "Client님, 예산 승인 프로세스 이해합니다.\n\n혹시 제가 도와드릴 수 있는 부분이 있을까요? 예를 들어:\n- ROI calculation 자료 제공 (승인 근거용)\n- 더 작은 scope의 pilot 제안 (budget 부담 감소)\n- 월간 결제 옵션 (upfront 부담 없음)\n\n또는 예산 승인 예상 시점만이라도 알려주시면 저희도 internal resource planning에 도움이 됩니다.\n\n계속 업데이트 부탁드려요. 좋은 소식 기다리겠습니다!"
+  },
+  {
+    "instruction": "테크 스타트업의 제품을 대기업에 pitch하는 짧은 Konglish 스크립트를 만들어 줘.",
+    "input": "",
+    "output": "[의사결정자]님, 안녕하세요.\n\n저희는 enterprise sales를 AI로 자동화하는 [회사명]입니다. 특허받은 엔진으로 고객사의 영업 reps가 하루 평균 3시간을 절약하고 있습니다.\n\n롯데, 삼성, KT에서 이미 도입하셨고, 평균 ROI는 6개월입니다.\n\n보안과 compliance는 물론, on-premise 배포도 가능합니다.\n\n20분만 투자하시면, 간단한 데모 + 실제 고객사 성과 데이터 공유드릴 수 있습니다. 혹시 가능하신 날짜 있으실까요?\n\n바쁘신 와중에 감사합니다."
+  },
+  {
+    "instruction": "계약서의 payment schedule을 변경해 달라는 요청을 받았어. 어떻게 응답할까?",
+    "input": "",
+    "output": "Client님,\n\nPayment schedule 변경 요청 검토했습니다. 현재 제안: 50% upfront, 25% mid, 25% completion.\n\n저희 counter proposal:\n- Option 1: 40/30/30 으로 타협\n- Option 2: 50/50 유지하되 milestone을 더 상세히 나눔\n- Option 3: Monthly subscription으로 변경 (price 8% up)\n\n완성 전에 너무 많은 payment를 뒤로 미루면 저희 cash flow에 부담이 있습니다.\n\n의견 주시면 감사하겠습니다. 함께 찾아봐요."
+  },
+  {
+    "instruction": "경쟁사가 불공정한 방법으로 딜을 가져가려는 것 같아. 상사에게 보고하는 슬랙 메시지를 작성해 줘.",
+    "input": "",
+    "output": "상사님, 경쟁사 A가 이상한 움직임 보입니다.\n\nClient B쪽에서 들은 rumor: 경쟁사가 저희 기능을 copy했다고 허위 클레임 + 제품보다 50% 낮은 가격 제시했다고 합니다.\n\n제안:\n1. Client B에 차별점 재강조하는 deck 보내기 (특히 patented tech)\n2. Legal 팀에 경쟁사의 false claim 내용 공유\n3. Client B와 기존 관계 강화를 위한 dinner 미팅 제안\n\n이대로 놓치기 아까운 딜입니다. 의견 주세요."
+  },
+  {
+    "instruction": "클라이언트가 '다른 팀과 협의가 필요하다'고 했어. 누구와 협의하는지 물어보는 이메일을 작성해 줘.",
+    "input": "",
+    "output": "안녕하세요 [Client],\n\n'다른 팀과 협의 필요'하다고 하셨는데, 혹시 어떤 팀들인지 알 수 있을까요? (IT, legal, procurement 등)\n\n이유: 각 팀별로 필요한 자료가 다를 수 있습니다. 예를 들어 IT팀은 security docs, legal은 contract terms, procurement는 pricing details.\n\n미리 준비해서 협의 과정을 smooth하게 도와드리고 싶습니다. 협의가 예상되는 팀들을 공유해 주시면, 맞춤형 자료 보내드릴게요.\n\n감사합니다."
+  },
+  {
+    "instruction": "신규 기능 출시를 기존 클라이언트에게 upsell하는 Konglish 이메일을 작성해 줘.",
+    "input": "",
+    "output": "Subject: [Client]님을 위한 새로운 AI forecasting 기능 출시 🚀\n\n안녕하세요,\n\n저희가 6개월간 개발한 'Predictive Pipeline' 기능을 드디어 출시했습니다.\n\n이 기능은:\n- Machine learning으로 95% 정확도의 forecast 제공\n- 자동으로 at-risk deal 감지 및 action 추천\n- Salesforce/HubSpot과 1-click 연동\n\n현재 고객 대상 special launch pricing: 월 $200 추가 (정가 $500).\n\n14일 무료 trial 가능합니다. 간단한 데모 원하시면 알려주세요.\n\n관심 있으신가요?"
+  },
+  {
+    "instruction": "클라이언트가 '보고서가 너무 복잡하다'고 complain했어. 단순화된 버전을 제안하는 메시지를 작성해 줘.",
+    "input": "",
+    "output": "Client님, feedback 감사합니다. 저희가 너무 tech-heavy한 보고서를 드렸나 보네요.\n\n아래 중 선호하시는 방식 알려주세요:\n\nA) Executive summary only (1페이지)\n   - 핵심 KPI 5개만 차트로\n   - 나머지는 appendix\n\nB) Dashboard 형식 (visual 위주)\n   - Table 대신 graph\n   - Red/yellow/green status indicator\n\nC) 자동으로 요약해 주는 AI report (new!)\n\n어떤 게 가장 도움이 될까요? 아니면 제가 15분짜리 report 읽는 법을 화면 공유로 설명드려도 좋습니다. 답변 부탁드려요."
+  },
+  {
+    "instruction": "계약 renewal 시점에 클라이언트가 competitive RFP를 보냈어. 어떻게 대응할지 Konglish로 알려줘.",
+    "input": "",
+    "output": "RFP 잘 받았습니다. 경쟁사 포함이라는 점, 이해했습니다.\n\n저희 접근법:\n1. 차별점 명확히 - 특히 24/7 support와 custom feature 개발 속도\n2. 기존 usage data 공유 - 이미 저희에 lock-in effect 있음 (migration cost 큼)\n3. pricing은 최대한 유리하게, 하지만 절대 과도한 discount는 no\n\nStrategy: RFP 질문 중 저희에게 유리한 항목을 강조하고, 경쟁사가 약한 부분 (보안, SLA)을 부각.\n\n혹시 RFP deadline과 evaluation criteria 공유 가능할까요? 답변 기다리겠습니다."
+  },
+  {
+    "instruction": "영업 demo에서 클라이언트가 예산은 충분하나 timing이 안 맞다고 했어. 어떻게 reply할까?",
+    "input": "",
+    "output": "Timing 이슈, 이해합니다. Q1 시작 전에는 budget이 확정 안 되는 경우가 많죠.\n\n대안을 제안드립니다:\n\n1. Letter of Intent (LOI) 체결: 지금 가격 lock, Q1에 계약\n2. Pilot program: 지금 소규모로 시작, 성과 보면 확장\n3. Free consultation: 지금은 무료로 현재 setup 진단, Q1에 본계약\n\n어떤 게 현실적일까요? 저희는 장기적 관계가 중요하니, 지금 무리하게 계약 강요하지 않겠습니다.\n\n의견 주세요."
+  },
+  {
+    "instruction": "클라이언트와의 미팅에서 technical 질문이 많았어. follow-up 이메일에 기술적 답변을 포함해 줘.",
+    "input": "",
+    "output": "[Client]님, 오늘 technical 질문들 감사했습니다. 답변 드립니다:\n\nQ: Data encryption 방법은?\nA: AES-256 at rest, TLS 1.3 in transit. SOC2 Type II 인증 완료.\n\nQ: API rate limit은?\nA: 기본 1,000 calls/min, 필요시 unlimited plan 있음.\n\nQ: On-premise 가능?\nA: 가능합니다. Kubernetes 기반 배포, 2주 정도 소요.\n\nQ: GDPR compliance?\nA: 완전 compliance. Data processing agreement 제공 가능.\n\n추가 질문 있으시면 언제든지요. 감사합니다."
+  },
+  {
+    "instruction": "영업팀의 마감을 맞추기 위한 emergency meeting을 소집하는 슬랙 메시지를 만들어 줘.",
+    "input": "",
+    "output": "@channel 긴급!!\n\n이번달 마감까지 3일 남았고 현재 gap $150k입니다.\n\n15분 뒤에 emergency sync 합니다:\n- 시간: 10:30 AM\n- 장소: huddle room (또는 zoom)\n\nAgenda:\n- Top 5 deals status (각자 업데이트)\n- 어떤 deal을 이번주 안에 close할 수 있을지\n- 추가 discount 승인 필요 사항\n- 마지막 push 전략\n\n전원 참석 필수입니다. 마감 채워야 합니다, 팀 파이팅!"
+  },
+  {
+    "instruction": "클라이언트가 '솔루션이 우리 비즈니스에 맞을지 모르겠다'고 했어. 어떻게 넘어갈까?",
+    "input": "",
+    "output": "그런 걱정, 충분히 이해합니다. 저희가 너무 generic하게 접근했나 보네요.\n\n혹시 구체적으로 어떤 부분이 mismatch처럼 느껴지시나요?\n\n제가 제안하는 건: 지금 client님의 실제 데이터를 1주일간 무료로 분석해 드리고, customized ROI 리포트를 보여드리는 겁니다.\n\n증거 기반으로 판단하시는 게 가장 확실하겠죠. 부담 없이 data sharing만 동의해 주시면, 제가 직접 셋업 도와드리겠습니다.\n\n어떠세요?"
+  },
+  {
+    "instruction": "5년 장기 계약을 제안하는 이메일을 기존 클라이언트에게 보내려고 해. Konglish로 작성해 줘.",
+    "input": "",
+    "output": "Subject: 장기 파트너십 제안 (5년)\n\n안녕하세요 [Client]님,\n\n5년간의 성공적인 협업에 감사드리며, 더 장기적인 파트너십을 제안합니다.\n\n5년 계약 혜택:\n- 가격 20% 할인 (연간 $100k → $80k)\n- 3년차에 feature upgrade 무료\n- 전담 solutions architect 배정\n- 24/7 priority support\n\n대신:\n- Annual minimum commitment $80k\n- Termination: 6개월 전 서면 통보\n\n별도의 MSA 수정 없이 간단한 amendment로 가능합니다.\n\n관심 있으시면 상세 proposal 보내드릴게요. 검토 부탁드립니다."
+  },
+  {
+    "instruction": "계약 negotiation 중에 서로 변호사가 끼게 되었어. 어떻게 커뮤니케이션할지 조언해 줘.",
+    "input": "",
+    "output": "Legal involved되면 더 formal해집니다. Tips:\n\nDOs:\n- 모든 communication은 email로 (verbal 약속 최소화)\n- \"legal review 필요\"라는 표현 자주 쓰기\n- 상대방 법무팀과 직접 논의보다는, 우리 변호사에게 먼저\n\nDON'Ts:\n- 감정적인 표현 no (legal은 business와 다른 언어)\n- 시간 압박 no (검토 시간 필요 인정)\n- '원래 계약에 없던' 갑작스러운 요구 no\n\nStrategy: Business term은 우리끼리 먼저 합의, legal은 boilerplate만 조율.\n\n모든 redline은 tracked changes로. 화이팅입니다!"
+  },
+  {
+    "instruction": "영업팀의 proposal 승인율이 떨어지고 있어. 원인 분석과 해결책을 Konglish로 작성해 줘.",
+    "input": "",
+    "output": "데이터 분석 결과, 주요 원인 3가지:\n\n1. Pricing mismatch (고객 예산보다 30% 높음)\n   - Solution: 초기 콜에서 budget discovery 강화\n\n2. Too generic (customization 부족)\n   - Solution: 30분 discovery call 의무화\n\n3. Slow follow-up (평균 5일)\n   - Solution: 24시간 이내 proposal send SLA\n\nAction plan:\n- Template에 'customization section' 추가\n- Discount approval 과정 간소화 (VP 승인 $5k→$10k)\n- 매주 proposal win/loss review 미팅\n\n내주부터 rollout. 팀 교육은 금요일에."
+  },
+  {
+    "instruction": "클라이언트가 implementation 중에 갑자기 scope change를 요청했어. 어떻게 handle할까?",
+    "input": "",
+    "output": "Scope change 요청, 확인했습니다. 다만 이건 original SOW에 없는 내용이네요.\n\nOptions:\n\n1. Change order 발행 (추가 비용 $5k, timeline +2주)\n2. 현재 phase 1 완료 후 phase 2로 포함\n3. 무료로 해드리되, 향후 renewal시 price 5% up\n\n어떤 게 가장 공정할까요? 저희도 협조 의사 있지만, 무료로 모든 change를 받을 수는 없습니다.\n\n선호하는 옵션 알려주시면 change order 준비하겠습니다. 감사합니다."
+  },
+  {
+    "instruction": "영업팀 신입 사원을 위한 role-play 시나리오를 하나 만들어 줘 (Konglish로).",
+    "input": "",
+    "output": "Role-play: Client says '우리 이미 다른 vendor와 contract signing 직전이에요'\n\nTrainee script:\n\"축하드립니다! 혹시 제가 3분만 시간을 얻을 수 있을까요? 현재 vendor의 weak point를 공유드리고 싶습니다.\n\n많은 클라이언트들이 저희를 선택하는 이유는 두 가지입니다:\n1) 저희는 hidden fee가 전혀 없습니다\n2) 구현 시간이 평균 2주 (경쟁사는 2달)\n\n혹시 현재 진행 중인 contract가 최종 signing 전이라면, 비교 견적서 한 번 받아보시는 게 어떨까요?\"\n\nCoach feedback point: 절대 경쟁사 욕하지 말 것, 차별점에 집중."
+  },
+  {
+    "instruction": "클라이언트가 무료로 더 많은 기능을 요구해. 어떻게 polite하게 거절할까?",
+    "input": "",
+    "output": "Client님, feature request 감사합니다. 다만 해당 기능은 저희 premium tier에 속합니다.\n\n대신 제안드립니다:\n\n- Standard tier: 지금 당장 필요한 basic 버전 (무료)\n- 무료 30일 trial of premium 기능 (2개 선택 가능)\n- 아니면 지금 계약에 add-on으로 $200/월 추가\n\n저희도 최대한 도와드리고 싶지만, 모든 premium feature를 무료로 제공하면 비즈니스 모델이 유지되지 않습니다.\n\n양해 부탁드리며, 가장 적합한 옵션 알려주세요."
+  },
+  {
+    "instruction": "분기 실적 발표를 앞두고 CEO에게 보내는 요약 보고서를 Konglish로 작성해 줘.",
+    "input": "",
+    "output": "CEO님,\n\nQ3 결과 간략히 보고드립니다:\n\nRevenue: $3.2M (vs target $3M, 107%)\nNew logos: 12개 (target 10개)\nChurn rate: 2.1% (역대 최저)\nSales cycle: 45일 → 38일 단축\n\nBright spots: Enterprise segment strong (Samsung, LG, SK)\nRisks: SMB segment slowdown (경기 영향)\n\nForecast Q4: $3.5-3.8M\n\nFull deck은 따로 공유했습니다. 질문 있으시면 call 부탁드려요."
+  },
+  {
+    "instruction": "클라이언트가 RFP (Request for Proposal)를 보내왔어. response 전략을 Konglish로 알려줘.",
+    "input": "",
+    "output": "RFP response 전략:\n\n1. Readiness check: deadline realistic? 우리가 모든 requirement 충족?\n2. Kill or win? (low win probability면 no-bid도 고려)\n\nWin strategy:\n- Relationship 강조 (이미 있다면)\n- Technical 부분에서 차별화 (우리만의 IP)\n- Pricing은 value-based (가장 싸게 가려고 하지 마세요)\n\n팀 구성:\n- Sales: overall lead\n- Solution architect: technical 답변\n- Legal: terms 검토\n- Executive sponsor: final review\n\nTimeline: 2주 전에 draft 완성, 1주일은 internal review.\n\n도움이 필요하면 말씀하세요."
+  },
+  {
+    "instruction": "영업 콜 중에 클라이언트가 '지금 너무 바빠서 나중에 연락달라'고 했어. 어떻게 reply할까?",
+    "input": "",
+    "output": "물론입니다. 바쁘신데 시간 내주셔서 감사합니다.\n\n제가 드릴 말씀은 두 가지만요:\n1) 혹시 2분만 더 가능하실까요? 가장 중요한 benefit 하나만 말씀드리겠습니다.\n2) 아니면, 가장 편하신 방법으로 follow-up 하겠습니다. (email, calendar invite, 또는 제가 먼저 자료 보내드리기)\n\n언제쯤 다시 연락드리는 게 좋을까요? 다음주 화요일 오전 어떠신가요?\n\n그때까지 간단한 1-pager 준비해서 보내드리겠습니다. 감사합니다!"
+  },
+  {
+    "instruction": "계약서에서 indemnification clause가 불균형해. 어떻게 negotiation할지 조언해 줘.",
+    "input": "",
+    "output": "일반적으로 mutual indemnification이 standard입니다. 상대방이 'unilateral'을 요구하면:\n\nCounter proposal:\n- Mutual로 변경 (양쪽 다 IP infringement나 gross negligence 시 보호)\n- 대신 cap 추가 (e.g., 총 계약 금액의 50%)\n- 'Third party claim'으로 한정\n\n만약 상대방이 강경하면:\n- 우리는 capped mutual로, 상대방은 uncapped unilateral?\n- 또는 별도 insurance 증명 요구\n\n절대 동의하면 안 되는 조항: 'any and all claims' + 'uncapped' + 'sole discretion'\n\nLegal팀과 꼭 함께 review하세요. 화이팅!"
+  },
+  {
+    "instruction": "신규 시장 (예: 일본) 진출을 위한 영업 전략을 간단히 Konglish로 작성해 줘.",
+    "input": "",
+    "output": "Japan expansion sales strategy:\n\nMarket entry:\n- Local partner 우선 (distributor or reseller)\n- 일본어 localization (product + marketing materials)\n- JP 인증 획득 (Pマーク, ISMS 등)\n\nSales approach:\n- 관계 중심 (명함 교체부터 천천히)\n- 레퍼런스 중요 (기존 한국 고객사 중 일본에도 알려진 브랜드)\n- 가격 경쟁력보다 quality와 support 강조\n\nTimeline: 파트너 계약 Q1, pilot Q2, 본격 영업 Q3.\n\n예산: initial investment $100k 필요."
+  },
+  {
+    "instruction": "대형 클라이언트가 계약 체결 전에 SOC2 리포트를 요구했어. 어떻게 대응할지 알려줘.",
+    "input": "",
+    "output": "보안 감사 요청은 좋은 sign입니다 (due diligence 하는 serious한 client).\n\nAction plan:\n1. NDA 체결 후 SOC2 Type II report 공유 (기밀 정보 redaction)\n2. 필요시 3rd party auditor와의 Q&A 세션 진행\n3. 내부적으로 penetration test 결과도 준비\n\n주의: 절대 raw data나 내부 시스템 접근권은 no. 보고서만.\n\n시간: 준비에 2-3일 소요. 대개는 이걸로 충분합니다.\n\n혹시 추가로 ISO 27001이나 GDPR 문서도 필요하면 알려주세요."
+  },
+  {
+    "instruction": "영업팀의 리드 퀄리티가 떨어져. 어떻게 개선할지 제안해 줘.",
+    "input": "",
+    "output": "Lead quality issue는 보통 MQL → SQL 정의 문제입니다.\n\nFix:\n1. BANT framework 도입 (Budget, Authority, Need, Timeline)\n   - 각 항목 1-5점 score, 합산 15점 이상만 SQL\n\n2. Marketing과 SLA (Service Level Agreement) 재정의\n   - 예: demo 요청 10개 중 3개만 SQL로 인정\n\n3. Automated scoring (HubSpot/Marketo)\n   - Behavior score (webinar attend, whitepaper download)\n   - Demographic score (title, company size)\n\n4. 주 1회 marketing-sales alignment meeting\n\n30일 후 재측정 추천. 화이팅!"
+  },
+  {
+    "instruction": "클라이언트와의 가격 협상에서 교착 상태예요. 새로운 옵션을 제안해 줘.",
+    "input": "",
+    "output": "Creative options:\n\n1. Payment terms 유연화: 예를 들어 월 $2k 대신 분기 $5.5k (3% discount)\n2. Seat-based → usage-based: 실제 사용한 만큼만 지불\n3. Risk reversal: 3개월 후 성과 미흡시 계약 취소 + 50% refund\n4. Barter deal: client의 서비스를 우리가 사용하는 대신 discount\n5. Multi-year 계약이 어렵다면, 1년 + automatic renewal 옵션\n\n가격 자체를 낮추지 않고도 perceived value를 올릴 수 있습니다.\n\n어떤 옵션이 가장 feasible해 보이나요?"
+  },
+  {
+    "instruction": "계약서에 있는 auto-renewal clause를 설명해 달라고 client가 요청했어. Konglish로 답변해 줘.",
+    "input": "",
+    "output": "Client님,\n\nAuto-renewal clause (Section 5.3) 설명드립니다:\n\n- 계약 만료 60일 전까지 서면으로 termination 통보하지 않으면 자동으로 1년 연장됩니다.\n- Renewal price: 최대 5% 인상 (CPI 또는 명시된 percentage)\n- 최초 계약 기간: 12개월 → auto-renewal은 그 이후부터 적용\n\n장점: 서비스 중단 없이 계속 이용 가능, 별도 negotiation 번거로움 없음\n단점: 미리 취소하지 않으면 자동 연장됨\n\n혹시 이 조항을 삭제하거나 30일 통보로 변경 원하시면 알려주세요.\n\n설명 필요하신 부분 있나요?"
+  },
+  {
+    "instruction": "영업팀이 사용할 '이메일 콜드 아웃리치' A/B 테스트 결과를 분석해 줘.",
+    "input": "",
+    "output": "A/B test 결과 (n=500 each):\n\nSubject line A: \"[Name], sales productivity tool\"\n- Open rate: 22% / Reply rate: 3%\n\nSubject line B: \"안녕하세요 [Name]님, 영업팀 시간 5시간 절약 방법\"\n- Open rate: 35% / Reply rate: 8%\n\nWinner: B (한국어 + personalized + 구체적 benefit)\n\nBody A: feature 리스트\nBody B: \"OOO님, 저희가 [Client's industry]에서 영업팀의 리드 응답 시간을 5시간→15분으로 줄여드렸습니다. 실제 사례 하나 공유드려도 될까요?\"\n\nTakeaway: personalization + industry-specific case study = 2.6x reply rate.\n\n계속 A/B test 추천."
+  },
+  {
+    "instruction": "클라이언트가 '제품 데모는 봤는데, 실제 ROI가 궁금하다'고 했어. 어떻게 대응할까?",
+    "input": "",
+    "output": "좋은 질문입니다. ROI는 제일 중요하죠.\n\n제가 제안하는 건:\n\n1. 유사한 업종/규모의 고객사 ROI case study 2-3개 공유\n2. Client님의 실제 데이터로 customized ROI calculator 만들어 드리기\n   - 필요한 정보: 현재 매출, 리드 수, conversion rate, reps 수\n3. Pilot program: 30일 무료试用 후 실제 성과 측정\n\n어떤 방식이 가장 설득력 있을까요? 저는 #2나 #3 추천드립니다.\n\n데이터 공유 가능하시면 제가 직접 ROI 모델 만들어 보여드리겠습니다."
+  },
+  {
+    "instruction": "팀의 sales pipeline이 너무 얕아. 새로운 파이프라인 생성 전략을 Konglish로 알려줘.",
+    "input": "",
+    "output": "파이프라인 생성 3가지 전략:\n\nShort-term (1-2주):\n- Existing client referral program (소개시 1개월 무료)\n- LinkedIn sales navigator로 ICP 타겟팅 후 개인화 메시지\n- Webinar 'How to survive Q4' (자사 제품과 무관한 가치 제공)\n\nMid-term (1-2달):\n- 파트너사의 공동 마케팅 (협력사 리스트 공유)\n- Case study + PR (보도 자료 배포)\n- 무료 assessment tool (lead magnet)\n\nLong-term (3+달):\n- Account-based marketing (ABM) for top 20 targets\n- Sales & marketing alignment 정기 미팅\n\n각 rep에게 주간 파이프라인 생성 KPI (예: 5개 new opp) 부여하세요."
+  },
+  {
+    "instruction": "계약 termination 후에도 데이터 retention 정책에 대해 client가 물어봐. 어떻게 답변할까?",
+    "input": "",
+    "output": "안녕하세요,\n\nTermination 후 데이터 정책은 다음과 같습니다:\n\n- Personal data: 계약 종료 즉시 삭제 (GDPR, CCPA compliance)\n- Business data (e.g., transaction history): 90일간 보관 후 삭제 (법적 분쟁 대비)\n- Anonymized aggregate data: 영구 보관 가능 (product improvement용)\n\nClient님의 데이터는 계약 종료 90일 이내에 export 가능합니다. 그 이후에는 저희도 접근 불가합니다.\n\n혹시 특정 데이터에 대해 더 오래 보관 원하시면 별도 agreement 필요합니다.\n\n질문 있으시면 답변해 주세요."
+  },
+  {
+    "instruction": "영업팀의 proposal에서 빠지면 안 되는 5가지 요소를 Konglish로 리스트해 줘.",
+    "input": "",
+    "output": "Proposal에 반드시 들어가야 할 5 elements:\n\n1. Executive summary (1페이지) - 고객사의 pain point와 우리 솔루션의 alignment\n2. Pricing table - 숨은 비용 없이 명확하게 (setup, license, support, training 별도 표시)\n3. Timeline & milestones - 언제 무엇이 deliver될지\n4. ROI calculation - 구체적인 숫자 (예: \"12개월 내 $50k 절감\")\n5. Next steps - 명확한 call to action (\"서명 후 3일 이내 온보딩 시작\")\n\nBonus: client logo + testimonial 있으면 best.\n\n절대 technical jargon 남발 금지. 고객의 언어로 쓰세요."
+  },
+  {
+    "instruction": "클라이언트가 '솔루션이 우리 ERP와 호환되는지 증명해 달라'고 요구해. 어떻게 대응할까?",
+    "input": "",
+    "output": "Client님,\n\n호환성 증명 방법 여러 가지 있습니다:\n\n1. Technical 문서 공유: API specification, integration guide\n2. Sandbox 환경에서 live integration demo (고객사 ERP test data로)\n3. Reference call: 비슷한 ERP 쓰는 기존 고객사 연결\n4. 30일 pilot: 실제 운영 환경에서 작동 확인\n\n가장 확실한 건 #4 (pilot) 이라고 생각합니다.\n\n혹시 고객사의 개발팀과 함께 2-3시간 working session 가능할까요? 그 자리에서 바로 integration 확인해 드리겠습니다.\n\n선호하는 방식 알려주세요."
+  },
+  {
+    "instruction": "올해 sales kickoff 행사에서 다룰 주제를 추천해 줘 (Konglish로).",
+    "input": "",
+    "output": "SKO 2025 주제 추천:\n\nKeynote:\n- AI가 sales에 미치는 영향 (generative AI for proposals, forecasting)\n- 2024 성과 분석 + 2025 전략\n\nBreakout sessions:\n- Challenger sales methodology 워크샵\n- Negotiation in a down economy (가격 압박 대응법)\n- Account planning best practices\n- Demo skills masterclass (product team과 함께)\n\nFun activity:\n- Sales competition (role-play tournament)\n\nPanel:\n- Top performers sharing their actual deals (win/loss)\n\nClosing:\n- Q4 push incentive 발표\n\nTrack별로 break, 전체 2일 일정 추천."
+  },
+  {
+    "instruction": "클라이언트와의 관계가 냉각되었어. recovery plan을 Konglish로 작성해 줘.",
+    "input": "",
+    "output": "Client recovery plan:\n\n1. Acknowledge: \"최근 몇 달간 communication 부족했네요. 저희의 fault입니다. 사과드립니다.\"\n2. Listen: 무조건 client의 불만 먼저 듣기 (defensive 하지 말고)\n3. Action: 구체적인 개선 plan 제시\n   - 예: 전담 CSM 배정, 주간 status call, issue tracking sheet 공유\n4. Compensate: 무료 서비스 개월 수 또는 discount\n5. Rebuild: 정기적 executive business review (분기별)\n\nTimeline: 1주일 내 사과 방문, 30일 내 초기 성과 보여주기.\n\n그래도 안 되면, 때로는 'professional divorce'도 선택지."
+  },
+  {
+    "instruction": "경쟁사가 갑자기 가격을 40% 내렸어. 어떻게 대응할지 전략을 세워 줘.",
+    "input": "",
+    "output": "경쟁사의 가격 인하는 desperation signal일 수 있습니다.\n\nDo NOT:\n- 즉시 가격 매칭 (수익성 악화, 신뢰도 하락)\n- 경쟁사 욕하기\n\nDO:\n1. Differentiation 강조: \"그들은 가격을 낮추는 대신 어디를 quality에서 희생했을까?\"\n2. TCO (Total Cost of Ownership) 비교: hidden fee, migration cost, training 등\n3. Value selling 강화: ROI, productivity, risk reduction\n4. Prospect에게 질문: \"가격 외에 결정 기준은 무엇인가요?\"\n\n최후의 수단으로만 selective discount (multi-year, upfront 조건으로)."
+  },
+  {
+    "instruction": "클라이언트가 '이건 제 결정이 아니라, 팀 결정이에요'라고 해. 어떻게 접근할까?",
+    "input": "",
+    "output": "Multiple stakeholders가 involved되었다는 의미입니다. 좋은 sign!\n\nAction plan:\n1. \"혹시 결정에 영향을 미치는 다른 분들은 누가 계신가요?\"\n2. 각 stakeholder의 역할과 concern 파악 (사용자, 구매자, 결정자, 승인자)\n3. 맞춤형 자료 준비:\n   - IT: security docs, integration guide\n   - Finance: ROI, payment terms\n   - End users: demo account, feature list\n4. \"팀 프레젠테이션 할 기회를 주실 수 있나요? 30분만요.\"\n\n혼자 결정 못하는 건 오히려 공정한 프로세스라는 증거.\n\n누구를 만나야 하는지 리스트 공유 부탁드려요."
+  },
+  {
+    "instruction": "영업팀의 quota attainment이 저조해. 근본 원인과 해결책을 Konglish로 알려줘.",
+    "input": "",
+    "output": "근본 원인 (data 기반):\n\n1. Quota 너무 높음 (top performer도 70% 달성)\n2. Territory 불균형 (A급 territory vs C급 territory 동일 quota)\n3. Lead quality 문제 (MQL → SQL 전환율 10%)\n4. Sales cycle 길이 과소평가 (90일인데 60일로 잡음)\n\n해결책:\n- Quota 조정 (80% 달성 가능하게)\n- Territory 가중치 도입\n- Marketing과 함께 lead scoring 재정의\n- Sales cycle 실제 데이터 기반으로 forecast 조정\n\n추가: coaching 강화 (deal review를 weekly로)\n\n30일 내로 개선 plan 실행하세요."
+  },
+  {
+    "instruction": "법무팀과 영업팀의 contract review 과정이 너무 느려. 개선 아이디어를 제안해 줘.",
+    "input": "",
+    "output": "Bottleneck 해결 아이디어:\n\n1. Standard contract template with 'fallback positions'\n   - Green (자유롭게 negotiation 가능)\n   - Yellow (VP approval 필요)\n   - Red (절대 변경 불가)\n\n2. Self-service portal: 영업이 직접 minor term 수정 (예: payment term net 15→30)\n\n3. Legal의 early involvement: RFP 단계에서 검토 (마감 직전x)\n\n4. AI contract review tool (예: Lawgeex) 도입\n\n5. 'Deal desk' team 운영: $50k 미만 딜은 legal bypass\n\n6. SLA between sales and legal: 24시간 응답, 48시간 redline 완료\n\n측정: average review time을 KPI로 만들기."
+  },
+  {
+    "instruction": "이번 분기 목표를 초과 달성한 팀원에게 보낼 축하 슬랙 메시지를 작성해 줘.",
+    "input": "",
+    "output": "@[이름] 축하합니다!!! 🎉\n\n이번 분기 목표 120% 달성하셨네요! 특히 작년 같은 분기 대비 45% 성장이 인상적입니다.\n\nExecutive team에서도 주목하고 있습니다. 특히 [Client X] 딜은 정말 어려운 상황에서 잘 마무리하셨어요.\n\n보상으로:\n- 점심 식사 제가 쏩니다 (원하는 장소 고르세요)\n- 추가 휴가 1일\n- 전체 팀 미팅에서 사례\n\n계속해서 excellent work! 👏"
+  },
+  {
+    "instruction": "계약서에 있는 'most favored nation' (MFN) clause를 이해 못 하겠다는 클라이언트에게 설명해 줘.",
+    "input": "",
+    "output": "Client님,\n\nMFN clause는 '만약 저희가 다른 고객사에게 더 유리한 조건을 주면, Client님께도 동일하게 적용하겠다'는 약속입니다.\n\n예: 연간 $100k에 계약했는데, 3개월 후 다른 고객에게 $80k 제안할 경우, Client님도 $80k로 조정됩니다.\n\n장점: 항상 최고 조건 보장\n단점: 저희에게 pricing flexibility 제한, 보통 enterprise 고객이 요청함\n\n저희 입장: MFN 대신 'price protection for 12 months' 제안 가능합니다.\n\n어떤 게 더 적합할까요?"
+  },
+  {
+    "instruction": "영업 콜 중에 예상치 못한 objection (예: '우리 이미 내년 예산 다 씀')을 받았어. 어떻게 대응할까?",
+    "input": "",
+    "output": "첫째, panic 하지 마세요. '이미 예산 다 씀'은 일시적 장애물입니다.\n\n대응법:\n- \"이해합니다. 혹시 Q1 예산은 언제 확정되나요? 그때 다시 연락드려도 될까요?\"\n- \"그렇다면 지금은 무료로 제공할 수 있는 부분이 있을까요? (컨설팅, 진단, 파일럿)\"\n- \"내년 예산에 포함시킬 수 있도록, 지금 간단한 LOI (Letter of Intent)만 체결해 주실 수 있나요? 가격 lock용으로요.\"\n- \"혹시 예산 재배정 가능한 다른 라인 있나요? (IT, 마케팅 등)\"\n\n목표: 'no'를 'not now'로 바꾸고, 관계 유지."
+  },
+  {
+    "instruction": "재계약 협상에서 client가 대폭 할인을 요구해. 어떻게 'no'를 말할까?",
+    "input": "",
+    "output": "정중하지만 명확하게:\n\n\"Client님, 제안해 주신 30% discount는 저희가 제공할 수 있는 범위를 훨씬 넘습니다. 저희도 좋은 파트너십을 원하지만, 이 가격은 cost를 커버하지 못합니다.\n\n대신 제안드릴 수 있는 최대치는 10%이며, 여기에는 이미 저희가 지난 1년간 제공한 12개 신규 기능과 24/7 support가 포함되어 있습니다.\n\n혹시 discount 대신 payment terms 유연화나 다른 non-price concession이 도움이 될까요?\n\n그래도 안 되면, 죄송하지만 함께 할 수 없을 것 같습니다.\"\n\nNo라고 말하는 것도 때로는 중요합니다."
+  },
+  {
+    "instruction": "신규 영업 rep에게 'discovery call' 진행 방법을 간단히 Konglish로 교육해 줘.",
+    "input": "",
+    "output": "Discovery call 골든 룰:\n\n1. 80/20 법칙: prospect이 80% 말하게 하세요.\n2. 질문 순서: 상황 → 문제 → 영향 → 비전 → 예산/타임라인\n\n핵심 질문 5개:\n- \"현재 [관련 프로세스] 어떻게 하고 계신가요?\" (situation)\n- \"가장 큰 불편함이나 비효율은 무엇인가요?\" (problem)\n- \"이 문제가 매출/생산성에 얼마나 영향을 주나요?\" (impact)\n- \"해결된다면 어떤 모습이 가장 이상적인가요?\" (vision)\n- \"의사 결정 프로세스와 timeline은 어떻게 되나요?\" (process)\n\n절대 하지 말 것: 데모 먼저, 가격 먼저, 경쟁사 욕.\n\nRole-play로 연습하세요!"
+  },
+  {
+    "instruction": "글로벌 고객과의 계약에서 jurisdiction clause를 한국으로 해 달라고 요청받았어. 어떻게 할까?",
+    "input": "",
+    "output": "Global client의 한국 jurisdiction 요청은 unusual 합니다 (보통 본사所在地 선호).\n\n저희 입장: 당연히 환영! 하지만 client는 아마 반대할 거예요.\n\nNegotiation tip:\n- Client가 '싱가포르 중재' 제안하면 acceptable한 중립지\n- 한국 법정은 client에게 불리할 수 있음을 인지 (소송 시 한국어, 한국 변호사 필요)\n\n대안 제안:\n- 한국 law 적용하되, 중재는 서울이 아닌 홍콩/싱가포르\n- 아니면 mutual agreement로 변경 (협의 후 결정)\n\n어떤 게 가장 현실적인 compromise인지 같이 고민해 보세요."
+  },
+  {
+    "instruction": "영업 팀의 데모 품질이 일정하지 않아. 표준화된 데모 스크립트를 만들어 줘 (Konglish).",
+    "input": "",
+    "output": "Standard demo script (15-min):\n\n0:00-2:00 Intro & agenda:\n\"오늘은 [고객 pain point]를 어떻게 저희가 해결하는지, 특히 [기능 X]에 집중해서 보여드리겠습니다.\"\n\n2:00-5:00 고객 상황 이해 (질문):\n\"현재 workflow 좀 알려주세요. 무엇이 가장 비효율적인가요?\"\n\n5:00-12:00 라이브 데모:\n- Pain point A → 솔루션 A (1-2분)\n- Pain point B → 솔루션 B\n- \"이 시나리오에서 당신이라면 어떻게 사용하시겠습니까?\"\n\n12:00-15:00 Q&A & next steps:\n- \"가장 인상 깊었던 기능은?\"\n- \"내부에서 논의 필요한 부분 있나요?\"\n- 데모 녹화본 공유 약속\n\n항상 mute하고, 고객의 반응 보면서 진행하세요."
+  },
+  {
+    "instruction": "클라이언트가 갑자기 연락을 두 달째 안 받고 있어. 최종 follow-up 이메일을 작성해 줘.",
+    "input": "",
+    "output": "Subject: [Client]님, 마지막 follow-up입니다\n\n안녕하세요 [Client]님,\n\n지난 두 달간 여러 차례 연락드렸지만 답변이 없어 마지막으로 메일 드립니다.\n\n만약 저희 솔루션에 대한 관심이 더 이상 없으시다면, 그 점을 말씀해 주시면 더 이상 연락드리지 않겠습니다. (답변만 'no'라고 해주셔도 됩니다)\n\n혹시 바쁘셔서 답변 못 하신 거라면, 언제쯤 다시 연락 가능하신지 알려주세요.\n\n2주 내로 답변이 없으면, 더 이상 연락드리지 않는 것으로 간주하겠습니다.\n\n그동안 시간 내주셔서 감사했습니다.\n\n[내 이름]"
+  },
+  {
+    "instruction": "계약서 초안에서 liability cap을 $50k로 제안했는데, client가 $500k를 요구해. 어떻게 negotiation할까?",
+    "input": "",
+    "output": "Gap이 10배나 나네요.\n\nStrategy:\n\n1. Risk assessment: 우리의 실제 리스크는? (데이터 유출, IP 분쟁 등)\n2. Counter proposal: $100k + annual fee의 2배 중 큰 금액\n3. Insurance 증명: \"우리는 $1M liability insurance 있으니, cap $100k만으로도 충분\"\n4. Exception: IP infringement나 gross negligence는 uncapped 가능\n\n만약 client가 강경하면:\n- Cap은 높이되, 대신 premium feature 제공\n- 또는 mutual로 제안 (양쪽 cap 동일)\n\n최종 보루: \"$500k는 저희 insurance policy 한도를 넘어서 불가합니다\"\n\n법무팀과 상의하세요."
+  },
+  {
+    "instruction": "영업팀의 일일 활동 리포트 템플릿을 Konglish로 만들어 줘.",
+    "input": "",
+    "output": "Daily activity report (end of day):\n\n이름: [본인 이름]\n날짜: YYYY-MM-DD\n\n📞 Calls: X건\n   - Connected: Y건\n   - Meetings booked: Z건\n\n✉️ Emails sent: N건\n   - Replies received: M건\n\n💻 Demos conducted: K건\n   - Next steps defined: L건\n\n📝 Proposals sent: P건\n   - Value: $Q\n\n✅ Deals closed: R건\n   - Total ARR: $S\n\n🔄 Pipeline changes:\n   - New opp: T건 ($U)\n   - Lost: V건 ($W)\n   - Moved to next stage: X건\n\n🚧 Blockers / help needed:\n   - [내용]\n\n📅 Tomorrow's focus:\n   - Top 3 priorities\n\nSlack #sales-activity 채널에 매일 6PM까지 공유."
+  },
+  {
+    "instruction": "해외 지사와의 계약 negotiation에서 currency 환율 리스크를 어떻게 다룰지 조언해 줘.",
+    "input": "",
+    "output": "Cross-border contract FX risk management:\n\nOptions from best to worst:\n\n1. USD 또는 안정적 currency로 계약 (고객이 accept할 경우)\n2. 환율 변동 시 price adjustment clause (예: 5% 이상 변동시 재협상)\n3. 평균 환율 사용 (quarterly average)\n4. 50/50 split: half in local currency, half in USD\n5. Client에게 risk 전가 (우리 currency로만 지불)\n\n추천: Option 2 (adjustment clause) 가 가장 fair.\n\n예: \"Monthly fee is KRW 10M, if USDKRW moves > 10% from base rate, parties will renegotiate in good faith\"\n\n계약 기간이 길수록 중요합니다."
+  },
+  {
+    "instruction": "계약서에 'time is of the essence' 조항이 뭔지 client가 물어봐. 설명해 줘.",
+    "input": "",
+    "output": "Client님,\n\n'Time is of the essence'는 법적 용어로, 모든 deadline과 timeline을 절대적으로 지켜야 한다는 뜻입니다.\n\n예: 만약 구현 deadline이 3월 1일이고, 저희가 3월 2일에 하루 늦어도, client는 계약 위반으로 전액 환불 + 손해배상 청구 가능합니다.\n\n일반 계약에서는 'reasonable delay'가 허용되지만, 이 조항이 있으면 단 하루도 늦으면 안 됩니다.\n\n저희 입장: 이 조항 삭제를 강력히 권장합니다. 대신 'best efforts' 또는 'commercially reasonable efforts'로 대체합시다.\n\n이해되셨나요?"
+  },
+  {
+    "instruction": "영업팀이 자주 묻는 질문 5개와 답변을 Konglish로 준비해 줘.",
+    "input": "",
+    "output": "Sales FAQs:\n\nQ1: \"경쟁사보다 비싼 이유는?\"\nA: \"Total cost of ownership 기준으로는 비슷하거나 저렴합니다. 저희는 hidden fee가 없고, 무료 업데이트와 24/7 support가 포함되어 있어서 장기적으로 더 경제적입니다.\"\n\nQ2: \"구현에 얼마나 걸리나요?\"\nA: \"보통 2-4주. 고객 준비 상태에 따라 다르며, 저희가 대부분의 작업을 해드립니다.\"\n\nQ3: \"계약 기간은?\"\nA: \"월간 또는 연간. 장기 계약 시 discount 있습니다.\"\n\nQ4: \"데이터는 안전한가요?\"\nA: \"SOC2 Type II, GDPR, CCPA compliant. Enterprise는 on-premise 가능합니다.\"\n\nQ5: \"어떤 회사들이 쓰나요?\"\nA: \"Reference list는 NDA 후 공유 가능합니다. 업종별로 5개 이상 있습니다.\""
+  },
+  {
+    "instruction": "클라이언트와의 연간 business review (ABR) agenda를 Konglish로 작성해 줘.",
+    "input": "",
+    "output": "ABR Agenda (60 mins):\n\n5 min: Intro & relationship check-in\n\n15 min: 성과 review\n- Usage metrics (active users, key features)\n- Business impact (cost saved, revenue generated)\n- SLA performance (uptime, response time)\n\n15 min: Client feedback session\n- \"What went well?\"\n- \"What could be improved?\"\n- New pain points emerged?\n\n15 min: Roadmap & expansion\n- Upcoming features (relevant to client)\n- Upsell/cross-sell opportunities\n- Mutual success plan for next year\n\n10 min: Q&A & action items\n- Open discussion\n- Summary of commitments from both sides\n\n사전에 metric dashboard와 agenda 공유하세요."
+  },
+  {
+    "instruction": "계약서에 있는 confidentiality clause의 예외 조항을 설명해 줘 (Konglish로).",
+    "input": "",
+    "output": "Confidentiality clause의 general exceptions:\n\n정보가 다음과 같은 경우는 비밀이 아닙니다:\n\n1. 공개적으로 이미 알려진 정보 (예: 뉴스, 보도자료)\n2. 계약 전에 이미 client가 알고 있던 정보 (증명 필요)\n3. 제3자로부터 정당하게 받은 정보 (그 제3자가 의무 없이 공개)\n4. 법원, 규제 기관, 법적 프로세스에 의해 요구된 정보\n   - 단, 가능한 경우 사전에 상대방에게 통보해야 함\n\n예: \"국세청에서 자료 제출 요청하면 어쩔 수 없죠\"\n\n이 외에는 모두 confidential. 예외를 악용하지 않는 게 중요합니다.\n\n이해되셨나요?"
+  },
+  {
+    "instruction": "대규모 딜을 앞두고 영업팀에게 보내는 동기부여 슬랙 메시지를 작성해 줘.",
+    "input": "",
+    "output": "@sales-team 대박 소식!!! 🚀\n\n[Client X]와의 $1M 딜, 최종 프레젠테이션 3일 남았습니다.\n\n지금까지 준비 정말 잘했어요. 특히:\n- [이름]의 discovery로 고객 pain point 완벽 파악\n- [이름]의 ROI model로 300% ROI 증명\n- [이름]이 구축한 executive relationship\n\n남은 3일:\n- 내일: final rehearsal (오후 4시)\n- 모레: Q&A 예상 및 대비\n- D-day: 모두 화이팅!\n\n이기고 오는 겁니다. 우리가 최고의 팀이라는 걸 보여줍시다. 잠시 후 커피 쏩니다! ☕️"
+  },
+  {
+    "instruction": "계약 termination clause의 'cause'와 'without cause' 차이를 설명해 줘.",
+    "input": "",
+    "output": "Termination types:\n\n1. For cause (with cause):\n   - 상대방이 계약 위반 (예: 미지급, SLA 미달, 불법 행위)\n   - 통보 후 일정 기간 내 cure (시정) 기회 제공\n   - 시정 안 되면 즉시 termination 가능\n   - 손해배상 청구 가능\n\n2. Without cause (for convenience):\n   - 아무 이유 없이도 termination 가능\n   - 보통 30-90일 사전 통보 필요\n   - 이미 발생한 fee는 환불 불가\n   - penalty 없음\n\n우리는 'for cause'만 있고 'without cause'는 없는 게 좋습니다. (고객이 갑자기 떠날 수 없음)\n\nClient는 반대일 수 있음. compromise: 60일 notice without cause."
+  },
+  {
+    "instruction": "영업팀의 win/loss 분석 템플릿을 Konglish로 만들어 줘.",
+    "input": "",
+    "output": "Win/Loss analysis template:\n\nDeal name: [고객사]\nDeal value: $X\nSales rep: [이름]\nOutcome: Win / Loss\nDate: YYYY-MM-DD\n\nWin reasons (if applicable):\n- [ ] Price (most competitive)\n- [ ] Product features (differentiation)\n- [ ] Relationship (existing trust)\n- [ ] Implementation speed\n- [ ] Support quality\n- [ ] Other: _____\n\nLoss reasons:\n- [ ] Price (too expensive)\n- [ ] Competition (who? _____)\n- [ ] No budget\n- [ ] No decision\n- [ ] Product gap (which feature? _____)\n- [ ] Relationship (no champion)\n- [ ] Implementation concerns\n- [ ] Other: _____\n\nKey lessons:\n- What worked well?\n- What to improve next time?\n\nCompetitor intel (if loss): pricing, features, sales tactics?\n\nSlack #winloss 채널에 매주 금요일 공유."
+  },
+  {
+    "instruction": "클라이언트가 'AI 솔루션이 블랙박스 같아서 신뢰가 안 간다'고 해. 어떻게 설명할까?",
+    "input": "",
+    "output": "좋은 지적입니다. 블랙박스 문제는 실제 우려사항이죠.\n\n저희 접근법:\n\n1. Explainability by design:\n   - \"모든 AI prediction에 왜 그런 결론이 나왔는지 이유를 함께 보여드립니다.\"\n   - 예: \"이 딜은 과거 유사한 50개 deal 중 40개가 closed-won이라서 high probability입니다\"\n\n2. Human in the loop:\n   - \"AI는 추천만 하고, 최종 결정은 사람이 합니다.\"\n\n3. 투명한 metric:\n   - 정확도, precision, recall 수치 공개\n   - 정기적으로 모델 성과 모니터링 리포트 제공\n\n4. Customization:\n   - Client의 데이터로 모델을 학습시켜 더 정확하게\n\n신뢰는 투명성에서 옵니다. 데모로 보여드릴까요?"
+  },
+  {
+    "instruction": "계약서 amendment (수정 계약서) 작성이 필요해. template을 Konglish로 알려줘.",
+    "input": "",
+    "output": "Amendment template:\n\n[계약서 제목] 제1호 수정계약서\n\n본 수정계약서는 [YYYY년 M월 D일]자로 [당사 A]와 [당사 B] 간 체결된 원 계약서를 다음과 같이 수정합니다.\n\n1. 수정 내용\n   - 원 계약서 Section [번호] '[제목]'을 아래와 같이 변경:\n     (기존): [기존 문구]\n     (변경): [새 문구]\n\n2. 추가 조항 (if any)\n   - [새로운 내용 추가]\n\n3. 유효일: 본 수정계약서는 [일자]부터 효력 발생\n\n4. 나머지 조항: 원 계약서의 다른 조항들은 그대로 유효함\n\n본 수정계약서는 원 계약서의 일부로 간주됩니다.\n\n[서명란]\n\n간단한 건 email 교환으로도 binding될 수 있음 (단, 법무팀 확인 필요)."
+  },
+  {
+    "instruction": "영업팀의 forecast accuracy가 너무 낮아. 개선 방법을 Konglish로 알려줘.",
+    "input": "",
+    "output": "Forecast accuracy 개선 5가지 방법:\n\n1. Define stages clearly:\n   - Discovery → Proposal → Negotiation → Verbal commit → Contract sent → Closed-won\n   - 각 stage에 명확한 exit criteria 지정\n\n2. 3-point forecast:\n   - Best case / Commit / Pipeline (각각 다른 weight 부여)\n\n3. Weekly deal review:\n   - 모든 commit deal을 leadership과 함께 검토\n   - 'guts feel' 금지, data 기반으로만\n\n4. Historical data 활용:\n   - 각 rep의 historical win rate 적용\n   - Stage별 conversion rate 적용\n\n5. Automated forecasting tool:\n   - CRM에 AI forecast 기능 추가\n\n측정: forecast accuracy = actual / commit (target 90%)\n\n30일간 pilot 후 rollout."
+  },
+  {
+    "instruction": "연말에 모든 고객에게 보내는 감사 메일을 Konglish로 작성해 줘.",
+    "input": "",
+    "output": "Subject: [고객사명]님, 2024년 함께 해주셔서 감사합니다\n\n안녕하세요,\n\n2024년 한 해 동안 저희 [회사명]과 함께해 주셔서 진심으로 감사합니다.\n\n올해는 특별히:\n- 새로운 기능 15개 출시\n- 평균 응답 시간 2.4시간 → 45분 단축\n- 고객 성공 사례 10개 발간\n\n모든 것은 여러분의 피드백 덕분입니다.\n\n2025년에는:\n- 더 나은 AI 기능 (2월 출시 예정)\n- 연중 무료 웨비나 시리즈\n- 고객 자문 위원회 신설\n\n즐거운 연말 보내시고, 새해에도 더욱 발전된 모습으로 찾아뵙겠습니다.\n\n감사합니다,\n[회사명] 팀 일동"
+  },
+  {
+    "instruction": "계약서에 있는 'non-solicitation' 조항이 무엇인지 client가 물어봐. 설명해 줘.",
+    "input": "",
+    "output": "Non-solicitation clause:\n\n계약 기간 중 및 종료 후 일정 기간(보통 1-2년) 동안 상대방의 직원을 채용하거나 스카우트하지 못하게 하는 조항입니다.\n\n예외:\n- 일반적인 채용 공고 (specific targeting 아니면 OK)\n- 계약 종료 6개월 후 (일부 계약)\n- 상대방의 사전 서면 동의 시\n\n범위: 보통 '직접적으로 업무 관련된' 직원으로 한정\n\n저희 입장: 가능한 narrow하게 (예: 영업팀 VP 이상만, 12개월)\n\n위반 시: 손해배상 (보통 직원 연봉의 20-30%)\n\n이해되셨나요? 협의 필요한 부분 있으면 말씀해 주세요."
+  },
+  {
+    "instruction": "영업 데모에서 technical glitch 발생 시 대처법을 Konglish로 알려줘.",
+    "input": "",
+    "output": "Demo glitch 대처법:\n\n1. 침착하게 웃으세요. \"아, 기술의 묘죠?\" (긍정적 리프레임)\n\n2. 빠른 수정 시도: \"잠시만요, 1분만\" (2분 넘으면 NO)\n\n3. Backup plan 실행:\n   - 미리 준비한 스크린샷/영상으로 대체\n   - \"기능은 이렇게 보여드리려 했는데, 대신 제가 설명드리겠습니다\"\n   - \"사실 이 버그를 고친 새 버전이 내일 출시됩니다\"\n\n4. 절대 하지 말 것:\n   - 상대방 탓 (\"고객님 인터넷이\")\n   - 길게 수정 시도 (시간 낭비)\n   - 당황해서 말 더듬기\n\n5. After demo: \"저희가 fix 후 재데모 해드리겠습니다, 불편 죄송합니다\"\n\n항상 backup ready!"
+  },
+  {
+    "instruction": "클라이언트에게 'reference call 요청'을 하는 이메일을 Konglish로 작성해 줘.",
+    "input": "",
+    "output": "Subject: Reference call 요청 드립니다 ([Client A]님)\n\n안녕하세요 [Client A]님,\n\n항상 감사한 마음으로 지내고 있습니다.\n\n다름이 아니라, 잠재 고객사 [Client B]사에서 저희 솔루션 도입을 고려 중인데, reference call 가능한 고객사 한 곳을 소개해 달라고 요청했습니다.\n\n[Client A]님께서 저희의 가장 성공적인 파트너 중 한 분이라, 혹시 15분 정도 전화 통화 또는 화상 미팅에 참여해 주실 수 있을까요?\n\n당연히 저희가 배려해 드릴 부분이 있으며, 원치 않으시면 정중히 거절하셔도 됩니다. 부담 갖지 마세요.\n\n검토 부탁드립니다. 감사합니다!"
+  },
+  {
+    "instruction": "계약서의 'force majeure' 조항을 평이한 Konglish로 설명해 줘.",
+    "input": "",
+    "output": "Force majeure = '예측 불가능한 불가항력'\n\n포함되는 예:\n- 천재지변 (지진, 홍수, 화재, 태풍)\n- 전쟁, 테러, 폭동\n- 전염병 (팬데믹), 정부 규제\n- 파업 (단, 우리 회사 내 파업은 제외하는 게 일반적)\n\n포함되지 않는 예:\n- 경기 침체\n- 예산 부족\n- 직원 부족 (고용 문제)\n- 공급망 문제 (일부 계약은 포함 가능)\n\n효과: 해당 기간 동안 의무 이행이 면제됨. 보통 계약 연장 또는 종료.\n\n중요: 발동 시 상대방에게 즉시 통보 의무.\n\n이해되셨나요?"
+  },
+  {
+    "instruction": "영업팀이 월간 목표를 반드시 달성해야 해. 동기부여 메시지를 슬랙에 작성해 줘.",
+    "input": "",
+    "output": "@sales-team 주목!\n\n이번달 마감까지 5일, 현재 gap $200k입니다.\n\ndoable합니다. 이미 $500k는 closed, $300k는 commit 상태입니다.\n\n각자 지금 top 3 deals를 slack에 공유해 주세요. 제가 개인별로 전략 코칭 해드립니다.\n\nIncentive:\n- 오늘 7PM까지 한 건이라도 close하면 저녁 식사 쿠폰 ($50)\n- 금요일까지 target 달성팀: 조기 퇴근 + team dinner\n- 개인 최고 실적자: 애플 워치\n\n우리는 해냈고, 또 해낼 겁니다. 마지막까지 집중! 🔥"
+  },
+  {
+    "instruction": "계약서에 있는 'right to audit' 조항의 범위를 설명해 줘 (Konglish로).",
+    "input": "",
+    "output": "Right to audit clause:\n\n상대방이 우리의 compliance를 확인하기 위해 감사할 권리.\n\nScope 협상 포인트:\n\n1. Frequency: \"연 1회, 특별한 사유 없으면 더 자주 안 됨\"\n2. Cost: \"audit 비용은 요청한 쪽 부담 (단, material violation 발견 시 위반자가 부담)\"\n3. Notice: \"최소 30일 사전 통보\"\n4. Access: \"비즈니스 시간, 특정 시스템만, confidential 정보 보호\"\n5. Scope: \"우리의 보안, data handling, licensing compliance만\" (고객 데이터에는 접근 불가)\n\nRed flag: \"any time, any reason, at your sole discretion\" = 협상 필요\n\n표준: \"annual, with reasonable notice, at requesting party's expense\"\n\n안전하게 가져가세요."
+  },
+  {
+    "instruction": "계약 renewal을 앞두고 client에게 보내는 3개월 전 reminder 이메일을 작성해 줘.",
+    "input": "",
+    "output": "Subject: [Client]님, 계약 renewal 90일 전 안내\n\n안녕하세요,\n\n현재 계약이 [YYYY년 M월 D일]에 만료됩니다. 90일 전이라 미리 연락드립니다.\n\nRenewal 옵션:\n\n1. 현재 계약과 동일 조건으로 1년 연장 (자동)\n   - 가격: $X/월 (변동 없음)\n   - SLA: 기존과 동일\n\n2. Upgraded plan (권장)\n   - 추가 기능: AI forecasting, advanced analytics\n   - 가격: $Y/월 (현재 대비 +15%)\n   - 무료 onboarding support\n\n3. Multi-year (2년 또는 3년)\n   - 2년: 10% discount\n   - 3년: 15% discount + dedicated CSM\n\n검토 부탁드리며, 30일 전까지 선택지 알려주시면 감사하겠습니다.\n\n질문 있으시면 편하게요."
+  },
+  {
+    "instruction": "영업팀의 이메일 응답률을 높이는 5가지 팁을 Konglish로 알려줘.",
+    "input": "",
+    "output": "Email reply rate tips:\n\n1. Subject line에 개인화:\n   - Bad: \"Sales productivity tool\"\n   - Good: \"[Name], 영업팀의 시간 절약 방법 (참고: OO산업군)\"\n\n2. 첫 문장에 value prop:\n   - \"OOO님, 저희가 [고객산업]의 리드 응답 시간을 85% 줄인 사례가 있습니다\"\n\n3. 질문으로 끝내기:\n   - \"15분 데모 원하시나요? 아니면 먼저 자료부터 보내드릴까요?\" (선택지 주기)\n\n4. 3줄 이내로:\n   - 너무 길면 안 읽음. 핵심만.\n\n5. Follow-up sequence:\n   - Day 1: 첫 메일\n   - Day 3: \"Just bumping this up\"\n   - Day 7: 다른 angle (case study 공유)\n   - Day 14: \"마지막으로 한 번만 더\"\n\nA/B test 항상 하세요!"
+  },
+  {
+    "instruction": "긴급한 버그 픽스 때문에 클라이언트에게 보낼 사과 및 보상 이메일을 작성해 줘.",
+    "input": "",
+    "output": "Subject: [긴급 공지] 서비스 장애 사과드립니다\n\n[Client]님,\n\n오전 9시부터 11시 20분까지 (2시간 20분) 서비스 장애가 발생했습니다. 근본 원인은 데이터베이스 마이그레이션 중 발생한 예기치 못한 오류였으며, 현재 100% 복구 완료되었습니다.\n\n다시는 이런 일이 없도록:\n- 모든 migration은 이제 주말에만 진행\n- 추가 QA 단계 도입\n- 자동 rollback 시스템 구축\n\n보상 조치:\n- 이번달 invoice에서 20% 크레딧\n- 다음 달 무료 프리미엄 지원 시간 5시간\n\n진심으로 사과드리며, 혹시 영향 받은 부분 있으면 저희가 우선 처리해 드리겠습니다.\n\n감사합니다."
+  }
+]
