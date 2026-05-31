@@ -25,7 +25,7 @@ def discover_tokenizer():
 def main():
     parser = argparse.ArgumentParser(description="Unified W&B Downloader & Interactive CLI Chat for Bori")
     parser.add_argument("--artifact_path", type=str, default=None, help="W&B artifact path 'entity/project/artifact_name'")
-    parser.add_argument("--alias", type=str, default="latest", help="Artifact version alias ('latest', 'step-300')")
+    parser.add_argument("--alias", type=str, default="v1", help="Artifact version alias ('latest', 'v1', 'step-300')")
     parser.add_argument("--tokenizer_path", type=str, default=None, help="Path to merged tokenizer directory")
     parser.add_argument("--output_dir", type=str, default="./downloaded_sft_checkpoint", help="Destination download directory")
     args = parser.parse_args()
@@ -37,7 +37,7 @@ def main():
     # 1. Interactive input fallbacks for maximum ease of use
     artifact_path = args.artifact_path
     if not artifact_path:
-        default_path = "brandon-baek/bori-sft/bori-2-135m-sft"
+        default_path = "brandon_baek/Bori-V2/bori-2-135m-sft"
         user_input = input(f"💬 Enter W&B artifact path [Default: {default_path}]: ").strip()
         artifact_path = user_input if user_input else default_path
 
