@@ -2,6 +2,7 @@ import argparse
 import os
 import sys
 import torch
+import shutil
 from threading import Thread
 from transformers import AutoModelForCausalLM, AutoTokenizer, TextIteratorStreamer
 
@@ -25,7 +26,6 @@ def discover_tokenizer():
 
 def setup_wandb_api_key():
     """Loads a locally saved W&B API key from .env, or prompts and saves it."""
-    # Find .env at project root
     script_dir = os.path.dirname(os.path.abspath(__file__))
     bori_root = os.path.dirname(os.path.dirname(script_dir)) # /Users/brandon.baek/Development/Bori
     env_path = os.path.join(bori_root, ".env")
@@ -49,13 +49,10 @@ def setup_wandb_api_key():
 
     # Simple check if already logged in via ~/.netrc
     try:
-        # If logged in, this won't throw an error
         api = wandb.Api()
-        # Try a dummy query to verify login
         api.viewer
         return True
     except Exception:
-        # Not logged in
         pass
 
     if not os.environ.get("WANDB_API_KEY"):
@@ -63,7 +60,6 @@ def setup_wandb_api_key():
         user_key = input("👉 Please paste your W&B API Key (it will be saved locally in .env): ").strip()
         if user_key:
             os.environ["WANDB_API_KEY"] = user_key
-            # Save to .env (git-ignored)
             with open(env_path, "w") as f:
                 f.write(f"WANDB_API_KEY={user_key}\n")
             print(f"💾 Saved API key to {env_path} (Git-ignored) for future runs.")
@@ -79,6 +75,7 @@ def main():
     parser.add_argument("--alias", type=str, default="v1", help="Artifact version alias ('v1', 'latest', 'step-400')")
     parser.add_argument("--tokenizer_path", type=str, default=None, help="Path to merged tokenizer directory")
     parser.add_argument("--output_dir", type=str, default="./downloaded_sft_checkpoint", help="Destination download directory")
+    parser.add_argument("--cleanup", action="store_true", help="Automatically delete downloaded model weights on exit")
     args = parser.parse_args()
 
     print("======================================================================")
@@ -107,7 +104,6 @@ def main():
             print(f"🔍 Auto-detected local merged tokenizer at: {discovered}")
             tokenizer_path = discovered
         else:
-            # SFT checkpoint already contains tokenizer.json and tokenizer_config.json!
             print(f"🔍 No standalone tokenizer directory found. Using the tokenizer bundled in the downloaded checkpoint.")
             tokenizer_path = args.output_dir
 
@@ -157,7 +153,7 @@ def main():
     # 4. Mode Selection Menu
     print("\n" + "="*50)
     print("💡 Select Generation Mode:")
-    print("  [1] Interactive Chat Mode (Dialogue with SFT templates)")
+    print("  [1] Interactive Chat Mode (Dialogue SFT template)")
     print("  [2] Raw Autocomplete Mode (Predict next-tokens directly)")
     print("="*50)
     
@@ -166,114 +162,145 @@ def main():
     if mode_input in ["1", "2"]:
         mode = mode_input
 
-    if mode == "1":
-        run_chat_mode(model, tokenizer)
-    else:
-        run_autocomplete_mode(model, tokenizer)
+    # 5. Run stateful unified interactive session
+    run_unified_interactive_session(model, tokenizer, start_mode=mode)
 
-def run_chat_mode(model, tokenizer):
+    # 6. Cleanup storage if requested or prompted
+    if args.cleanup:
+        cleanup_storage(args.output_dir)
+    else:
+        print("\n" + "-"*50)
+        cleanup_input = input("💬 Delete downloaded checkpoint folder to free up space? [y/N]: ").strip().lower()
+        if cleanup_input in ["y", "yes"]:
+            cleanup_storage(args.output_dir)
+        else:
+            print(f"💾 Checkpoint folder preserved at: {args.output_dir}")
+            
+    print("\n👋 Goodbye!")
+
+def cleanup_storage(path):
+    """Deletes the downloaded checkpoint directory to save disk space."""
+    if os.path.exists(path):
+        print(f"🗑️ Cleaning up storage... deleting {path}")
+        try:
+            shutil.rmtree(path)
+            print("✅ Storage is clean!")
+        except Exception as e:
+            print(f"⚠️ Notice: Could not delete checkpoint folder: {e}")
+
+def run_unified_interactive_session(model, tokenizer, start_mode="1"):
+    current_mode = start_mode
+    
     print("\n" + "="*70)
-    print("💬 Bori SFT Interactive Chat Session Initialized (Live Streaming)!")
-    print("   Type your prompt below. Type 'exit' or 'quit' to end.")
-    print("="*70 + "\n")
+    print("⚡ Stateful Session Initialized (Live Streaming)!")
+    print("   Type '/mode' to switch between Chat and Autocomplete at any time.")
+    print("   Type '/help' to list options, or '/exit' to quit.")
+    print("="*70)
 
     history = []
     
     while True:
+        # Render appropriate CLI prompt based on active mode
+        if current_mode == "1":
+            prompt_header = "\n💬 [Chat] User: "
+        else:
+            prompt_header = "\n📝 [Autocomplete] Prompt Prefix: "
+            
         try:
-            user_msg = input("\n👤 User: ").strip()
+            user_msg = input(prompt_header).strip()
         except (KeyboardInterrupt, EOFError):
-            print("\n👋 Goodbye!")
             break
 
         if not user_msg:
             continue
-        if user_msg.lower() in ["exit", "quit"]:
-            print("👋 Goodbye!")
-            break
-
-        history.append({"role": "user", "content": user_msg})
-        
-        # Apply chat template
-        prompt = ""
-        for msg in history:
-            prompt += f"<|im_start|>{msg['role']}\n{msg['content']}<|im_end|>\n"
-        prompt += "<|im_start|>assistant\n"
-
-        inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
-        
-        print("🤖 Bori: ", end="", flush=True)
-        
-        # Live streaming setup using TextIteratorStreamer
-        streamer = TextIteratorStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
-        generation_kwargs = dict(
-            **inputs,
-            max_new_tokens=256,
-            do_sample=True,
-            temperature=0.7,
-            top_p=0.9,
-            pad_token_id=tokenizer.eos_token_id,
-            eos_token_id=tokenizer.encode("<|im_end|>")[0] if "<|im_end|>" in tokenizer.get_vocab() else tokenizer.eos_token_id,
-            streamer=streamer
-        )
-        
-        thread = Thread(target=model.generate, kwargs=generation_kwargs)
-        thread.start()
-        
-        completion = ""
-        for new_text in streamer:
-            # Render tokens immediately
-            print(new_text, end="", flush=True)
-            completion += new_text
             
-        print() # Newline at the end
-        
-        # Strip trailing tags if present
-        completion = completion.replace("<|im_end|>", "").strip()
-        history.append({"role": "assistant", "content": completion})
-
-def run_autocomplete_mode(model, tokenizer):
-    print("\n" + "="*70)
-    print("📝 Bori Raw Autocomplete Session Initialized (Live Streaming)!")
-    print("   Type any text prefix and Bori will complete it.")
-    print("   Type 'exit' or 'quit' to end.")
-    print("="*70 + "\n")
-    
-    while True:
-        try:
-            prefix = input("\n📝 Prompt Prefix: ").strip()
-        except (KeyboardInterrupt, EOFError):
-            print("\n👋 Goodbye!")
+        # Parse commands
+        if user_msg.lower() in ["/exit", "/quit", "exit", "quit"]:
             break
-
-        if not prefix:
+            
+        if user_msg.lower() == "/help":
+            print("\n📋 Bori CLI Help Commands:")
+            print("  /mode   - Swaps instantly between SFT Chat and Raw Autocomplete")
+            print("  /clear  - Clears chat dialogue history")
+            print("  /exit   - Terminate session and exit")
             continue
-        if prefix.lower() in ["exit", "quit"]:
-            print("👋 Goodbye!")
-            break
-
-        inputs = tokenizer(prefix, return_tensors="pt").to(model.device)
-        
-        print("✍️ Completion: ", end="", flush=True)
-        
-        streamer = TextIteratorStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
-        generation_kwargs = dict(
-            **inputs,
-            max_new_tokens=150,
-            do_sample=True,
-            temperature=0.7,
-            top_p=0.9,
-            pad_token_id=tokenizer.eos_token_id,
-            streamer=streamer
-        )
-        
-        thread = Thread(target=model.generate, kwargs=generation_kwargs)
-        thread.start()
-        
-        for new_text in streamer:
-            print(new_text, end="", flush=True)
             
-        print() # Newline at the end
+        if user_msg.lower() == "/clear":
+            history = []
+            print("🧹 Chat history cleared!")
+            continue
+
+        if user_msg.lower() == "/mode":
+            if current_mode == "1":
+                current_mode = "2"
+                print("\n🔄 Switched to Raw Autocomplete Mode! (No templates applied)")
+            else:
+                current_mode = "1"
+                print("\n🔄 Switched to SFT Interactive Chat Mode! (Dialog template active)")
+            continue
+
+        # ----------------------------------------------------
+        # Mode 1: SFT Chat Generation
+        # ----------------------------------------------------
+        if current_mode == "1":
+            history.append({"role": "user", "content": user_msg})
+            
+            prompt = ""
+            for msg in history:
+                prompt += f"<|im_start|>{msg['role']}\n{msg['content']}<|im_end|>\n"
+            prompt += "<|im_start|>assistant\n"
+
+            inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+            print("🤖 Bori: ", end="", flush=True)
+            
+            streamer = TextIteratorStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
+            generation_kwargs = dict(
+                **inputs,
+                max_new_tokens=256,
+                do_sample=True,
+                temperature=0.7,
+                top_p=0.9,
+                pad_token_id=tokenizer.eos_token_id,
+                eos_token_id=tokenizer.encode("<|im_end|>")[0] if "<|im_end|>" in tokenizer.get_vocab() else tokenizer.eos_token_id,
+                streamer=streamer
+            )
+            
+            thread = Thread(target=model.generate, kwargs=generation_kwargs)
+            thread.start()
+            
+            completion = ""
+            for new_text in streamer:
+                print(new_text, end="", flush=True)
+                completion += new_text
+            print()
+            
+            completion = completion.replace("<|im_end|>", "").strip()
+            history.append({"role": "assistant", "content": completion})
+
+        # ----------------------------------------------------
+        # Mode 2: Raw Autocomplete Generation
+        # ----------------------------------------------------
+        else:
+            inputs = tokenizer(user_msg, return_tensors="pt").to(model.device)
+            print("✍️ Completion: ", end="", flush=True)
+            
+            streamer = TextIteratorStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
+            generation_kwargs = dict(
+                **inputs,
+                max_new_tokens=150,
+                do_sample=True,
+                temperature=0.7,
+                top_p=0.9,
+                pad_token_id=tokenizer.eos_token_id,
+                streamer=streamer
+            )
+            
+            thread = Thread(target=model.generate, kwargs=generation_kwargs)
+            thread.start()
+            
+            for new_text in streamer:
+                print(new_text, end="", flush=True)
+            print()
 
 if __name__ == "__main__":
     main()
