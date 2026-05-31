@@ -60,6 +60,8 @@ def upload_kaggle_checkpoint(checkpoint_dir, artifact_name="bori-2-135m-sft", pr
             project=project,
             entity=entity,
             job_type="kaggle_upload",
+            group="Kaggle-Uploads",
+            tags=["kaggle", "upload"],
             name=f"kaggle-{artifact_name}-{alias}"
         )
         

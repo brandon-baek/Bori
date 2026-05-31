@@ -117,6 +117,8 @@ def main():
             project=project,
             entity=args.entity,
             job_type="upload_checkpoint",
+            group="Local-Uploads",
+            tags=["local", "upload"],
             name=f"upload-{artifact_name}-{alias}"
         )
         
