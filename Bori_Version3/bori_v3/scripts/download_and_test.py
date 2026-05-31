@@ -37,7 +37,7 @@ def main():
     # 1. Interactive input fallbacks for maximum ease of use
     artifact_path = args.artifact_path
     if not artifact_path:
-        default_path = "brandon-baek/bori-sft/bori-sft"
+        default_path = "brandon-baek/bori-sft/bori-2-135m-sft"
         user_input = input(f"💬 Enter W&B artifact path [Default: {default_path}]: ").strip()
         artifact_path = user_input if user_input else default_path
 
@@ -69,8 +69,19 @@ def main():
     
     try:
         artifact = api.artifact(full_path)
-        print(f"📥 Downloading weights to: {args.output_dir} ...")
-        artifact.download(root=args.output_dir)
+        print(f"📥 Selective Downloading to: {args.output_dir} ...")
+        
+        # Selectively download only what is needed for inference (skips 1.1GB optimizer states!)
+        skipped_count = 0
+        for file in artifact.files():
+            if file.name.endswith((".pt", ".pth", "trainer_state.json", "training_args.bin")):
+                skipped_count += 1
+                continue
+            print(f"   Downloading {file.name} ({file.size / 1024 / 1024:.1f} MB)...")
+            file.download(root=args.output_dir)
+            
+        if skipped_count > 0:
+            print(f"   ⚡ Skipped {skipped_count} optimizer/trainer state files to save ~1.1 GB of bandwidth!")
         print("✅ Checkpoint successfully downloaded!")
     except Exception as e:
         print(f"❌ Failed to download artifact: {e}")
