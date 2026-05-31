@@ -2,7 +2,8 @@ import argparse
 import os
 import sys
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from threading import Thread
+from transformers import AutoModelForCausalLM, AutoTokenizer, TextIteratorStreamer
 
 def discover_tokenizer():
     """Attempts to auto-detect the merged tokenizer path to save the user from typing it."""
@@ -22,17 +23,70 @@ def discover_tokenizer():
             return abs_p
     return None
 
+def setup_wandb_api_key():
+    """Loads a locally saved W&B API key from .env, or prompts and saves it."""
+    # Find .env at project root
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    bori_root = os.path.dirname(os.path.dirname(script_dir)) # /Users/brandon.baek/Development/Bori
+    env_path = os.path.join(bori_root, ".env")
+    
+    # 1. Try to load from existing .env
+    if os.path.exists(env_path):
+        with open(env_path, "r") as f:
+            for line in f:
+                if line.startswith("WANDB_API_KEY="):
+                    key = line.split("=", 1)[1].strip()
+                    os.environ["WANDB_API_KEY"] = key
+                    print("🔑 Loaded W&B API Key from local .env config.")
+                    return True
+
+    # 2. If not authenticated already, prompt and save
+    try:
+        import wandb
+    except ImportError:
+        print("❌ Error: 'wandb' package is not installed. Please run: pip install wandb")
+        sys.exit(1)
+
+    # Simple check if already logged in via ~/.netrc
+    try:
+        # If logged in, this won't throw an error
+        api = wandb.Api()
+        # Try a dummy query to verify login
+        api.viewer
+        return True
+    except Exception:
+        # Not logged in
+        pass
+
+    if not os.environ.get("WANDB_API_KEY"):
+        print("\n🔑 W&B Authentication Required.")
+        user_key = input("👉 Please paste your W&B API Key (it will be saved locally in .env): ").strip()
+        if user_key:
+            os.environ["WANDB_API_KEY"] = user_key
+            # Save to .env (git-ignored)
+            with open(env_path, "w") as f:
+                f.write(f"WANDB_API_KEY={user_key}\n")
+            print(f"💾 Saved API key to {env_path} (Git-ignored) for future runs.")
+            return True
+        else:
+            print("⚠️ Warning: No W&B API Key entered. Proceeding without explicit credentials...")
+            return False
+    return True
+
 def main():
-    parser = argparse.ArgumentParser(description="Unified W&B Downloader & Interactive CLI Chat for Bori")
+    parser = argparse.ArgumentParser(description="Unified W&B Downloader & Streaming CLI for Bori")
     parser.add_argument("--artifact_path", type=str, default=None, help="W&B artifact path 'entity/project/artifact_name'")
-    parser.add_argument("--alias", type=str, default="v1", help="Artifact version alias ('latest', 'v1', 'step-300')")
+    parser.add_argument("--alias", type=str, default="v1", help="Artifact version alias ('v1', 'latest', 'step-400')")
     parser.add_argument("--tokenizer_path", type=str, default=None, help="Path to merged tokenizer directory")
     parser.add_argument("--output_dir", type=str, default="./downloaded_sft_checkpoint", help="Destination download directory")
     args = parser.parse_args()
 
     print("======================================================================")
-    print("🌾 Bori (보리): Unified Downloader & Interactive CLI Chat")
+    print("🌾 Bori (보리): Unified Downloader & Live Autocomplete/Chat CLI")
     print("======================================================================\n")
+
+    # W&B API Key setup
+    setup_wandb_api_key()
 
     # 1. Interactive input fallbacks for maximum ease of use
     artifact_path = args.artifact_path
@@ -53,18 +107,12 @@ def main():
             print(f"🔍 Auto-detected local merged tokenizer at: {discovered}")
             tokenizer_path = discovered
         else:
-            # The W&B SFT checkpoint already contains tokenizer.json and tokenizer_config.json!
+            # SFT checkpoint already contains tokenizer.json and tokenizer_config.json!
             print(f"🔍 No standalone tokenizer directory found. Using the tokenizer bundled in the downloaded checkpoint.")
             tokenizer_path = args.output_dir
 
     # 2. Download from W&B
-    print(f"\n🚀 Initializing W&B API...")
-    try:
-        import wandb
-    except ImportError:
-        print("❌ Error: 'wandb' package is not installed. Please run: pip install wandb")
-        return
-
+    import wandb
     api = wandb.Api()
     full_path = f"{artifact_path}:{alias}"
     print(f"📦 Fetching W&B Artifact: {full_path} ...")
@@ -106,22 +154,28 @@ def main():
         print(f"❌ Failed to load model or tokenizer: {e}")
         return
 
-    # 4. Interactive chat loop
+    # 4. Mode Selection Menu
+    print("\n" + "="*50)
+    print("💡 Select Generation Mode:")
+    print("  [1] Interactive Chat Mode (Dialogue with SFT templates)")
+    print("  [2] Raw Autocomplete Mode (Predict next-tokens directly)")
+    print("="*50)
+    
+    mode = "1"
+    mode_input = input("👉 Select mode [Default: 1]: ").strip()
+    if mode_input in ["1", "2"]:
+        mode = mode_input
+
+    if mode == "1":
+        run_chat_mode(model, tokenizer)
+    else:
+        run_autocomplete_mode(model, tokenizer)
+
+def run_chat_mode(model, tokenizer):
     print("\n" + "="*70)
-    print("💬 Bori SFT Interactive Chat Session Initialized!")
+    print("💬 Bori SFT Interactive Chat Session Initialized (Live Streaming)!")
     print("   Type your prompt below. Type 'exit' or 'quit' to end.")
     print("="*70 + "\n")
-
-    chat_template = (
-        "{% for message in messages %}"
-        "{% if message['role'] == 'user' %}"
-        "{{ '<|im_start|>user\n' + message['content'] + '<|im_end|>\n' }}"
-        "{% elif message['role'] == 'assistant' %}"
-        "{{ '<|im_start|>assistant\n' + message['content'] + '<|im_end|>\n' }}"
-        "{% endif %}"
-        "{% endfor %}"
-        "{{ '<|im_start|>assistant\n' }}"
-    )
 
     history = []
     
@@ -141,7 +195,6 @@ def main():
         history.append({"role": "user", "content": user_msg})
         
         # Apply chat template
-        # We manually render the chat template using jinja2 pattern
         prompt = ""
         for msg in history:
             prompt += f"<|im_start|>{msg['role']}\n{msg['content']}<|im_end|>\n"
@@ -151,27 +204,76 @@ def main():
         
         print("🤖 Bori: ", end="", flush=True)
         
-        # Stream response token by token
-        with torch.no_grad():
-            outputs = model.generate(
-                **inputs,
-                max_new_tokens=256,
-                do_sample=True,
-                temperature=0.7,
-                top_p=0.9,
-                pad_token_id=tokenizer.eos_token_id,
-                eos_token_id=tokenizer.encode("<|im_end|>")[0] if "<|im_end|>" in tokenizer.get_vocab() else tokenizer.eos_token_id
-            )
+        # Live streaming setup using TextIteratorStreamer
+        streamer = TextIteratorStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
+        generation_kwargs = dict(
+            **inputs,
+            max_new_tokens=256,
+            do_sample=True,
+            temperature=0.7,
+            top_p=0.9,
+            pad_token_id=tokenizer.eos_token_id,
+            eos_token_id=tokenizer.encode("<|im_end|>")[0] if "<|im_end|>" in tokenizer.get_vocab() else tokenizer.eos_token_id,
+            streamer=streamer
+        )
+        
+        thread = Thread(target=model.generate, kwargs=generation_kwargs)
+        thread.start()
+        
+        completion = ""
+        for new_text in streamer:
+            # Render tokens immediately
+            print(new_text, end="", flush=True)
+            completion += new_text
             
-        generated_ids = outputs[0][inputs["input_ids"].shape[-1]:]
-        completion = tokenizer.decode(generated_ids, skip_special_tokens=True)
+        print() # Newline at the end
         
         # Strip trailing tags if present
         completion = completion.replace("<|im_end|>", "").strip()
-        
-        # Print response
-        print(completion)
         history.append({"role": "assistant", "content": completion})
+
+def run_autocomplete_mode(model, tokenizer):
+    print("\n" + "="*70)
+    print("📝 Bori Raw Autocomplete Session Initialized (Live Streaming)!")
+    print("   Type any text prefix and Bori will complete it.")
+    print("   Type 'exit' or 'quit' to end.")
+    print("="*70 + "\n")
+    
+    while True:
+        try:
+            prefix = input("\n📝 Prompt Prefix: ").strip()
+        except (KeyboardInterrupt, EOFError):
+            print("\n👋 Goodbye!")
+            break
+
+        if not prefix:
+            continue
+        if prefix.lower() in ["exit", "quit"]:
+            print("👋 Goodbye!")
+            break
+
+        inputs = tokenizer(prefix, return_tensors="pt").to(model.device)
+        
+        print("✍️ Completion: ", end="", flush=True)
+        
+        streamer = TextIteratorStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
+        generation_kwargs = dict(
+            **inputs,
+            max_new_tokens=150,
+            do_sample=True,
+            temperature=0.7,
+            top_p=0.9,
+            pad_token_id=tokenizer.eos_token_id,
+            streamer=streamer
+        )
+        
+        thread = Thread(target=model.generate, kwargs=generation_kwargs)
+        thread.start()
+        
+        for new_text in streamer:
+            print(new_text, end="", flush=True)
+            
+        print() # Newline at the end
 
 if __name__ == "__main__":
     main()
