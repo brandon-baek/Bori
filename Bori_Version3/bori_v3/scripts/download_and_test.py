@@ -50,10 +50,12 @@ def main():
     if not tokenizer_path:
         discovered = discover_tokenizer()
         if discovered:
-            print(f"🔍 Auto-detected merged tokenizer at: {discovered}")
+            print(f"🔍 Auto-detected local merged tokenizer at: {discovered}")
             tokenizer_path = discovered
         else:
-            tokenizer_path = input("💬 Path to merged tokenizer directory: ").strip()
+            # The W&B SFT checkpoint already contains tokenizer.json and tokenizer_config.json!
+            print(f"🔍 No standalone tokenizer directory found. Using the tokenizer bundled in the downloaded checkpoint.")
+            tokenizer_path = args.output_dir
 
     # 2. Download from W&B
     print(f"\n🚀 Initializing W&B API...")
