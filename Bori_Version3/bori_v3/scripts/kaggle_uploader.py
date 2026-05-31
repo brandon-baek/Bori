@@ -24,6 +24,16 @@ def upload_kaggle_checkpoint(checkpoint_dir, artifact_name="bori-2-135m-sft", pr
         if step_num.isdigit() and alias == "latest":
             alias = f"step-{step_num}"
 
+    # Check if running in Kaggle and load Secret if available
+    if "KAGGLE_KERNEL_RUN_TYPE" in os.environ or os.path.exists("/kaggle/input"):
+        try:
+            from kaggle_secrets import UserSecretsClient
+            user_secrets = UserSecretsClient()
+            os.environ["WANDB_API_KEY"] = user_secrets.get_secret("WANDB_API_KEY")
+            print("🔑 Authenticated silently using Kaggle Secret 'WANDB_API_KEY'.")
+        except Exception:
+            pass
+
     print(f"\n🚀 Connecting to W&B (Project: {project}, Entity: {entity})...")
     
     # Check if already authenticated; if not, invoke login
