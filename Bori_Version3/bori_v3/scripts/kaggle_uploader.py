@@ -4,8 +4,27 @@ import argparse
 def upload_kaggle_checkpoint(checkpoint_dir, artifact_name="bori-2-135m-sft", project="Bori-V2", entity="brandon_baek", alias="latest"):
     """
     Self-contained function to upload Kaggle checkpoint directories to W&B.
-    Copy-paste this directly into a Kaggle Notebook cell.
+    Automatically integrates with Kaggle Secrets (supports 'WANDB_API_KEY' or 'wandb_api_key') for silent login.
     """
+    # 🔑 1. AUTOMATIC KAGGLE SECRETS SILENT SETUP (Must run BEFORE importing wandb!)
+    if "KAGGLE_KERNEL_RUN_TYPE" in os.environ or os.path.exists("/kaggle/input"):
+        try:
+            from kaggle_secrets import UserSecretsClient
+            user_secrets = UserSecretsClient()
+            key = None
+            for secret_name in ["WANDB_API_KEY", "wandb_api_key"]:
+                try:
+                    key = user_secrets.get_secret(secret_name)
+                    if key:
+                        os.environ["WANDB_API_KEY"] = key
+                        print(f"🔑 Authenticated silently using Kaggle Secret '{secret_name}'.")
+                        break
+                except Exception:
+                    continue
+        except Exception:
+            pass
+
+    # 2. Import wandb (now it will read the environment variable instantly upon load!)
     try:
         import wandb
     except ImportError:
@@ -24,25 +43,16 @@ def upload_kaggle_checkpoint(checkpoint_dir, artifact_name="bori-2-135m-sft", pr
         if step_num.isdigit() and alias == "latest":
             alias = f"step-{step_num}"
 
-    # Check if running in Kaggle and load Secret if available
-    if "KAGGLE_KERNEL_RUN_TYPE" in os.environ or os.path.exists("/kaggle/input"):
-        try:
-            from kaggle_secrets import UserSecretsClient
-            user_secrets = UserSecretsClient()
-            os.environ["WANDB_API_KEY"] = user_secrets.get_secret("WANDB_API_KEY")
-            print("🔑 Authenticated silently using Kaggle Secret 'WANDB_API_KEY'.")
-        except Exception:
-            pass
-
     print(f"\n🚀 Connecting to W&B (Project: {project}, Entity: {entity})...")
     
-    # Check if already authenticated; if not, invoke login
-    try:
-        api = wandb.Api()
-        api.viewer
-    except Exception:
-        print("🔑 Authentication required. Please log in to W&B:")
-        wandb.login()
+    # 3. Only invoke manual login if the API key environment variable is not set
+    if not os.environ.get("WANDB_API_KEY"):
+        try:
+            api = wandb.Api()
+            api.viewer
+        except Exception:
+            print("🔑 Authentication required. Please log in to W&B:")
+            wandb.login()
 
     try:
         # Start a lightweight upload run
