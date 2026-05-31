@@ -4,6 +4,10 @@ Bori is a highly optimized, bilingual (Korean-English) Small Language Model pipe
 
 ---
 
+* **📜 Version & Changelog Log**: A complete, step-by-step history of all versions, architectural upgrades, and optimizations can be found in the central [CHANGELOG.md](file:///Users/brandon.baek/Development/Bori/CHANGELOG.md).
+
+---
+
 ## 📂 Repository Roadmap
 
 The codebase is organized in evolutionary versions, allowing you to trace design decisions, training infrastructure updates, and model configurations over time:
