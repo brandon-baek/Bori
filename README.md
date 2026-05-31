@@ -1,4 +1,4 @@
-# Bori (보리): Bilingual Small Language Model (SLM) Pipeline
+# 🌾 Bori (보리): Bilingual Small Language Model (SLM) Pipeline
 
 Bori is a highly optimized, bilingual (Korean-English) Small Language Model pipeline built upon the **SmolLM2-135M** architecture. This repository tracks the complete evolutionary history of Bori's development, transitioning from a basic fine-tuning setup to a state-of-the-art, fully automated pre-training and alignment infrastructure.
 
