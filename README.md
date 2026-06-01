@@ -35,7 +35,7 @@ Bori-3 upgrades the base model from 135M to `SmolLM2-360M`, dramatically improvi
 
 ### 2. Vocabulary Expansion & EEVE Initialization
 * **The Problem**: Pre-trained English-centric SLMs represent Korean prose very inefficiently.
-* **The Solution**: We train a custom standalone Korean Byte-Level BPE tokenizer and merge it with the base tokenizer, adding **757 highly efficient Korean tokens**.
+* **The Solution**: We train a custom standalone Korean Byte-Level BPE tokenizer and merge it with the base tokenizer, adding **8,981 highly efficient Korean tokens** (Final Vocab: 58,133).
 * **EEVE Initialization**: In `src/model.py`, newly added Korean token embeddings are initialized from the mean embeddings of their English subwords from the base tokenizer, giving the model an excellent starting approximation.
 
 ### 3. Response-Only Loss (SFT Masking)
