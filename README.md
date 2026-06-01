@@ -1,10 +1,6 @@
 # 🌾 Bori (보리): Bilingual Small Language Model (SLM) Pipeline
 
-Bori is a highly optimized, bilingual (Korean-English) Small Language Model pipeline built upon the **SmolLM2-135M** architecture. This repository tracks the complete evolutionary history of Bori's development, transitioning from a basic fine-tuning setup to a state-of-the-art, fully automated pre-training and alignment infrastructure.
-
----
-
-* **📜 Version & Changelog Log**: A complete, step-by-step history of all versions, architectural upgrades, and optimizations can be found in the central [CHANGELOG.md](file:///Users/brandon.baek/Development/Bori/CHANGELOG.md).
+Bori is a highly optimized, bilingual (Korean-English) Small Language Model pipeline built upon the **SmolLM2** architecture. This repository tracks the complete evolutionary history of Bori's development, transitioning from a basic fine-tuning setup to a state-of-the-art, fully automated pre-training and alignment infrastructure.
 
 ---
 
@@ -14,99 +10,69 @@ The codebase is organized in evolutionary versions, allowing you to trace design
 
 ```
 Bori/
-├── .gitignore                     # Custom git safety configurations
-├── README.md                      # Unified documentation
-├── Bori_Version1/                 # Phase 1: Baseline pre-training & SFT scripts
-│   ├── bori_code/                 # Core source and execution folder
-│   └── kaggle_runner.ipynb        # Kaggle integration workbook
-│
-├── Bori_Version2/                 # Phase 2: Refined CPT split and EEVE warm-up
-│   ├── Data/                      # Intermediate fine-tuning datasets
-│   ├── bori_v2/                   # Multi-GPU config & continuous pre-training (10% replay)
-│   ├── run_local_dry_run.py       # Local pipeline testing script
-│   └── kaggle_runner_v2.ipynb     # Kaggle multi-node workbook
-│
-└── Bori_Version3/                 # Phase 3 (Latest): Production-Grade Infrastructure
-    ├── Data/                      # Dataset resources (DeepSeek V4 datasets)
-    ├── run_local_dry_run.py       # Updated local CPU dry run integration test
-    └── bori_v3/                   # Core production codebase
-        ├── configs/               # Single & multi-node training configurations
-        ├── src/                   # Core modules (EEVE initialization, packed dataset loaders)
-        └── scripts/               # Production-grade orchestration scripts
-            ├── train_korean_tokenizer.py  # Korean Byte-Level BPE training
-            ├── merge_tokenizers.py        # Tokenizer merging & fertility comparisons
-            ├── cpt.py                     # CPT (Phase 1a Warmup & Phase 1b WSD pre-training)
-            ├── sft.py                     # Supervised Fine-Tuning with WSD & step offset
-            ├── chat_ui.py                 # Gradio chat interface
-            ├── test_fertility.py          # Tokenizer fertility analyzer
-            └── test_inference.py          # Standalone inference validation
+├── Bori-1/                        # Phase 1: Baseline Qwen2 pre-training & SFT scripts
+├── Bori-2/                        # Phase 2: SmolLM2-135M, EEVE warm-up, and WSD scheduler
+└── Bori-3/                        # Phase 3 (Latest): Production-Grade Infrastructure
+    ├── codebase/                  # Core source code (mounted to Kaggle)
+    │   ├── configs/               # Hyperparameter configurations (cpt_config.yaml)
+    │   ├── scripts/               # Production-grade orchestration scripts
+    │   │   ├── setup_kaggle.py    # Automated Kaggle environment setup
+    │   │   ├── cpt.py             # CPT (Phase 1a Warmup & Phase 1b pre-training)
+    │   │   ├── sft.py             # Supervised Fine-Tuning with 50/50 bilingual mix
+    │   │   ├── benchmark.py       # Comprehensive 5-axis evaluation suite
+    │   │   └── ...
+    │   └── src/                   # Core modules (EEVE initialization, custom collators)
+    │
+    └── kaggle_runner_v3.ipynb     # Thin control-panel notebook for Kaggle execution
 ```
 
 ---
 
-## 🛠️ Key Architectural Highlights (Bori v3)
+## 🛠️ Key Architectural Highlights (Bori-3)
 
-### 1. Vocabulary Expansion & EEVE Initialization
-* **The Problem**: Pre-trained English-centric SLMs (like SmolLM2) represent Korean prose very inefficiently, splitting single syllables into multiple bytes (high fertility).
-* **The Solution**: We train a custom standalone Korean Byte-Level BPE tokenizer and merge it with the base tokenizer, adding **757 highly efficient Korean tokens** (Final vocab: `49,909`).
-* **EEVE (Subword-based) Initialization**: In `src/model.py`, newly added Korean token embeddings are **not** initialized randomly. Instead, we use the **EEVE strategy**, which initializes each new token from the mean embeddings of its English subwords from the base tokenizer. This gives the model an excellent starting approximation, lowering starting loss.
-* **Fertility Improvement**: Measured BPE fertility improvements on Korean prose range from **1.76x to 3.12x** vocabulary compression, meaning the model can process and generate Korean text up to 3x faster with smaller sequence lengths!
+### 1. Scaling to SmolLM2-360M
+Bori-3 upgrades the base model from 135M to `SmolLM2-360M`, dramatically improving reasoning capability and instruction adherence while remaining trainable on free Kaggle T4 GPUs via gradient checkpointing and SDPA attention.
 
-### 2. Multi-Phase Continuous W&B Charting
-Standard Hugging Face training resets the step count (`state.global_step = 0`) at the beginning of each phase or script execution, causing graphs to stack or overlay confusingly in W&B.
-Bori v3 introduces the **`GlobalStepCallback`**:
-* **Step Offset Injection**: Accumulates steps continuously by taking a `--step_offset` argument.
-* **W&B X-Axis Sync**: Logs a custom `global_step_accumulated` metric. In your W&B dashboard, simply change the panel's X-axis to `global_step_accumulated` to view Phase 1a $\rightarrow$ Phase 1b $\rightarrow$ SFT as one clean, continuous, and non-jagged optimization curve!
+### 2. Vocabulary Expansion & EEVE Initialization
+* **The Problem**: Pre-trained English-centric SLMs represent Korean prose very inefficiently.
+* **The Solution**: We train a custom standalone Korean Byte-Level BPE tokenizer and merge it with the base tokenizer, adding **757 highly efficient Korean tokens**.
+* **EEVE Initialization**: In `src/model.py`, newly added Korean token embeddings are initialized from the mean embeddings of their English subwords from the base tokenizer, giving the model an excellent starting approximation.
 
-### 3. Automated Warmup-Stable-Decay (WSD) Scheduler
-Top-tier pre-training pipelines rely on WSD schedules rather than simple cosine decay. Bori v3 provides a fully automated custom PyTorch WSD scheduler option (`--lr_scheduler_type wsd`):
-* **Warmup Phase**: Ramps up learning rate linearly from 0 to peak.
-* **Stable Phase**: Keeps the learning rate flat at peak to maximize optimizer progress over high-entropy web text.
-* **Decay Phase**: cosinely decays learning rate down to a floor (e.g., 10%) at the very end to consolidate weights.
-* **Dry Run Clamping Guardrails**: Dynamically clamps `warmup_steps` and `decay_steps` against `max_steps` to protect against negative math in short test or dry-run environments.
+### 3. Response-Only Loss (SFT Masking)
+Bori-3 implements a custom `SFTDataCollator` that strictly enforces prompt-masking (setting user/system turn labels to `-100`). The model calculates loss **only** on its own assistant responses, drastically reducing hallucinations.
+
+### 4. 50/50 Bilingual SFT Mix
+The SFT pipeline uses `datasets.interleave_datasets` to seamlessly stream a perfectly balanced 50/50 mix of Korean and English instructional data to prevent catastrophic forgetting of English capabilities:
+- `konglish-synthetic-instruct` (Korean instructions)
+- `korean_safe_conversation` (Korean alignment)
+- `ko_wikidata_QA` (Korean factual QA)
+- `no_robots` (English human-written instructions)
+- `alpaca-cleaned` (English diverse instructions)
+
+### 5. Automated Benchmark Suite
+A standalone `benchmark.py` script automatically grades model checkpoints (A-F) across 5 axes: Korean/English Perplexity, Tokenizer Fertility, Repetition analysis, and hardcoded Bilingual Instruction Following.
 
 ---
 
 ## 🚀 Execution & Usage Guide
 
-### A. Run the Local Dry Run (End-to-End Pipeline Verification)
-To verify your training scripts, tokenizer merger, custom schedulers, and callbacks locally on CPU (2-4 steps per phase):
-```bash
-cd Bori_Version3
-python3 run_local_dry_run.py
-```
+### A. Environment Setup
+The repository is designed to run seamlessly on Kaggle. The `setup_kaggle.py` script handles extracting the codebase, restoring prior checkpoints across sessions, generating Accelerate configs, and pre-caching models.
 
-### B. Full Bilingual Pre-Training (CPT) on GPU
+### B. Full Bilingual Pre-Training (CPT)
 CPT is run in two sequential stages in a single command using `cpt.py`:
-1. **Phase 1a (Embedding Warm-up)**: Freezes the backbone and trains only the new Korean embeddings to align them with the model's internal representations.
-2. **Phase 1b (Full CPT with WSD)**: Unfreezes all parameters and trains the model on a mix of Korean web text and 10% English replay data to prevent catastrophic forgetting.
-
-```bash
-python3 bori_v3/scripts/cpt.py \
-    --lr_scheduler_type wsd \
-    --max_steps 10000 \
-    --warmup_steps 500 \
-    --decay_steps 1500 \
-    --min_lr_ratio 0.1 \
-    --output_dir ./checkpoints \
-    --tokenizer_path /path/to/merged_tokenizer \
-    --wandb_project bori-v3-cpt
-```
+1. **Phase 1a (Embedding Warm-up)**: Freezes the backbone and trains only the new Korean embeddings.
+2. **Phase 1b (Full CPT)**: Unfreezes all parameters and trains the model on a mix of 85% Korean web text and 15% English replay data using a WSD (Warmup-Stable-Decay) learning rate schedule.
 
 ### C. Supervised Fine-Tuning (SFT)
-Once CPT is complete, run conversational instruction alignment using `sft.py`. Ensure you carry over the accumulated step offset to maintain a unified W&B curve:
-```bash
-python3 bori_v3/scripts/sft.py \
-    --model_path ./checkpoints/phase_1b \
-    --tokenizer_path /path/to/merged_tokenizer \
-    --dataset_name heegyu/open-korean-instructions \
-    --lr_scheduler_type cosine \
-    --step_offset 11000 \
-    --output_dir ./sft_checkpoints \
-    --wandb_project bori-v3-sft
-```
+Once CPT is complete, run conversational instruction alignment using `sft.py`. The control panel notebook allows switching between models and phases with single boolean toggles.
 
 ---
 
+## 🔗 Published Models (Hugging Face)
+- [Bori-2 135M Base](https://huggingface.co/brandonbaek/Bori-2-135M-Base)
+- [Bori-2 135M Instruct](https://huggingface.co/brandonbaek/Bori-2-135M-Instruct)
+- [Bori-1 0.6B Base](https://huggingface.co/brandonbaek/Bori-1-0.6B-Base)
+
 ## 🤝 Contributing & License
-This project tracks custom experimental research on Bilingual Small Language Models. Feel free to open issues or pull requests to improve tokenization packing, memory footprint, or multi-GPU pipeline parallelisms. Distributed under the MIT License.
+This project tracks custom experimental research on Bilingual Small Language Models. Feel free to open issues or pull requests. Distributed under the MIT License.

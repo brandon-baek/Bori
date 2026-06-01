@@ -1,0 +1,496 @@
+import os
+os.environ['NCCL_DISABLE_P2P'] = '1'
+os.environ['NCCL_IB_DISABLE'] = '1'
+import torch
+local_rank = int(os.environ.get("LOCAL_RANK", 0))
+if torch.cuda.is_available():
+    torch.cuda.set_device(local_rank)
+import argparse
+import sys
+import shutil
+import time
+from dataclasses import dataclass
+from typing import Any, List, Dict
+from transformers import (
+    AutoModelForCausalLM,
+    AutoTokenizer,
+    TrainingArguments,
+    Trainer,
+    TrainerCallback,
+)
+import wandb
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from src.data import get_sft_dataset
+
+
+@dataclass
+class SFTDataCollator:
+    """Custom data collator that preserves pre-built labels for prompt masking.
+    
+    Unlike DataCollatorForLanguageModeling which overwrites labels by shifting
+    input_ids, this collator pads input_ids, labels, and attention_mask while
+    keeping the original label values intact (including -100 masks).
+    """
+    tokenizer: Any
+    pad_to_multiple_of: int = None
+    
+    def __call__(self, features: List[Dict[str, Any]]) -> Dict[str, torch.Tensor]:
+        max_len = max(len(f["input_ids"]) for f in features)
+        
+        # Optionally pad to a multiple for hardware efficiency
+        if self.pad_to_multiple_of is not None:
+            max_len = ((max_len + self.pad_to_multiple_of - 1) 
+                       // self.pad_to_multiple_of * self.pad_to_multiple_of)
+        
+        pad_token_id = self.tokenizer.pad_token_id if self.tokenizer.pad_token_id is not None else 0
+        
+        batch_input_ids = []
+        batch_labels = []
+        batch_attention_mask = []
+        
+        for f in features:
+            seq_len = len(f["input_ids"])
+            pad_len = max_len - seq_len
+            
+            # Right-pad input_ids with pad token
+            batch_input_ids.append(f["input_ids"] + [pad_token_id] * pad_len)
+            # Right-pad labels with -100 (ignored in loss)
+            batch_labels.append(f["labels"] + [-100] * pad_len)
+            # Attention mask: 1 for real tokens, 0 for padding
+            batch_attention_mask.append([1] * seq_len + [0] * pad_len)
+        
+        return {
+            "input_ids": torch.tensor(batch_input_ids, dtype=torch.long),
+            "labels": torch.tensor(batch_labels, dtype=torch.long),
+            "attention_mask": torch.tensor(batch_attention_mask, dtype=torch.long),
+        }
+
+class ProgressCallback(TrainerCallback):
+    def __init__(self, phase="sft"):
+        self.phase = phase
+        self.start_time = None
+        self.start_step = None
+
+    def on_train_begin(self, args, state, control, **kwargs):
+        self.start_time = time.time()
+        self.start_step = state.global_step
+
+    def on_log(self, args, state, control, logs=None, **kwargs):
+        if state.max_steps <= 0 or self.start_time is None or self.start_step is None:
+            return
+        elapsed = time.time() - self.start_time
+        steps_completed = state.global_step - self.start_step
+        progress = state.global_step / state.max_steps
+
+        if steps_completed > 0:
+            steps_per_sec = steps_completed / elapsed
+            steps_remaining = state.max_steps - state.global_step
+            eta_seconds = steps_remaining / steps_per_sec
+            eta_minutes = eta_seconds / 60
+        else:
+            eta_minutes = 0
+
+        extra = {
+            "progress_pct": round(progress * 100, 1),
+            "eta_minutes": round(eta_minutes, 1),
+            "elapsed_minutes": round(elapsed / 60, 1),
+            "phase": self.phase,
+        }
+        if logs is not None:
+            logs.update(extra)
+        print(f"[{self.phase}] Step {state.global_step}/{state.max_steps} ({extra['progress_pct']}%) | ETA: {extra['eta_minutes']}min | Elapsed: {extra['elapsed_minutes']}min")
+
+class SaveTokenizerCallback(TrainerCallback):
+    def __init__(self, tokenizer):
+        self.tokenizer = tokenizer
+
+    def on_save(self, args, state, control, **kwargs):
+        checkpoint_dir = os.path.join(args.output_dir, f"checkpoint-{state.global_step}")
+        if os.path.exists(checkpoint_dir):
+            self.tokenizer.save_pretrained(checkpoint_dir)
+            print(f"Custom callback successfully saved tokenizer to {checkpoint_dir}")
+
+class GlobalStepCallback(TrainerCallback):
+    """Injects an accumulated global step metric into trainer logs to enable
+    continuous graphing across multiple distinct training phases in W&B."""
+    def __init__(self, step_offset=0):
+        self.step_offset = step_offset
+
+    def on_log(self, args, state, control, logs=None, **kwargs):
+        if logs is not None:
+            logs["global_step_accumulated"] = state.global_step + self.step_offset
+
+class WandbCheckpointCallback(TrainerCallback):
+    """Uploads each checkpoint to W&B Artifacts and enforces a max_keep limit."""
+    def __init__(self, artifact_name, artifact_type="model", max_keep=5):
+        self.artifact_name = artifact_name
+        self.artifact_type = artifact_type
+        self.max_keep = max_keep
+        self.logged_steps = []
+
+    def on_save(self, args, state, control, **kwargs):
+        if int(os.environ.get("RANK", 0)) != 0:
+            return
+        if wandb.run is None:
+            return
+        checkpoint_dir = os.path.join(args.output_dir, f"checkpoint-{state.global_step}")
+        if not os.path.exists(checkpoint_dir):
+            return
+        try:
+            artifact = wandb.Artifact(
+                name=self.artifact_name,
+                type=self.artifact_type,
+                metadata={
+                    "step": state.global_step,
+                    "loss": state.log_history[-1].get("loss") if state.log_history else None,
+                },
+            )
+            artifact.add_dir(checkpoint_dir)
+            # Use 'latest' and the specific step alias
+            wandb.log_artifact(artifact, aliases=[f"step-{state.global_step}", "latest"])
+            print(f"Uploaded checkpoint step {state.global_step} to W&B Artifacts as '{self.artifact_name}'")
+            
+            self.logged_steps.append(state.global_step)
+            
+            # Clean up older artifacts in W&B to enforce max_keep limit
+            if len(self.logged_steps) > self.max_keep:
+                step_to_delete = self.logged_steps.pop(0)
+                try:
+                    api = wandb.Api()
+                    artifact_path = f"{wandb.run.entity}/{wandb.run.project}/{self.artifact_name}:step-{step_to_delete}"
+                    art = api.artifact(artifact_path)
+                    art.delete(delete_aliases=True)
+                    print(f"Cleaned up old W&B artifact: {artifact_path}")
+                except Exception as e:
+                    print(f"Notice: Could not delete old W&B artifact step {step_to_delete}: {e}")
+                    
+        except Exception as e:
+            print(f"Warning: W&B artifact upload failed: {e}")
+
+def get_wsd_scheduler(optimizer, num_warmup_steps, num_stable_steps, num_decay_steps, min_lr_ratio=0.1):
+    import math
+    from torch.optim.lr_scheduler import LambdaLR
+    
+    def lr_lambda(current_step):
+        if current_step < num_warmup_steps:
+            return float(current_step) / float(max(1, num_warmup_steps))
+        
+        if current_step < num_warmup_steps + num_stable_steps:
+            return 1.0
+            
+        decay_step = current_step - (num_warmup_steps + num_stable_steps)
+        if decay_step >= num_decay_steps:
+            return min_lr_ratio
+            
+        ratio = float(decay_step) / float(max(1, num_decay_steps))
+        cosine_decay = 0.5 * (1.0 + math.cos(math.pi * ratio))
+        return min_lr_ratio + (1.0 - min_lr_ratio) * cosine_decay
+        
+    return LambdaLR(optimizer, lr_lambda)
+
+def create_custom_optimizer_and_scheduler(model, args, lr, max_steps, warmup_steps):
+    optimizer = torch.optim.AdamW(
+        [p for p in model.parameters() if p.requires_grad],
+        lr=lr,
+        weight_decay=0.01,
+    )
+    
+    # Clamp warmup steps to max steps to prevent negative values in short runs
+    warmup_steps = min(warmup_steps, max_steps)
+    
+    decay_steps = args.decay_steps if (hasattr(args, "decay_steps") and args.decay_steps is not None) else int(max_steps * 0.15)
+    # Clamp decay steps to remaining steps
+    decay_steps = min(decay_steps, max_steps - warmup_steps)
+    
+    stable_steps = max_steps - warmup_steps - decay_steps
+    if stable_steps < 0:
+        stable_steps = 0
+        decay_steps = max_steps - warmup_steps
+        
+    print(f"Instantiating custom WSD Scheduler: warmup_steps={warmup_steps}, stable_steps={stable_steps}, decay_steps={decay_steps}, min_lr_ratio={args.min_lr_ratio}")
+    
+    scheduler = get_wsd_scheduler(
+        optimizer,
+        num_warmup_steps=warmup_steps,
+        num_stable_steps=stable_steps,
+        num_decay_steps=decay_steps,
+        min_lr_ratio=args.min_lr_ratio
+    )
+    return optimizer, scheduler
+
+def main(args):
+    # Enforce reproducibility
+    import random
+    import numpy as np
+    from transformers import set_seed
+    
+    print(f"Enforcing seed {args.seed} and deterministic execution settings...")
+    set_seed(args.seed)
+    random.seed(args.seed)
+    np.random.seed(args.seed)
+    torch.manual_seed(args.seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(args.seed)
+        torch.cuda.manual_seed(args.seed)
+    
+    # Configure deterministic algorithms
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    torch.use_deterministic_algorithms(True, warn_only=True)
+
+    is_main_process = int(os.environ.get("RANK", 0)) == 0
+    if args.wandb_project and is_main_process:
+        run_id = args.wandb_run_id or args.run_name
+        os.environ["WANDB_RUN_ID"] = run_id
+        os.environ["WANDB_RESUME"] = "allow"
+        print(f"Initializing W&B run: {run_id}")
+        wandb.init(
+            project=args.wandb_project,
+            name=args.run_name,
+            id=run_id,
+            resume="allow",
+        )
+
+    print("Loading Tokenizer...")
+    tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_path)
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+    
+    # Determine if model_path is a local directory or a HF repo
+    is_local = os.path.isdir(args.model_path)
+    
+    # Always load in fp32 — the Trainer's AMP handles mixed-precision casting.
+    # Use SDPA attention for ~10-20% speedup on T4 GPUs (Turing SM75 compatible).
+    try:
+        model = AutoModelForCausalLM.from_pretrained(
+            args.model_path,
+            torch_dtype=torch.float32,
+            local_files_only=is_local,
+            attn_implementation="sdpa",
+        )
+    except OSError as e:
+        if "no file named" in str(e) or "pytorch_model.bin" in str(e) or "model.safetensors" in str(e):
+            print(f"⚠️ Warning: Base model weights not found at {args.model_path}. Instantiating from config instead for safe resumption...")
+            from transformers import AutoConfig
+            config = AutoConfig.from_pretrained(args.model_path)
+            model = AutoModelForCausalLM.from_config(config, torch_dtype=torch.float32)
+            # Resize token embeddings immediately since the tokenizer was merged
+            model.resize_token_embeddings(len(tokenizer))
+            print("✅ Successfully instantiated base model from config with resized embeddings.")
+        else:
+            raise e
+    
+    print("Loading SFT Dataset...")
+    dataset = get_sft_dataset(
+        args.dataset_name, tokenizer, split="train",
+        max_seq_length=args.max_seq_length, probabilities=args.dataset_probs,
+        seed=args.seed
+    )
+    
+    def tokenize_fn(examples):
+        all_input_ids = []
+        all_labels = []
+        
+        for i in range(len(examples["text"])):
+            text = examples["text"][i]
+            messages = examples["messages"][i] if ("messages" in examples and examples["messages"][i] is not None) else []
+            
+            # Fallback to standard unmasked tokenization if messages are empty/raw text
+            if not messages:
+                enc = tokenizer(text, truncation=True, max_length=args.max_seq_length, padding=False)
+                all_input_ids.append(enc["input_ids"])
+                all_labels.append(enc["input_ids"].copy())
+                continue
+            
+            # Start with BOS token for train/inference consistency
+            input_ids = []
+            labels = []
+            if tokenizer.bos_token_id is not None:
+                input_ids.append(tokenizer.bos_token_id)
+                labels.append(-100)  # Don't compute loss on BOS
+            
+            # Construct sequence and label sequence incrementally turn-by-turn
+            for msg in messages:
+                role = msg["role"]
+                content = msg.get("content") or ""
+                
+                if role == "system":
+                    t_text = f"<|im_start|>system\n{content}<|im_end|>\n"
+                    tokens = tokenizer.encode(t_text, add_special_tokens=False)
+                    input_ids.extend(tokens)
+                    labels.extend([-100] * len(tokens))
+                elif role == "user":
+                    t_text = f"<|im_start|>user\n{content}<|im_end|>\n"
+                    tokens = tokenizer.encode(t_text, add_special_tokens=False)
+                    input_ids.extend(tokens)
+                    labels.extend([-100] * len(tokens))
+                elif role == "assistant":
+                    # Loss only calculated on assistant response and its eos token (<|im_end|>\n)
+                    # We do not compute loss on '<|im_start|>assistant\n'
+                    prefix = "<|im_start|>assistant\n"
+                    prefix_tokens = tokenizer.encode(prefix, add_special_tokens=False)
+                    input_ids.extend(prefix_tokens)
+                    labels.extend([-100] * len(prefix_tokens))
+                    
+                    response = f"{content}<|im_end|>\n"
+                    response_tokens = tokenizer.encode(response, add_special_tokens=False)
+                    input_ids.extend(response_tokens)
+                    labels.extend(response_tokens)
+            
+            # Append EOS token at the end for proper stop signal
+            if tokenizer.eos_token_id is not None:
+                if not input_ids or input_ids[-1] != tokenizer.eos_token_id:
+                    input_ids.append(tokenizer.eos_token_id)
+                    labels.append(tokenizer.eos_token_id)  # Train model to emit EOS
+            
+            # Truncate to max_seq_length
+            if len(input_ids) > args.max_seq_length:
+                input_ids = input_ids[:args.max_seq_length]
+                labels = labels[:args.max_seq_length]
+                
+            all_input_ids.append(input_ids)
+            all_labels.append(labels)
+            
+        return {
+            "input_ids": all_input_ids,
+            "labels": all_labels,
+        }
+    
+    tokenized = dataset.map(tokenize_fn, batched=True, remove_columns=dataset.column_names)
+    
+    # Filter out samples that tokenize to 0 or 1 tokens — these cause a reshape
+    # crash inside LlamaAttention when seq_len=0.
+    tokenized = tokenized.filter(lambda x: len(x["input_ids"]) > 1)
+    
+    collator = SFTDataCollator(tokenizer=tokenizer)
+    
+    training_args = TrainingArguments(
+        output_dir=args.output_dir,
+        per_device_train_batch_size=args.batch_size,
+        gradient_accumulation_steps=args.grad_accum,
+        learning_rate=args.learning_rate,
+        logging_steps=10,
+        num_train_epochs=args.epochs,
+        max_steps=args.max_steps,
+        save_strategy="steps" if args.max_steps > 0 else "epoch",
+        save_steps=args.save_steps if args.max_steps > 0 else None,
+        save_total_limit=3,
+        fp16=torch.cuda.is_available(),
+        gradient_checkpointing=True,
+        report_to="wandb" if (args.wandb_project and is_main_process) else "none",
+        optim="adamw_torch",
+        lr_scheduler_type=args.lr_scheduler_type if args.lr_scheduler_type != "wsd" else "constant",
+        warmup_steps=args.warmup_steps,
+        ddp_find_unused_parameters=False,
+        use_cpu=not torch.cuda.is_available(),
+        seed=args.seed,
+        data_seed=args.seed,
+    )
+    
+    optimizer_and_scheduler = (None, None)
+    if args.lr_scheduler_type == "wsd":
+        if args.max_steps > 0:
+            total_steps = args.max_steps
+        else:
+            num_devices = torch.cuda.device_count() if torch.cuda.is_available() else 1
+            effective_batch_size = args.batch_size * args.grad_accum * num_devices
+            total_samples = len(tokenized)
+            steps_per_epoch = total_samples // effective_batch_size
+            if total_samples % effective_batch_size != 0:
+                steps_per_epoch += 1
+            total_steps = steps_per_epoch * args.epochs
+            print(f"Calculated SFT total steps over {args.epochs} epochs: {total_steps}")
+            
+        optimizer, scheduler = create_custom_optimizer_and_scheduler(
+            model, args, args.learning_rate, total_steps, args.warmup_steps
+        )
+        optimizer_and_scheduler = (optimizer, scheduler)
+        
+    print("Initializing Trainer...")
+    trainer = Trainer(
+        model=model,
+        train_dataset=tokenized,
+        args=training_args,
+        data_collator=collator,
+        optimizers=optimizer_and_scheduler,
+        callbacks=[
+            ProgressCallback(phase="sft"),
+            SaveTokenizerCallback(tokenizer),
+            GlobalStepCallback(step_offset=args.step_offset),
+        ] + ([WandbCheckpointCallback(artifact_name=args.run_name)] if args.wandb_project and is_main_process else []),
+    )
+    
+    print("Starting SFT Training...")
+    resume_from_checkpoint = args.resume_from_checkpoint
+    if not resume_from_checkpoint and os.path.exists(args.output_dir):
+        valid_checkpoint_dirs = []
+        for item in os.listdir(args.output_dir):
+            if item.startswith("checkpoint-"):
+                path = os.path.join(args.output_dir, item)
+                if os.path.isdir(path):
+                    # A valid checkpoint must have trainer_state.json AND weight files to resume successfully
+                    state_file = os.path.join(path, "trainer_state.json")
+                    has_weights = any(os.path.exists(os.path.join(path, f)) for f in ["model.safetensors", "pytorch_model.bin", "model.safetensors.index.json", "pytorch_model.bin.index.json", "adapter_model.bin", "adapter_model.safetensors"])
+                    if os.path.exists(state_file) and has_weights:
+                        valid_checkpoint_dirs.append(path)
+                    else:
+                        if is_main_process:
+                            print(f"⚠️ Warning: Found corrupted checkpoint at {path} (missing trainer_state.json or model weights). Cleaning it up to enable safe resumption...")
+                            try:
+                                if os.path.exists(path):
+                                    shutil.rmtree(path)
+                            except Exception as e:
+                                print(f"Failed to remove corrupted checkpoint {path}: {e}")
+        if len(valid_checkpoint_dirs) > 0:
+            resume_from_checkpoint = True
+            print(f"Found {len(valid_checkpoint_dirs)} valid SFT checkpoints. Resuming safely from the latest valid checkpoint...")
+        
+    trainer.train(resume_from_checkpoint=resume_from_checkpoint)
+    trainer.save_model(args.output_dir)
+    tokenizer.save_pretrained(args.output_dir)
+    print("SFT Training Complete.")
+    
+    if args.wandb_project and is_main_process and wandb.run is not None:
+        try:
+            artifact = wandb.Artifact(
+                name=f"{args.run_name}-final",
+                type="model",
+                metadata={"final": True},
+            )
+            artifact.add_dir(args.output_dir)
+            wandb.log_artifact(artifact, aliases=["final", "latest"])
+            print(f"Uploaded final SFT model to W&B Artifacts as '{args.run_name}-final'")
+        except Exception as e:
+            print(f"Warning: W&B final artifact upload failed: {e}")
+            
+    if args.wandb_project and is_main_process:
+        wandb.finish()
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--model_path", type=str, required=True)
+    parser.add_argument("--tokenizer_path", type=str, required=True)
+    parser.add_argument("--dataset_name", type=str, required=True)
+    parser.add_argument("--dataset_probs", type=str, default=None)
+    parser.add_argument("--output_dir", type=str, default="./sft_checkpoints")
+    parser.add_argument("--wandb_project", type=str, default=None)
+    parser.add_argument("--run_name", type=str, default="bori-sft")
+    parser.add_argument("--batch_size", type=int, default=1)
+    parser.add_argument("--grad_accum", type=int, default=32)
+    parser.add_argument("--learning_rate", type=float, default=5e-5)
+    parser.add_argument("--epochs", type=int, default=3)
+    parser.add_argument("--max_seq_length", type=int, default=2048)
+    parser.add_argument("--max_steps", type=int, default=-1)
+    parser.add_argument("--save_steps", type=int, default=500)
+    parser.add_argument("--wandb_run_id", type=str, default=None)
+    parser.add_argument("--lr_scheduler_type", type=str, default="cosine")
+    parser.add_argument("--warmup_steps", type=int, default=200)
+    parser.add_argument("--decay_steps", type=int, default=None)
+    parser.add_argument("--min_lr_ratio", type=float, default=0.1)
+    parser.add_argument("--step_offset", type=int, default=0)
+    parser.add_argument("--resume_from_checkpoint", type=str, default=None, help="Path to a specific checkpoint to resume from. If None, auto-detects from output_dir.")
+    parser.add_argument("--seed", type=int, default=42)
+    
+    args = parser.parse_args()
+    main(args)
